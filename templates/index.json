@@ -258,7 +258,7 @@
               "type": "text",
               "name": "Description",
               "settings": {
-                "text": "<p style=\"display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;\">{{ closest.product.description | strip_html }}</p>",
+                "text": "<div style=\"display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;\">{{ closest.product.description }}</div>",
                 "text_color": "#5C5142",
                 "width": "100%",
                 "max_width": "normal",
