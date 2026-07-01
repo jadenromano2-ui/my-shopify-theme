@@ -435,11 +435,68 @@
         "padding-block-start": 72,
         "padding-block-end": 0
       }
+    },
+    "filtration_process_01": {
+      "type": "filtration-process",
+      "name": "Filtration process",
+      "blocks": {
+        "stage_1": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 01",
+            "name": "Sediment Pre-Filter",
+            "description": "Removes sand, rust, and particulate down to 5 microns."
+          }
+        },
+        "stage_2": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 02",
+            "name": "Carbon Block",
+            "description": "Absorbs chlorine, odor, and volatile compounds."
+          }
+        },
+        "stage_3": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 03",
+            "name": "KDF Media",
+            "description": "Reduces heavy metals through redox filtration."
+          }
+        },
+        "stage_4": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 04",
+            "name": "Polishing Filter",
+            "description": "Final 0.5-micron pass for clarity and taste."
+          }
+        }
+      },
+      "block_order": ["stage_1", "stage_2", "stage_3", "stage_4"],
+      "settings": {
+        "eyebrow": "The Process",
+        "heading": "How Filtration Works.",
+        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "stat_1_value": "5 Micron",
+        "stat_1_label": "Sediment Capture",
+        "stat_2_value": "0.5 Micron",
+        "stat_2_label": "Final Polish",
+        "stat_3_value": "99.9%",
+        "stat_3_label": "Chlorine Reduction",
+        "stat_4_value": "4-Stage",
+        "stat_4_label": "Sequential Process",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
-    "engineered_precision_01"
+    "engineered_precision_01",
+    "filtration_process_01"
   ]
 }

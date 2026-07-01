@@ -1,0 +1,567 @@
+{% liquid
+  assign bg = section.settings.background_color
+  assign fg = section.settings.foreground_color
+%}
+
+<div
+  class="section section--full-width filtration-process spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %} --fp-bg: {{ bg }}; --fp-fg: {{ fg }};"
+  data-testid="filtration-process"
+>
+  <div class="filtration-process__intro">
+    {% if section.settings.eyebrow != blank %}
+      <p class="filtration-process__eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="filtration-process__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.intro_text != blank %}
+      <p class="filtration-process__intro-text">{{ section.settings.intro_text }}</p>
+    {% endif %}
+  </div>
+
+  <div class="filtration-process__diagram-wrap">
+    <div class="filtration-process__diagram-frame">
+      <svg class="fp-diagram" viewBox="0 0 1000 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the four-stage filtration process">
+        <circle cx="16" cy="108" r="2" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="30" cy="118" r="2.5" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="20" cy="128" r="1.5" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M12 115 L56 115" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M48 108 L58 115 L48 122" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <text x="34" y="145" text-anchor="middle" class="fp-diagram-label">RAW INTAKE</text>
+
+        <rect x="60" y="70" width="880" height="90" rx="6" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="280" y1="70" x2="280" y2="160" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <line x1="500" y1="70" x2="500" y2="160" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <line x1="720" y1="70" x2="720" y2="160" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+
+        <text x="170" y="46" text-anchor="middle" class="fp-diagram-tag">01</text>
+        <line x1="170" y1="52" x2="170" y2="70" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <text x="390" y="46" text-anchor="middle" class="fp-diagram-tag">02</text>
+        <line x1="390" y1="52" x2="390" y2="70" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <text x="610" y="46" text-anchor="middle" class="fp-diagram-tag">03</text>
+        <line x1="610" y1="52" x2="610" y2="70" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <text x="830" y="46" text-anchor="middle" class="fp-diagram-tag">04</text>
+        <line x1="830" y1="52" x2="830" y2="70" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+
+        <circle cx="112" cy="96" r="2.4" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="142" cy="131" r="3" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="172" cy="104" r="2.2" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="202" cy="136" r="2.6" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="232" cy="100" r="2.8" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="248" cy="130" r="1.8" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+
+        <path d="M320 90 L335 110" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M350 95 L365 115" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M380 90 L395 110" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M410 95 L425 115" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M440 90 L455 110" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M335 128 L350 148" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+        <path d="M395 128 L410 148" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.9"/>
+
+        <path d="M550 105 L554 109 L550 113 L546 109 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M580 128 L584 132 L580 136 L576 132 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M610 98 L614 102 L610 106 L606 102 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M642 130 L646 134 L642 138 L638 134 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M672 106 L676 110 L672 114 L668 110 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <path d="M694 132 L698 136 L694 140 L690 136 Z" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+
+        <circle cx="760" cy="92" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="782" cy="100" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="804" cy="92" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="826" cy="100" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="848" cy="92" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="870" cy="100" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="892" cy="92" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="770" cy="120" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="792" cy="128" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="814" cy="120" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="836" cy="128" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="858" cy="120" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <circle cx="880" cy="128" r="1" class="fp-draw fp-fill" pathLength="1" stroke="currentColor" stroke-width="1"/>
+
+        <path d="M942 115 L988 115" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M980 108 L990 115 L980 122" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M965 92 L969 96 L976 88" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <text x="966" y="145" text-anchor="middle" class="fp-diagram-label">FILTERED OUTPUT</text>
+
+        <line x1="60" y1="182" x2="940" y2="182" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="60" y1="182" x2="60" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="170" y1="182" x2="170" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="280" y1="182" x2="280" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="390" y1="182" x2="390" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="500" y1="182" x2="500" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="610" y1="182" x2="610" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="720" y1="182" x2="720" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="830" y1="182" x2="830" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="940" y1="182" x2="940" y2="188" class="fp-draw" pathLength="1" stroke="currentColor" stroke-width="0.6"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="filtration-process__stages">
+    {% for block in section.blocks %}
+      {% if block.type == 'stage' %}
+        <div class="filtration-process__stage" {{ block.shopify_attributes }}>
+          <span class="filtration-process__stage-number">{{ block.settings.tag_number }}</span>
+          <h3 class="filtration-process__stage-name">{{ block.settings.name }}</h3>
+          <p class="filtration-process__stage-description">{{ block.settings.description }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% if section.settings.stat_1_value != blank %}
+    <div class="filtration-process__stats">
+      <div class="filtration-process__stat">
+        <span class="filtration-process__stat-value">{{ section.settings.stat_1_value }}</span>
+        <span class="filtration-process__stat-label">{{ section.settings.stat_1_label }}</span>
+      </div>
+      <div class="filtration-process__stat">
+        <span class="filtration-process__stat-value">{{ section.settings.stat_2_value }}</span>
+        <span class="filtration-process__stat-label">{{ section.settings.stat_2_label }}</span>
+      </div>
+      <div class="filtration-process__stat">
+        <span class="filtration-process__stat-value">{{ section.settings.stat_3_value }}</span>
+        <span class="filtration-process__stat-label">{{ section.settings.stat_3_label }}</span>
+      </div>
+      <div class="filtration-process__stat">
+        <span class="filtration-process__stat-value">{{ section.settings.stat_4_value }}</span>
+        <span class="filtration-process__stat-label">{{ section.settings.stat_4_label }}</span>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% javascript %}
+  (function () {
+    if (window.__fpRevealInit) return;
+    window.__fpRevealInit = true;
+
+    const reduceMotion =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = document.querySelectorAll('.filtration-process__diagram-frame, .filtration-process__stage, .filtration-process__stats');
+
+    if (!targets.length) return;
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      targets.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
+    );
+
+    targets.forEach((el) => io.observe(el));
+  })();
+{% endjavascript %}
+
+{% stylesheet %}
+  .filtration-process {
+    background: var(--fp-bg, #F7F5F0);
+    color: var(--fp-fg, #2E2C29);
+  }
+
+  .filtration-process__intro {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 80px);
+    padding-bottom: clamp(28px, 3.5vw, 44px);
+    text-align: center;
+  }
+
+  .filtration-process__eyebrow {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #706C63;
+    margin: 0 0 14px;
+  }
+
+  .filtration-process__heading {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 4vw, 3.15rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  .filtration-process__intro-text {
+    font-family: var(--font-body--family);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: #706C63;
+    margin: 0 auto;
+    max-width: 34rem;
+  }
+
+  .filtration-process__diagram-wrap {
+    padding-inline: clamp(16px, 4vw, 64px);
+    padding-bottom: clamp(28px, 4vw, 44px);
+  }
+
+  .filtration-process__diagram-frame {
+    max-width: 1080px;
+    margin: 0 auto;
+    border: 1px solid rgba(46, 44, 41, 0.5);
+    padding: clamp(16px, 3vw, 28px) clamp(12px, 2vw, 24px);
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s var(--animation-timing-fade-in, ease), transform 0.9s var(--animation-timing-fade-in, ease);
+  }
+
+  .filtration-process__diagram-frame::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(46, 44, 41, 0.16);
+    pointer-events: none;
+  }
+
+  .filtration-process__diagram-frame.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fp-diagram {
+    width: 100%;
+    height: auto;
+    color: #2E2C29;
+    display: block;
+  }
+
+  .fp-diagram-label {
+    font-family: var(--font-accent--family);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    fill: currentColor;
+    opacity: 0.55;
+  }
+
+  .fp-diagram-tag {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    fill: currentColor;
+    opacity: 0.72;
+  }
+
+  .fp-fill {
+    fill: currentColor;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    .fp-draw {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke-dashoffset 1.6s var(--animation-timing-fade-in, ease) 0.15s;
+    }
+
+    .is-visible .fp-draw {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .filtration-process__stages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 64px);
+    padding-bottom: clamp(32px, 4.5vw, 52px);
+    border-bottom: 1px solid rgba(46, 44, 41, 0.14);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+  }
+
+  .filtration-process__stage {
+    padding-top: 16px;
+    border-top: 1px solid rgba(46, 44, 41, 0.3);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s var(--animation-timing-fade-in, ease), transform 0.7s var(--animation-timing-fade-in, ease);
+  }
+
+  .filtration-process__stage.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .filtration-process__stage-number {
+    display: block;
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    color: #706C63;
+    margin-bottom: 10px;
+  }
+
+  .filtration-process__stage-name {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .filtration-process__stage-description {
+    font-family: var(--font-body--family);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: #706C63;
+    margin: 0;
+  }
+
+  .filtration-process__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 64px);
+    padding-top: clamp(24px, 3vw, 36px);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.8s var(--animation-timing-fade-in, ease), transform 0.8s var(--animation-timing-fade-in, ease);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .filtration-process__stats.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .filtration-process__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 clamp(8px, 1.5vw, 20px);
+    border-left: 1px dashed rgba(46, 44, 41, 0.3);
+  }
+
+  .filtration-process__stat:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .filtration-process__stat-value {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .filtration-process__stat-label {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #706C63;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Filtration process",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "The Process"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How Filtration Works."
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro text",
+      "default": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F7F5F0"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "label": "Text color",
+      "default": "#2E2C29"
+    },
+    {
+      "type": "header",
+      "content": "Bottom stat strip"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_value",
+      "label": "Stat 1 value",
+      "default": "5 Micron"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_label",
+      "label": "Stat 1 label",
+      "default": "Sediment Capture"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_value",
+      "label": "Stat 2 value",
+      "default": "0.5 Micron"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_label",
+      "label": "Stat 2 label",
+      "default": "Final Polish"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_value",
+      "label": "Stat 3 value",
+      "default": "99.9%"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_label",
+      "label": "Stat 3 label",
+      "default": "Chlorine Reduction"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_value",
+      "label": "Stat 4 value",
+      "default": "4-Stage"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_label",
+      "label": "Stat 4 label",
+      "default": "Sequential Process"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stage",
+      "name": "Stage",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag_number",
+          "label": "Tag",
+          "default": "STAGE 01"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Sediment Pre-Filter"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Removes sand, rust, and particulate down to 5 microns."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Filtration process",
+      "blocks": [
+        {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 01",
+            "name": "Sediment Pre-Filter",
+            "description": "Removes sand, rust, and particulate down to 5 microns."
+          }
+        },
+        {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 02",
+            "name": "Carbon Block",
+            "description": "Absorbs chlorine, odor, and volatile compounds."
+          }
+        },
+        {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 03",
+            "name": "KDF Media",
+            "description": "Reduces heavy metals through redox filtration."
+          }
+        },
+        {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 04",
+            "name": "Polishing Filter",
+            "description": "Final 0.5-micron pass for clarity and taste."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
