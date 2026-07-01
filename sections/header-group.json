@@ -17,12 +17,12 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Let's go!",
+            "text": "Complimentary Shipping On All Orders",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
-            "letter_spacing": "normal",
-            "case": "none",
-            "text_color": "#FF0000"
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "text_color": "#2E2C29"
           },
           "blocks": {}
         }
@@ -34,11 +34,11 @@
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "background_color": "#FFFFFF",
+        "background_color": "#F7F5F0",
         "divider_width": 1,
         "divider_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "padding-block-start": 14,
+        "padding-block-end": 14
       }
     },
     "header_section": {
@@ -96,7 +96,9 @@
         "divider_size": "page-width",
         "border_width": 0,
         "background_color_top": "{{ settings.color_palette.background }}",
-        "enable_transparent_header_home": false,
+        "enable_transparent_header_home": true,
+        "home_inverse_logo": true,
+        "text_color_transparent_home": "#F7F5F0",
         "enable_transparent_header_product": false,
         "enable_transparent_header_collection": false
       }
