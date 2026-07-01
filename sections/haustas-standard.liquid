@@ -1,0 +1,572 @@
+{% liquid
+  assign bg = section.settings.background_color
+  assign fg = section.settings.foreground_color
+%}
+
+<div
+  class="section section--full-width haustas-standard spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %} --hs-bg: {{ bg }}; --hs-fg: {{ fg }};"
+  data-testid="haustas-standard"
+>
+  <div class="haustas-standard__intro">
+    {% if section.settings.eyebrow != blank %}
+      <p class="haustas-standard__eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="haustas-standard__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.intro_text != blank %}
+      <p class="haustas-standard__intro-text">{{ section.settings.intro_text }}</p>
+    {% endif %}
+  </div>
+
+  <div class="haustas-standard__certificate">
+    <div class="haustas-standard__seal-col">
+      <svg class="hs-seal" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HAUSTAS standard certification seal">
+        <defs>
+          <path id="hsSealRing" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+        </defs>
+        <circle cx="100" cy="100" r="78" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="1"/>
+        <text class="hs-ring-text">
+          <textPath href="#hsSealRing" startOffset="2%">PRECISION ENGINEERED • SILENT LUXURY • PRECISION ENGINEERED • SILENT LUXURY •</textPath>
+        </text>
+
+        <line x1="184" y1="100" x2="190" y2="100" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="173" y1="142" x2="178" y2="145" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="142" y1="173" x2="145" y2="178" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="100" y1="184" x2="100" y2="190" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="58" y1="173" x2="55" y2="178" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="27" y1="142" x2="22" y2="145" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="16" y1="100" x2="10" y2="100" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="27" y1="58" x2="22" y2="55" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="58" y1="27" x2="55" y2="22" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="100" y1="16" x2="100" y2="10" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="142" y1="27" x2="145" y2="22" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+        <line x1="173" y1="58" x2="178" y2="55" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="0.75"/>
+
+        <path d="M100,70 L119,79 L119,103 C119,118 108,126 100,130 C92,126 81,118 81,103 L81,79 Z" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="1.1"/>
+        <path d="M89,101 L97,109 L113,90" class="hs-draw" pathLength="1" stroke="currentColor" stroke-width="1.4"/>
+
+        <text x="100" y="150" text-anchor="middle" class="hs-diagram-tag">NO. 001</text>
+        <text x="100" y="163" text-anchor="middle" class="hs-diagram-label">SINCE 2024</text>
+      </svg>
+    </div>
+
+    <div class="haustas-standard__credentials">
+      {% if section.settings.credential_1 != blank %}
+        <dl class="haustas-standard__datasheet">
+          {% assign c1 = section.settings.credential_1 | split: ' — ' %}
+          <div class="haustas-standard__datasheet-row">
+            <dt>{{ c1[0] }}</dt>
+            <dd>{{ c1[1] | default: c1[0] }}</dd>
+          </div>
+          {% if section.settings.credential_2 != blank %}
+            {% assign c2 = section.settings.credential_2 | split: ' — ' %}
+            <div class="haustas-standard__datasheet-row">
+              <dt>{{ c2[0] }}</dt>
+              <dd>{{ c2[1] | default: c2[0] }}</dd>
+            </div>
+          {% endif %}
+          {% if section.settings.credential_3 != blank %}
+            {% assign c3 = section.settings.credential_3 | split: ' — ' %}
+            <div class="haustas-standard__datasheet-row">
+              <dt>{{ c3[0] }}</dt>
+              <dd>{{ c3[1] | default: c3[0] }}</dd>
+            </div>
+          {% endif %}
+          {% if section.settings.credential_4 != blank %}
+            {% assign c4 = section.settings.credential_4 | split: ' — ' %}
+            <div class="haustas-standard__datasheet-row">
+              <dt>{{ c4[0] }}</dt>
+              <dd>{{ c4[1] | default: c4[0] }}</dd>
+            </div>
+          {% endif %}
+        </dl>
+      {% endif %}
+      {% if section.settings.credential_note != blank %}
+        <p class="haustas-standard__credential-note">{{ section.settings.credential_note }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="haustas-standard__compare">
+    <div class="haustas-standard__compare-col">
+      <h3 class="haustas-standard__compare-heading">Built With</h3>
+      <ul class="haustas-standard__compare-list">
+        {% for i in (1..4) %}
+          {% assign key = 'built_' | append: i %}
+          {% assign val = section.settings[key] %}
+          {% if val != blank %}
+            <li>
+              <svg class="hs-mark" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5 L6.5 12 L13 4" stroke="currentColor" stroke-width="1.4"/></svg>
+              {{ val }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="haustas-standard__compare-col haustas-standard__compare-col--avoid">
+      <h3 class="haustas-standard__compare-heading">Never Used</h3>
+      <ul class="haustas-standard__compare-list">
+        {% for i in (1..4) %}
+          {% assign key = 'avoid_' | append: i %}
+          {% assign val = section.settings[key] %}
+          {% if val != blank %}
+            <li>
+              <svg class="hs-mark" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4 L12 12 M12 4 L4 12" stroke="currentColor" stroke-width="1.4"/></svg>
+              {{ val }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  (function () {
+    if (window.__hsRevealInit) return;
+    window.__hsRevealInit = true;
+
+    const reduceMotion =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = document.querySelectorAll('.haustas-standard__certificate, .haustas-standard__compare-col');
+
+    if (!targets.length) return;
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      targets.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
+    );
+
+    targets.forEach((el) => io.observe(el));
+  })();
+{% endjavascript %}
+
+{% stylesheet %}
+  .haustas-standard {
+    background: var(--hs-bg, #F7F5F0);
+    color: var(--hs-fg, #2E2C29);
+  }
+
+  .haustas-standard__intro {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 80px);
+    padding-bottom: clamp(28px, 3.5vw, 44px);
+    text-align: center;
+  }
+
+  .haustas-standard__eyebrow {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #706C63;
+    margin: 0 0 14px;
+  }
+
+  .haustas-standard__heading {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 4vw, 3.15rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  .haustas-standard__intro-text {
+    font-family: var(--font-body--family);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: #706C63;
+    margin: 0 auto;
+    max-width: 34rem;
+    font-style: italic;
+  }
+
+  .haustas-standard__certificate {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: clamp(28px, 4vw, 44px) clamp(20px, 5vw, 56px);
+    border: 1px solid rgba(46, 44, 41, 0.5);
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s var(--animation-timing-fade-in, ease), transform 0.9s var(--animation-timing-fade-in, ease);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+    }
+  }
+
+  .haustas-standard__certificate::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(46, 44, 41, 0.16);
+    pointer-events: none;
+  }
+
+  .haustas-standard__certificate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .haustas-standard__seal-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hs-seal {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    color: #2E2C29;
+  }
+
+  .hs-ring-text {
+    font-family: var(--font-accent--family);
+    font-size: 5.4px;
+    letter-spacing: 0.05em;
+    fill: currentColor;
+    opacity: 0.68;
+  }
+
+  .hs-diagram-tag {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    fill: currentColor;
+    opacity: 0.75;
+  }
+
+  .hs-diagram-label {
+    font-family: var(--font-accent--family);
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    fill: currentColor;
+    opacity: 0.5;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    .hs-draw {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke-dashoffset 1.6s var(--animation-timing-fade-in, ease) 0.15s;
+    }
+
+    .is-visible .hs-draw {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .haustas-standard__datasheet {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .haustas-standard__datasheet-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(46, 44, 41, 0.3);
+  }
+
+  .haustas-standard__datasheet-row:last-child {
+    border-bottom: none;
+  }
+
+  .haustas-standard__datasheet-row dt {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .haustas-standard__datasheet-row dd {
+    font-family: var(--font-body--family);
+    font-size: 0.9375rem;
+    text-align: right;
+    margin: 0;
+    opacity: 0.92;
+  }
+
+  .haustas-standard__credential-note {
+    font-family: var(--font-body--family);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: #706C63;
+    margin: 16px 0 0;
+    max-width: 42ch;
+  }
+
+  .haustas-standard__compare {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 1080px;
+    margin: clamp(32px, 4.5vw, 52px) auto 0;
+    padding-inline: clamp(20px, 5vw, 56px);
+    border-top: 1px solid rgba(46, 44, 41, 0.14);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .haustas-standard__compare-col {
+    padding: clamp(24px, 3vw, 36px) 0;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s var(--animation-timing-fade-in, ease), transform 0.7s var(--animation-timing-fade-in, ease);
+
+    @media screen and (min-width: 750px) {
+      padding-inline-end: 40px;
+    }
+  }
+
+  .haustas-standard__compare-col--avoid {
+    @media screen and (min-width: 750px) {
+      padding-inline-start: 40px;
+      border-left: 1px solid rgba(46, 44, 41, 0.14);
+    }
+  }
+
+  .haustas-standard__compare-col.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .haustas-standard__compare-heading {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #706C63;
+    margin: 0 0 18px;
+  }
+
+  .haustas-standard__compare-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .haustas-standard__compare-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body--family);
+    font-size: 1rem;
+    padding: 11px 0;
+    border-bottom: 1px dashed rgba(46, 44, 41, 0.18);
+  }
+
+  .haustas-standard__compare-list li:last-child {
+    border-bottom: none;
+  }
+
+  .haustas-standard__compare-col--avoid .haustas-standard__compare-list li {
+    color: #706C63;
+  }
+
+  .hs-mark {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: currentColor;
+    opacity: 0.7;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "HAUSTAS standard",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "The Standard"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The HAUSTAS Standard."
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro text",
+      "default": "We don't publish reviews. We publish specifications."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F7F5F0"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "label": "Text color",
+      "default": "#2E2C29"
+    },
+    {
+      "type": "header",
+      "content": "Certificate credentials (format: Label — Value)"
+    },
+    {
+      "type": "text",
+      "id": "credential_1",
+      "label": "Credential 1",
+      "default": "Material — 304 Stainless Steel, Medical Grade"
+    },
+    {
+      "type": "text",
+      "id": "credential_2",
+      "label": "Credential 2",
+      "default": "Certification — NSF/ANSI 42 & 53"
+    },
+    {
+      "type": "text",
+      "id": "credential_3",
+      "label": "Credential 3",
+      "default": "Warranty — 15 Years, Full Coverage"
+    },
+    {
+      "type": "text",
+      "id": "credential_4",
+      "label": "Credential 4",
+      "default": "Testing — 500+ Hours of Stress Testing"
+    },
+    {
+      "type": "textarea",
+      "id": "credential_note",
+      "label": "Credential note",
+      "default": "Every unit is individually pressure-tested before it leaves the workshop."
+    },
+    {
+      "type": "header",
+      "content": "Built with"
+    },
+    {
+      "type": "text",
+      "id": "built_1",
+      "label": "Built with 1",
+      "default": "304 Stainless Steel"
+    },
+    {
+      "type": "text",
+      "id": "built_2",
+      "label": "Built with 2",
+      "default": "Borosilicate Glass"
+    },
+    {
+      "type": "text",
+      "id": "built_3",
+      "label": "Built with 3",
+      "default": "Brushed Metal Hardware"
+    },
+    {
+      "type": "text",
+      "id": "built_4",
+      "label": "Built with 4",
+      "default": "FSC-Certified Packaging"
+    },
+    {
+      "type": "header",
+      "content": "Never used"
+    },
+    {
+      "type": "text",
+      "id": "avoid_1",
+      "label": "Avoid 1",
+      "default": "BPA Plastics"
+    },
+    {
+      "type": "text",
+      "id": "avoid_2",
+      "label": "Avoid 2",
+      "default": "Painted or Coated Finishes"
+    },
+    {
+      "type": "text",
+      "id": "avoid_3",
+      "label": "Avoid 3",
+      "default": "Adhesive Seals"
+    },
+    {
+      "type": "text",
+      "id": "avoid_4",
+      "label": "Avoid 4",
+      "default": "Disposable Components"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "presets": [
+    {
+      "name": "HAUSTAS standard"
+    }
+  ]
+}
+{% endschema %}

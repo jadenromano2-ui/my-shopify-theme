@@ -491,12 +491,39 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
+    },
+    "haustas_standard_01": {
+      "type": "haustas-standard",
+      "name": "HAUSTAS standard",
+      "settings": {
+        "eyebrow": "The Standard",
+        "heading": "The HAUSTAS Standard.",
+        "intro_text": "We don't publish reviews. We publish specifications.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "credential_1": "Material — 304 Stainless Steel, Medical Grade",
+        "credential_2": "Certification — NSF/ANSI 42 & 53",
+        "credential_3": "Warranty — 15 Years, Full Coverage",
+        "credential_4": "Testing — 500+ Hours of Stress Testing",
+        "credential_note": "Every unit is individually pressure-tested before it leaves the workshop.",
+        "built_1": "304 Stainless Steel",
+        "built_2": "Borosilicate Glass",
+        "built_3": "Brushed Metal Hardware",
+        "built_4": "FSC-Certified Packaging",
+        "avoid_1": "BPA Plastics",
+        "avoid_2": "Painted or Coated Finishes",
+        "avoid_3": "Adhesive Seals",
+        "avoid_4": "Disposable Components",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
     "engineered_precision_01",
-    "filtration_process_01"
+    "filtration_process_01",
+    "haustas_standard_01"
   ]
 }
