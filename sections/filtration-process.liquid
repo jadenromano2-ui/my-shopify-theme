@@ -131,6 +131,15 @@
       </div>
     </div>
   {% endif %}
+
+  {% if section.settings.cta_label != blank %}
+    <div class="filtration-process__cta">
+      <a href="{{ section.settings.cta_link | default: '#' }}" class="filtration-process__cta-link">
+        {{ section.settings.cta_label }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </div>
+  {% endif %}
 </div>
 
 {% javascript %}
@@ -380,6 +389,38 @@
     text-transform: uppercase;
     color: #706C63;
   }
+
+  .filtration-process__cta {
+    text-align: center;
+    padding-top: clamp(36px, 4.5vw, 56px);
+  }
+
+  .filtration-process__cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #2E2C29;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid currentColor;
+    transition: opacity 0.25s ease, gap 0.25s ease;
+  }
+
+  .filtration-process__cta-link:hover {
+    opacity: 0.6;
+    gap: 13px;
+  }
+
+  .filtration-process__cta-link svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -472,6 +513,22 @@
       "id": "stat_4_label",
       "label": "Stat 4 label",
       "default": "Sequential Process"
+    },
+    {
+      "type": "header",
+      "content": "Collection link"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Link label",
+      "default": "View The Collection"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Link",
+      "default": "shopify://collections/all"
     },
     {
       "type": "header",

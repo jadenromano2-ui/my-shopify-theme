@@ -159,6 +159,15 @@
       </div>
     {% endfor %}
   </div>
+
+  {% if section.settings.cta_label != blank %}
+    <div class="engineered-precision__cta">
+      <a href="{{ section.settings.cta_link | default: '#' }}" class="engineered-precision__cta-link">
+        {{ section.settings.cta_label }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </div>
+  {% endif %}
 </div>
 
 {% javascript %}
@@ -447,6 +456,39 @@
       stroke-dashoffset: 0;
     }
   }
+
+  .engineered-precision__cta {
+    text-align: center;
+    padding: clamp(40px, 5vw, 64px) clamp(20px, 5vw, 64px);
+    border-top: 1px solid rgba(46, 44, 41, 0.12);
+  }
+
+  .engineered-precision__cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #2E2C29;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid currentColor;
+    transition: opacity 0.25s ease, gap 0.25s ease;
+  }
+
+  .engineered-precision__cta-link:hover {
+    opacity: 0.6;
+    gap: 13px;
+  }
+
+  .engineered-precision__cta-link svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -503,6 +545,22 @@
       "id": "dark_foreground",
       "label": "Dark row text",
       "default": "#F2EFE9"
+    },
+    {
+      "type": "header",
+      "content": "Collection link"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Link label",
+      "default": "View The Collection"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Link",
+      "default": "shopify://collections/all"
     },
     {
       "type": "header",
