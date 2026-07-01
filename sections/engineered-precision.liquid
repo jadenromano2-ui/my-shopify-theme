@@ -162,7 +162,7 @@
 
   {% if section.settings.cta_label != blank %}
     <div class="engineered-precision__cta">
-      <a href="{{ section.settings.cta_link | default: '#' }}" class="engineered-precision__cta-link">
+      <a href="{{ section.settings.cta_link | default: 'shopify://collections/all' }}" class="engineered-precision__cta-link">
         {{ section.settings.cta_label }}
         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
       </a>
@@ -559,8 +559,7 @@
     {
       "type": "url",
       "id": "cta_link",
-      "label": "Link",
-      "default": "shopify://collections/all"
+      "label": "Link"
     },
     {
       "type": "header",
