@@ -357,8 +357,8 @@
         "section_width": "full-width",
         "horizontal_alignment": "flex-start",
         "gap": 96,
-        "padding-block-start": 120,
-        "padding-block-end": 140
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     }
   },
