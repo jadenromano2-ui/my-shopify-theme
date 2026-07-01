@@ -517,92 +517,6 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
-    },
-    "the_journal_01": {
-      "type": "featured-blog-posts",
-      "name": "The Journal",
-      "blocks": {
-        "static-blog-title": {
-          "type": "_featured-blog-posts-title",
-          "static": true,
-          "settings": {
-            "text": "<h2>The Journal</h2><p>Notes on water, materials, and the quiet architecture of home.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "rte"
-          }
-        },
-        "static-blog-post-card": {
-          "type": "_featured-blog-posts-card",
-          "static": true,
-          "settings": {
-            "alignment": "left",
-            "gap": 16,
-            "border": "none",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "title": {
-              "type": "_heading",
-              "static": true,
-              "settings": {
-                "type_preset": "h4",
-                "font": "var(--font-heading--family)",
-                "text_color": "#2E2C29"
-              }
-            },
-            "blog-post-info-text": {
-              "type": "_blog-post-info-text",
-              "static": true,
-              "settings": {
-                "show_date": true,
-                "show_author": false,
-                "type_preset": "",
-                "alignment": "left",
-                "text_color": "#706C63",
-                "padding-block-start": 8,
-                "padding-block-end": 0
-              }
-            },
-            "blog-post-description": {
-              "type": "_blog-post-description",
-              "static": true,
-              "settings": {
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "0.9375rem",
-                "line_height": "loose",
-                "text_color": "#706C63",
-                "padding-block-start": 12,
-                "padding-block-end": 0
-              }
-            }
-          }
-        },
-        "static-blog-post-image": {
-          "type": "_featured-blog-posts-image",
-          "static": true,
-          "settings": {
-            "image_ratio": "adapt",
-            "border": "none",
-            "border_radius": 0
-          }
-        }
-      },
-      "settings": {
-        "blog": "news",
-        "layout_type": "editorial",
-        "carousel_on_mobile": false,
-        "post_limit": 4,
-        "gap": 48,
-        "section_width": "page-width",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
     }
   },
   "order": [
@@ -610,7 +524,6 @@
     "product_list_fa6P9H",
     "engineered_precision_01",
     "filtration_process_01",
-    "haustas_standard_01",
-    "the_journal_01"
+    "haustas_standard_01"
   ]
 }
