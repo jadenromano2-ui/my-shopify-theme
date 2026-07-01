@@ -362,483 +362,65 @@
         "padding-block-end": 100
       }
     },
-    "panel_craftsmanship": {
-      "type": "section",
-      "name": "Craftsmanship panel",
+    "engineered_precision_01": {
+      "type": "engineered-precision",
+      "name": "Engineered panels",
       "blocks": {
-        "image_1": {
-          "type": "image",
+        "panel_1": {
+          "type": "panel",
           "settings": {
-            "image_ratio": "adapt",
-            "height": "fill",
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill"
-          },
-          "blocks": {}
+            "spec_code": "MAT / 304-SS",
+            "fig_number": "FIG. 01",
+            "heading": "Every Component, Considered.",
+            "body": "Precision-milled from raw stainless steel and assembled by hand.",
+            "diagram": "craftsmanship",
+            "row_theme": "light"
+          }
         },
-        "group_1": {
-          "type": "group",
+        "panel_2": {
+          "type": "panel",
           "settings": {
-            "content_direction": "column",
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20,
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill",
-            "height": "fill",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 80,
-            "padding-inline-end": 80
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>01 — Craftsmanship</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "loose",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Every Component, Considered.</p>",
-                "text_color": "#2E2C29",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Precision-milled from raw stainless steel and assembled by hand.</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1.125rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": ["eyebrow", "heading", "text"]
+            "spec_code": "MAT / COMPOSITION",
+            "fig_number": "FIG. 02",
+            "heading": "Materials That Outlast Trends.",
+            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
+            "diagram": "materials",
+            "row_theme": "dark"
+          }
+        },
+        "panel_3": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "ENG / FILTRATION",
+            "fig_number": "FIG. 03",
+            "heading": "Engineered For Silence.",
+            "body": "Multi-stage filtration tuned to disappear into daily life.",
+            "diagram": "engineering",
+            "row_theme": "light"
+          }
+        },
+        "panel_4": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "FORM / LONGEVITY",
+            "fig_number": "FIG. 04",
+            "heading": "Designed To Never Go Out Of Style.",
+            "body": "A form language built on restraint, made to sit quietly in any home for decades.",
+            "diagram": "timeless",
+            "row_theme": "dark"
+          }
         }
       },
-      "block_order": ["image_1", "group_1"],
+      "block_order": ["panel_1", "panel_2", "panel_3", "panel_4"],
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
-        "background_media": "none",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "panel_materials": {
-      "type": "section",
-      "name": "Materials panel",
-      "blocks": {
-        "image_1": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "adapt",
-            "height": "fill",
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill"
-          },
-          "blocks": {}
-        },
-        "group_1": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20,
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill",
-            "height": "fill",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 80,
-            "padding-inline-end": 80
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>02 — Materials</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "loose",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Materials That Outlast Trends.</p>",
-                "text_color": "#2E2C29",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>304 stainless steel and architectural glass — nothing plastic, nothing temporary.</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1.125rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": ["eyebrow", "heading", "text"]
-        }
-      },
-      "block_order": ["group_1", "image_1"],
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
-        "background_media": "none",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "panel_engineering": {
-      "type": "section",
-      "name": "Engineering panel",
-      "blocks": {
-        "image_1": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "adapt",
-            "height": "fill",
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill"
-          },
-          "blocks": {}
-        },
-        "group_1": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20,
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill",
-            "height": "fill",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 80,
-            "padding-inline-end": 80
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>03 — Engineering</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "loose",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Engineered For Silence.</p>",
-                "text_color": "#2E2C29",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Multi-stage filtration tuned to disappear into daily life.</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1.125rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": ["eyebrow", "heading", "text"]
-        }
-      },
-      "block_order": ["image_1", "group_1"],
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
-        "background_media": "none",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "panel_timeless": {
-      "type": "section",
-      "name": "Timeless design panel",
-      "blocks": {
-        "image_1": {
-          "type": "image",
-          "settings": {
-            "image_ratio": "adapt",
-            "height": "fill",
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill"
-          },
-          "blocks": {}
-        },
-        "group_1": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20,
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "fill",
-            "height": "fill",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 80,
-            "padding-inline-end": 80
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>04 — Timeless Design</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "loose",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Designed To Never Go Out Of Style.</p>",
-                "text_color": "#2E2C29",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>A form language built on restraint, made to sit quietly in any home for decades.</p>",
-                "text_color": "#706C63",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1.125rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": ["eyebrow", "heading", "text"]
-        }
-      },
-      "block_order": ["group_1", "image_1"],
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
-        "background_media": "none",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
+        "eyebrow": "Engineering Philosophy",
+        "heading": "Engineered Without Compromise.",
+        "intro_text": "Four principles guide every object we build — none of them negotiable.",
+        "light_background": "#F7F5F0",
+        "light_foreground": "#2E2C29",
+        "dark_background": "#211F1C",
+        "dark_foreground": "#F2EFE9",
+        "padding-block-start": 96,
         "padding-block-end": 0
       }
     }
@@ -846,9 +428,6 @@
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
-    "panel_craftsmanship",
-    "panel_materials",
-    "panel_engineering",
-    "panel_timeless"
+    "engineered_precision_01"
   ]
 }
