@@ -373,6 +373,9 @@
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
             "body": "Precision-milled from raw stainless steel and assembled by hand.",
+            "spec_line_1": "Process — CNC Machined",
+            "spec_line_2": "Tolerance — ±0.05mm",
+            "spec_line_3": "Assembly — Hand-fitted",
             "diagram": "craftsmanship",
             "row_theme": "light"
           }
@@ -384,6 +387,9 @@
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
             "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
+            "spec_line_1": "Shell — 304 Stainless Steel",
+            "spec_line_2": "Core — Architectural Glass",
+            "spec_line_3": "Trim — Brushed Steel",
             "diagram": "materials",
             "row_theme": "dark"
           }
@@ -395,6 +401,9 @@
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
             "body": "Multi-stage filtration tuned to disappear into daily life.",
+            "spec_line_1": "Stages — 4-Stage Filtration",
+            "spec_line_2": "Flow Rate — 2.5 L / min",
+            "spec_line_3": "Media Life — 6 Months",
             "diagram": "engineering",
             "row_theme": "light"
           }
@@ -406,6 +415,9 @@
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
             "body": "A form language built on restraint, made to sit quietly in any home for decades.",
+            "spec_line_1": "Warranty — 15 Years",
+            "spec_line_2": "Finish — Hand-brushed",
+            "spec_line_3": "Certification — NSF/ANSI 42",
             "diagram": "timeless",
             "row_theme": "dark"
           }
@@ -420,7 +432,7 @@
         "light_foreground": "#2E2C29",
         "dark_background": "#211F1C",
         "dark_foreground": "#F2EFE9",
-        "padding-block-start": 96,
+        "padding-block-start": 72,
         "padding-block-end": 0
       }
     }

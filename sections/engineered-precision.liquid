@@ -53,61 +53,105 @@
           {% if block.settings.body != blank %}
             <p class="engineered-precision__panel-body">{{ block.settings.body }}</p>
           {% endif %}
+          {% if block.settings.spec_line_1 != blank or block.settings.spec_line_2 != blank or block.settings.spec_line_3 != blank %}
+            <dl class="engineered-precision__datasheet">
+              {% if block.settings.spec_line_1 != blank %}
+                {% assign l1 = block.settings.spec_line_1 | split: ' — ' %}
+                <div class="engineered-precision__datasheet-row">
+                  <dt>{{ l1[0] }}</dt>
+                  <dd>{{ l1[1] | default: l1[0] }}</dd>
+                </div>
+              {% endif %}
+              {% if block.settings.spec_line_2 != blank %}
+                {% assign l2 = block.settings.spec_line_2 | split: ' — ' %}
+                <div class="engineered-precision__datasheet-row">
+                  <dt>{{ l2[0] }}</dt>
+                  <dd>{{ l2[1] | default: l2[0] }}</dd>
+                </div>
+              {% endif %}
+              {% if block.settings.spec_line_3 != blank %}
+                {% assign l3 = block.settings.spec_line_3 | split: ' — ' %}
+                <div class="engineered-precision__datasheet-row">
+                  <dt>{{ l3[0] }}</dt>
+                  <dd>{{ l3[1] | default: l3[0] }}</dd>
+                </div>
+              {% endif %}
+            </dl>
+          {% endif %}
         </div>
 
         <div class="engineered-precision__diagram">
           <div class="engineered-precision__diagram-frame">
+            <span class="engineered-precision__scale-tick engineered-precision__scale-tick--left"></span>
+            <span class="engineered-precision__scale-tick engineered-precision__scale-tick--right"></span>
             {% case block.settings.diagram %}
               {% when 'craftsmanship' %}
-                <svg class="ep-diagram" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <rect x="86" y="78" width="68" height="44" rx="1" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <line x1="86" y1="60" x2="86" y2="140" class="ep-draw" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2 3"/>
-                  <line x1="154" y1="60" x2="154" y2="140" class="ep-draw" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2 3"/>
-                  <line x1="86" y1="50" x2="154" y2="50" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <line x1="86" y1="46" x2="86" y2="54" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <line x1="154" y1="46" x2="154" y2="54" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <text x="120" y="40" text-anchor="middle" class="ep-diagram-label">68.00mm</text>
-                  <circle cx="98" cy="90" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="142" cy="90" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="98" cy="110" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="142" cy="110" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <path d="M60 100 L78 100" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <path d="M162 100 L180 100" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <path d="M60 92 L60 108" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <path d="M180 92 L180 108" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                <svg class="ep-diagram" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="76" y="86" width="88" height="52" rx="1" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <line x1="76" y1="68" x2="76" y2="150" class="ep-draw" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2 3"/>
+                  <line x1="164" y1="68" x2="164" y2="150" class="ep-draw" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2 3"/>
+                  <line x1="76" y1="56" x2="164" y2="56" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <line x1="76" y1="52" x2="76" y2="60" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <line x1="164" y1="52" x2="164" y2="60" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <text x="120" y="46" text-anchor="middle" class="ep-diagram-label">68.00MM BORE</text>
+                  <circle cx="90" cy="100" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="150" cy="100" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="90" cy="124" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="150" cy="124" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <path d="M48 100 L74 100" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <path d="M48 92 L48 108" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="44" y="88" text-anchor="end" class="ep-diagram-label">MOUNT (4)</text>
+                  <path d="M192 112 L166 112" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <path d="M192 104 L192 120" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="196" y="116" text-anchor="start" class="ep-diagram-label">MACHINED BODY</text>
+                  <line x1="120" y1="138" x2="120" y2="170" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="120" y="182" text-anchor="middle" class="ep-diagram-label">HAND-FITTED SEAM</text>
                 </svg>
               {% when 'materials' %}
-                <svg class="ep-diagram" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <line x1="52" y1="66" x2="188" y2="66" class="ep-draw" stroke="currentColor" stroke-width="0.75"/>
-                  <rect x="52" y="82" width="40" height="40" class="ep-draw ep-fill-solid" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="120" cy="102" r="20" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <path d="M168 82 L188 82 L188 122 L168 122 Z" class="ep-draw" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
-                  <text x="72" y="138" text-anchor="middle" class="ep-diagram-label">304-SS</text>
-                  <text x="120" y="138" text-anchor="middle" class="ep-diagram-label">GLASS</text>
-                  <text x="178" y="138" text-anchor="middle" class="ep-diagram-label">STEEL</text>
-                  <line x1="52" y1="150" x2="188" y2="150" class="ep-draw" stroke="currentColor" stroke-width="0.75"/>
+                <svg class="ep-diagram" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="44" y1="70" x2="196" y2="70" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <rect x="44" y="86" width="44" height="44" class="ep-draw ep-fill-solid" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="120" cy="108" r="22" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <path d="M174 86 L196 86 L196 130 L174 130 Z" class="ep-draw" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+                  <path d="M66 130 L66 146" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="66" y="158" text-anchor="middle" class="ep-diagram-label">304-SS SHELL</text>
+                  <path d="M120 130 L120 146" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="120" y="158" text-anchor="middle" class="ep-diagram-label">GLASS CORE</text>
+                  <path d="M185 130 L185 146" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="185" y="158" text-anchor="middle" class="ep-diagram-label">STEEL TRIM</text>
+                  <line x1="44" y1="172" x2="196" y2="172" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="120" y="188" text-anchor="middle" class="ep-diagram-label">SATIN, NON-REFLECTIVE FINISH</text>
                 </svg>
               {% when 'engineering' %}
-                <svg class="ep-diagram" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <ellipse cx="120" cy="54" rx="46" ry="10" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <ellipse cx="120" cy="84" rx="38" ry="9" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <ellipse cx="120" cy="112" rx="30" ry="8" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <ellipse cx="120" cy="138" rx="20" ry="6" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <line x1="74" y1="54" x2="74" y2="138" class="ep-draw" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2 3"/>
-                  <line x1="166" y1="54" x2="166" y2="138" class="ep-draw" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2 3"/>
-                  <line x1="120" y1="20" x2="120" y2="44" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="120" cy="16" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <line x1="120" y1="148" x2="120" y2="172" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <circle cx="120" cy="176" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
-                  <text x="184" y="98" class="ep-diagram-label">04 STAGES</text>
+                <svg class="ep-diagram" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <ellipse cx="120" cy="50" rx="50" ry="10" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <ellipse cx="120" cy="82" rx="42" ry="9" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <ellipse cx="120" cy="112" rx="34" ry="8" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <ellipse cx="120" cy="140" rx="24" ry="6" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <line x1="70" y1="50" x2="70" y2="140" class="ep-draw" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3"/>
+                  <line x1="170" y1="50" x2="170" y2="140" class="ep-draw" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3"/>
+                  <line x1="120" y1="18" x2="120" y2="40" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="120" cy="14" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <text x="180" y="52" text-anchor="start" class="ep-diagram-label">01 SEDIMENT</text>
+                  <text x="180" y="84" text-anchor="start" class="ep-diagram-label">02 CARBON BLOCK</text>
+                  <text x="180" y="114" text-anchor="start" class="ep-diagram-label">03 KDF MEDIA</text>
+                  <text x="180" y="142" text-anchor="start" class="ep-diagram-label">04 POLISH</text>
+                  <line x1="120" y1="150" x2="120" y2="176" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="120" cy="180" r="2.5" class="ep-draw ep-fill" stroke="currentColor" stroke-width="1"/>
+                  <text x="120" y="198" text-anchor="middle" class="ep-diagram-label">2.5 L/MIN OUTPUT</text>
                 </svg>
               {% when 'timeless' %}
-                <svg class="ep-diagram" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="120" cy="100" r="64" class="ep-draw" stroke="currentColor" stroke-width="0.75" stroke-dasharray="1 4"/>
-                  <path d="M104 56 C104 50 136 50 136 56 L140 128 C140 148 100 148 100 128 Z" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <line x1="112" y1="70" x2="128" y2="70" class="ep-draw" stroke="currentColor" stroke-width="0.75"/>
-                  <line x1="80" y1="164" x2="160" y2="164" class="ep-draw" stroke="currentColor" stroke-width="1"/>
-                  <text x="120" y="184" text-anchor="middle" class="ep-diagram-label">EST. PERMANENT</text>
+                <svg class="ep-diagram" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="120" cy="104" r="72" class="ep-draw" stroke="currentColor" stroke-width="0.6" stroke-dasharray="1 4"/>
+                  <path d="M102 56 C102 50 138 50 138 56 L142 132 C142 154 98 154 98 132 Z" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <line x1="110" y1="72" x2="130" y2="72" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <path d="M162 90 L182 90" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="186" y="94" text-anchor="start" class="ep-diagram-label">SOLID FORM</text>
+                  <path d="M162 118 L182 118" class="ep-draw" stroke="currentColor" stroke-width="0.6"/>
+                  <text x="186" y="122" text-anchor="start" class="ep-diagram-label">SILHOUETTE STUDY</text>
+                  <line x1="70" y1="184" x2="170" y2="184" class="ep-draw" stroke="currentColor" stroke-width="1"/>
+                  <text x="70" y="200" text-anchor="start" class="ep-diagram-label">2024</text>
+                  <text x="170" y="200" text-anchor="end" class="ep-diagram-label">TIMELESS</text>
                 </svg>
             {% endcase %}
           </div>
@@ -159,7 +203,7 @@
     max-width: 46rem;
     margin: 0 auto;
     padding-inline: clamp(20px, 5vw, 80px);
-    padding-bottom: clamp(48px, 6vw, 88px);
+    padding-bottom: clamp(32px, 4vw, 52px);
     text-align: center;
   }
 
@@ -170,23 +214,23 @@
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: #706C63;
-    margin: 0 0 20px;
+    margin: 0 0 14px;
   }
 
   .engineered-precision__heading {
     font-family: var(--font-heading--family);
     font-weight: 600;
-    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    font-size: clamp(2.1rem, 4vw, 3.15rem);
     line-height: 1.05;
     letter-spacing: -0.01em;
     color: #2E2C29;
-    margin: 0 0 20px;
+    margin: 0 0 14px;
   }
 
   .engineered-precision__intro-text {
     font-family: var(--font-body--family);
     font-size: 1.0625rem;
-    line-height: 1.65;
+    line-height: 1.6;
     color: #706C63;
     margin: 0 auto;
     max-width: 34rem;
@@ -235,7 +279,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(48px, 7vw, 96px) clamp(20px, 6vw, 88px);
+    padding: clamp(36px, 5vw, 60px) clamp(20px, 5vw, 64px);
   }
 
   .engineered-precision__spec {
@@ -243,8 +287,8 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 28px;
-    padding-bottom: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
     border-bottom: 1px solid currentColor;
     opacity: 0.9;
     max-width: 320px;
@@ -263,34 +307,78 @@
   .engineered-precision__panel-heading {
     font-family: var(--font-heading--family);
     font-weight: 600;
-    font-size: clamp(1.85rem, 2.6vw, 2.5rem);
-    line-height: 1.1;
+    font-size: clamp(1.7rem, 2.3vw, 2.15rem);
+    line-height: 1.12;
     letter-spacing: -0.01em;
-    margin: 0 0 18px;
+    margin: 0 0 12px;
     max-width: 18ch;
   }
 
   .engineered-precision__panel-body {
     font-family: var(--font-body--family);
-    font-size: 1.0625rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.6;
     opacity: 0.78;
     margin: 0;
-    max-width: 32ch;
+    max-width: 34ch;
+  }
+
+  .engineered-precision__datasheet {
+    margin: 22px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid currentColor;
+    opacity: 0.9;
+    max-width: 34ch;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .engineered-precision__datasheet-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 0;
+    border-bottom: 1px dashed currentColor;
+    opacity: 0.85;
+  }
+
+  .engineered-precision__datasheet-row:last-child {
+    border-bottom: none;
+  }
+
+  .engineered-precision__datasheet-row dt {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .engineered-precision__datasheet-row dd {
+    font-family: var(--font-body--family);
+    font-size: 0.9375rem;
+    text-align: right;
+    margin: 0;
+    opacity: 0.92;
   }
 
   .engineered-precision__diagram {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(32px, 5vw, 64px);
-    min-height: 280px;
+    padding: clamp(20px, 3vw, 36px);
+    min-height: 240px;
   }
 
   .engineered-precision__diagram-frame {
     width: 100%;
-    max-width: 340px;
-    aspect-ratio: 6 / 5;
+    max-width: 400px;
+    aspect-ratio: 11 / 10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,24 +390,41 @@
   .engineered-precision__diagram-frame::before {
     content: '';
     position: absolute;
-    inset: 10px;
+    inset: 8px;
     border: 1px solid currentColor;
     opacity: 0.28;
     pointer-events: none;
   }
 
+  .engineered-precision__scale-tick {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: currentColor;
+    opacity: 0.2;
+  }
+
+  .engineered-precision__scale-tick--left {
+    left: 20%;
+  }
+
+  .engineered-precision__scale-tick--right {
+    right: 20%;
+  }
+
   .ep-diagram {
-    width: 74%;
-    height: 74%;
+    width: 90%;
+    height: 90%;
     color: currentColor;
   }
 
   .ep-diagram-label {
     font-family: var(--font-accent--family);
-    font-size: 6.5px;
-    letter-spacing: 0.08em;
+    font-size: 6.25px;
+    letter-spacing: 0.06em;
     fill: currentColor;
-    opacity: 0.6;
+    opacity: 0.62;
   }
 
   .ep-fill {
@@ -411,7 +516,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "default": 96
+      "default": 72
     },
     {
       "type": "range",
@@ -454,6 +559,25 @@
           "default": "Precision-milled from raw stainless steel and assembled by hand."
         },
         {
+          "type": "header",
+          "content": "Datasheet rows (format: Label — Value)"
+        },
+        {
+          "type": "text",
+          "id": "spec_line_1",
+          "label": "Spec row 1"
+        },
+        {
+          "type": "text",
+          "id": "spec_line_2",
+          "label": "Spec row 2"
+        },
+        {
+          "type": "text",
+          "id": "spec_line_3",
+          "label": "Spec row 3"
+        },
+        {
           "type": "select",
           "id": "diagram",
           "label": "Diagram",
@@ -489,6 +613,9 @@
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
             "body": "Precision-milled from raw stainless steel and assembled by hand.",
+            "spec_line_1": "Process — CNC Machined",
+            "spec_line_2": "Tolerance — ±0.05mm",
+            "spec_line_3": "Assembly — Hand-fitted",
             "diagram": "craftsmanship",
             "row_theme": "light"
           }
@@ -500,6 +627,9 @@
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
             "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
+            "spec_line_1": "Shell — 304 Stainless Steel",
+            "spec_line_2": "Core — Architectural Glass",
+            "spec_line_3": "Trim — Brushed Steel",
             "diagram": "materials",
             "row_theme": "dark"
           }
@@ -511,6 +641,9 @@
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
             "body": "Multi-stage filtration tuned to disappear into daily life.",
+            "spec_line_1": "Stages — 4-Stage Filtration",
+            "spec_line_2": "Flow Rate — 2.5 L / min",
+            "spec_line_3": "Media Life — 6 Months",
             "diagram": "engineering",
             "row_theme": "light"
           }
@@ -522,6 +655,9 @@
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
             "body": "A form language built on restraint, made to sit quietly in any home for decades.",
+            "spec_line_1": "Warranty — 15 Years",
+            "spec_line_2": "Finish — Hand-brushed",
+            "spec_line_3": "Certification — NSF/ANSI 42",
             "diagram": "timeless",
             "row_theme": "dark"
           }
