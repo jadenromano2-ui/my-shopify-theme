@@ -185,9 +185,18 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "rating_placeholder": {
+                  "type": "custom-liquid",
+                  "name": "Rating placeholder",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<div class=\"hs-rating-placeholder\">\n  <span class=\"hs-rating-stars\" aria-hidden=\"true\">\n    {% for i in (1..5) %}\n      <svg viewBox=\"0 0 20 20\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L10 1.5z\" stroke=\"currentColor\" stroke-width=\"1\"/></svg>\n    {% endfor %}\n  </span>\n  <span class=\"hs-rating-text\">No reviews yet — be the first</span>\n</div>\n<style>\n  #shopify-section-{{ closest.section.id }} .hs-rating-placeholder {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 4px;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-rating-stars {\n    display: inline-flex;\n    gap: 2px;\n    color: #D9D2C4;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-rating-text {\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    color: #9A968C;\n  }\n</style>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
+                "rating_placeholder",
                 "text_xrnftG",
                 "price_tVjtKg",
                 "inventory_status"
@@ -983,13 +992,31 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "checkmark_highlights": {
+              "type": "custom-liquid",
+              "name": "Checkmark highlights",
+              "settings": {
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<ul class=\"hs-highlight-list\">\n  <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n  <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n  <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n</ul>\n<style>\n  #shopify-section-{{ closest.section.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #2E2C29;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2E2C29;\n  }\n</style>"
+              },
+              "blocks": {}
+            },
+            "subscribe_save_link": {
+              "type": "custom-liquid",
+              "name": "Subscribe & Save banner",
+              "settings": {
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<a class=\"hs-subscribe-banner\" href=\"/discount/FLOWSAVE15?redirect=/products/{{ p.handle }}\">\n  <span class=\"hs-subscribe-banner__icon\" aria-hidden=\"true\">\n    <svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" fill=\"none\"><path d=\"M4 10a6 6 0 0110-4.5M16 10a6 6 0 01-10 4.5M14 3v3h-3M6 17v-3h3\" stroke=\"#A0522D\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </span>\n  <span>Save 15% with Subscribe &amp; Save — use code <strong>FLOWSAVE15</strong></span>\n</a>\n<style>\n  #shopify-section-{{ closest.section.id }} .hs-subscribe-banner {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-top: 12px;\n    padding: 12px 14px;\n    background: #FBF3EE;\n    border: 1px solid #E3C9BA;\n    text-decoration: none;\n    color: #2E2C29;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    line-height: 1.4;\n    transition: background 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-subscribe-banner:hover {\n    background: #F5E6DD;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-subscribe-banner__icon {\n    flex-shrink: 0;\n    display: inline-flex;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-subscribe-banner strong {\n    color: #A0522D;\n  }\n</style>"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_icgrde",
+            "checkmark_highlights",
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "subscribe_save_link",
             "ship_micro",
             "trust_row",
             "cross_sell_callout",

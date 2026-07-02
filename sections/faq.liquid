@@ -20,25 +20,27 @@
     {% endif %}
   </div>
 
-  <div class="faq__list">
-    {% for block in section.blocks %}
-      {% if block.type == 'question' %}
-        <details class="faq__item" {{ block.shopify_attributes }}>
-          <summary class="faq__question">
-            <span>{{ block.settings.question }}</span>
-            <span class="faq__toggle" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 8h12" stroke="currentColor" stroke-width="1.2"/>
-                <path class="faq__toggle-vert" d="M8 2v12" stroke="currentColor" stroke-width="1.2"/>
-              </svg>
-            </span>
-          </summary>
-          <div class="faq__answer">
-            <p>{{ block.settings.answer }}</p>
-          </div>
-        </details>
-      {% endif %}
-    {% endfor %}
+  <div class="faq__card">
+    <div class="faq__list">
+      {% for block in section.blocks %}
+        {% if block.type == 'question' %}
+          <details class="faq__item" {{ block.shopify_attributes }}>
+            <summary class="faq__question">
+              <span>{{ block.settings.question }}</span>
+              <span class="faq__toggle" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 8h12" stroke="currentColor" stroke-width="1.2"/>
+                  <path class="faq__toggle-vert" d="M8 2v12" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq__answer">
+              <p>{{ block.settings.answer }}</p>
+            </div>
+          </details>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   {% if section.settings.cta_label != blank %}
@@ -133,18 +135,30 @@
     max-width: 34rem;
   }
 
-  .faq__list {
+  .faq__card {
     max-width: 780px;
-    margin: 0 auto;
+    margin: clamp(28px, 4vw, 44px) auto 0;
     padding-inline: clamp(20px, 5vw, 64px);
-    border-top: 1px solid rgba(46, 44, 41, 0.16);
+  }
+
+  .faq__list {
+    background: #FFFFFF;
+    border: 1px solid rgba(46, 44, 41, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(46, 44, 41, 0.06);
+    padding: 6px clamp(16px, 3vw, 28px);
+    overflow: hidden;
   }
 
   .faq__item {
-    border-bottom: 1px solid rgba(46, 44, 41, 0.16);
+    border-bottom: 1px solid rgba(46, 44, 41, 0.12);
     opacity: 0;
     transform: translateY(12px);
     transition: opacity 0.6s var(--animation-timing-fade-in, ease), transform 0.6s var(--animation-timing-fade-in, ease);
+  }
+
+  .faq__item:last-child {
+    border-bottom: none;
   }
 
   .faq__item.is-visible {
@@ -157,7 +171,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 22px 2px;
+    padding: 22px 4px;
     cursor: pointer;
     list-style: none;
     font-family: var(--font-heading--family);
@@ -172,14 +186,18 @@
 
   .faq__toggle {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    color: #706C63;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E2C29;
+    transition: transform 0.25s ease;
   }
 
   .faq__toggle svg {
-    width: 100%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
     display: block;
   }
 
@@ -188,12 +206,12 @@
     transition: transform 0.25s ease;
   }
 
-  .faq__item[open] .faq__toggle-vert {
-    transform: scaleY(0);
+  .faq__item[open] .faq__toggle {
+    transform: rotate(45deg);
   }
 
   .faq__answer {
-    padding: 0 2px 22px;
+    padding: 0 4px 22px;
   }
 
   .faq__answer p {
@@ -269,7 +287,7 @@
       "type": "color",
       "id": "background_color",
       "label": "Background",
-      "default": "#FFFFFF"
+      "default": "#F5F3EE"
     },
     {
       "type": "color",

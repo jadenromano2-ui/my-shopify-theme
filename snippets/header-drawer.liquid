@@ -709,6 +709,21 @@
         {%- endif -%}
       </div>
 
+      <div class="menu-drawer__social-row menu-drawer__animated-element" style="--menu-drawer-animation-index: {{ linklist.links.size | plus: 1 }};">
+        <a class="menu-drawer__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg class="menu-drawer__social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">{%- render 'icon', icon: 'facebook' -%}</svg>
+        </a>
+        <a class="menu-drawer__social-link" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+          <svg class="menu-drawer__social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">{%- render 'icon', icon: 'pinterest' -%}</svg>
+        </a>
+        <a class="menu-drawer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="menu-drawer__social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">{%- render 'icon', icon: 'instagram' -%}</svg>
+        </a>
+        <a class="menu-drawer__social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg class="menu-drawer__social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">{%- render 'icon', icon: 'tiktok' -%}</svg>
+        </a>
+      </div>
+
       {% liquid
         if block_settings.menu_style == 'featured_collections'
           assign top_level_featured_collections = linklist.links | where: 'type', 'collection_link'
@@ -772,6 +787,36 @@
 </header-drawer>
 
 {% stylesheet %}
+  .menu-drawer__social-row {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-md, 16px);
+    margin-block: var(--padding-md, 12px) 0;
+    margin-inline-start: var(--padding-xl);
+    padding-block-end: var(--padding-sm, 8px);
+  }
+
+  .menu-drawer__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    color: var(--color-foreground);
+    transition: opacity 0.2s ease;
+  }
+
+  .menu-drawer__social-link:hover {
+    opacity: 0.65;
+  }
+
+  .menu-drawer__social-icon {
+    width: 16px;
+    height: 16px;
+  }
+
   .header__icon--menu {
     position: initial;
   }
