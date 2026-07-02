@@ -5,7 +5,8 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * ------------------------------------------------------------*/
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -117,6 +118,7 @@
                 "border_opacity": 100,
                 "border_color": "",
                 "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
@@ -140,7 +142,7 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#2E2C29",
+                    "text_color": "#2e2c29",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -148,6 +150,14 @@
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "rating_placeholder": {
+                  "type": "custom-liquid",
+                  "name": "Rating placeholder",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<div id=\"hs-rating-{{ block.id }}\" class=\"hs-rating-placeholder\">\n  <span class=\"hs-rating-stars\" aria-hidden=\"true\">\n    {% for i in (1..5) %}\n      <svg viewBox=\"0 0 20 20\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L10 1.5z\" stroke=\"currentColor\" stroke-width=\"1\"/></svg>\n    {% endfor %}\n  </span>\n  <span class=\"hs-rating-text\">No reviews yet — be the first</span>\n</div>\n<style>\n  #hs-rating-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 4px;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-stars {\n    display: inline-flex;\n    align-items: center;\n    gap: 2px;\n    color: #D9D2C4;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-stars svg {\n    display: block;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-text {\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    color: #9A968C;\n  }\n</style>"
                   },
                   "blocks": {}
                 },
@@ -165,7 +175,7 @@
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
-                    "text_color": "#706C63",
+                    "text_color": "#706c63",
                     "padding-block-start": 6,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -178,19 +188,11 @@
                   "settings": {
                     "inventory_threshold": 10,
                     "show_inventory_quantity": true,
-                    "text_color": "#706C63",
+                    "text_color": "#706c63",
                     "padding-block-start": 2,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "rating_placeholder": {
-                  "type": "custom-liquid",
-                  "name": "Rating placeholder",
-                  "settings": {
-                    "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<div id=\"hs-rating-{{ block.id }}\" class=\"hs-rating-placeholder\">\n  <span class=\"hs-rating-stars\" aria-hidden=\"true\">\n    {% for i in (1..5) %}\n      <svg viewBox=\"0 0 20 20\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6L10 1.5z\" stroke=\"currentColor\" stroke-width=\"1\"/></svg>\n    {% endfor %}\n  </span>\n  <span class=\"hs-rating-text\">No reviews yet — be the first</span>\n</div>\n<style>\n  #hs-rating-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 4px;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-stars {\n    display: inline-flex;\n    align-items: center;\n    gap: 2px;\n    color: #D9D2C4;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-stars svg {\n    display: block;\n  }\n  #hs-rating-{{ block.id }} .hs-rating-text {\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    color: #9A968C;\n  }\n</style>"
                   },
                   "blocks": {}
                 }
@@ -201,6 +203,14 @@
                 "price_tVjtKg",
                 "inventory_status"
               ]
+            },
+            "checkmark_highlights": {
+              "type": "custom-liquid",
+              "name": "Checkmark highlights",
+              "settings": {
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #2E2C29;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2E2C29;\n  }\n</style>"
+              },
+              "blocks": {}
             },
             "divider_VJhene": {
               "type": "_divider",
@@ -222,13 +232,13 @@
                 "show_swatches": false,
                 "option_label_text_color": "",
                 "variant_style_class": "default",
-                "custom_variant_background": "#FFFFFF",
-                "custom_variant_text": "#2E2C29",
-                "custom_variant_border": "#D9D2C4",
+                "custom_variant_background": "#ffffff",
+                "custom_variant_text": "#2e2c29",
+                "custom_variant_border": "#d9d2c4",
                 "selected_variant_style_class": "default",
-                "custom_selected_variant_background": "#2E2C29",
-                "custom_selected_variant_text": "#FFFFFF",
-                "custom_selected_variant_border": "#2E2C29",
+                "custom_selected_variant_background": "#2e2c29",
+                "custom_selected_variant_text": "#ffffff",
+                "custom_selected_variant_border": "#2e2c29",
                 "alignment": "left",
                 "padding-block-start": 4,
                 "padding-block-end": 0,
@@ -282,9 +292,9 @@
                   "static": true,
                   "settings": {
                     "style_class": "button",
-                    "custom_button_background": "#A0522D",
-                    "custom_button_text": "#FFFFFF",
-                    "custom_button_border": "#A0522D"
+                    "custom_button_background": "#a0522d",
+                    "custom_button_text": "#ffffff",
+                    "custom_button_border": "#a0522d"
                   },
                   "blocks": {}
                 },
@@ -297,26 +307,33 @@
               },
               "block_order": []
             },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
+            "subscribe_save_link": {
+              "type": "custom-liquid",
+              "name": "Subscribe & Save banner",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<a id=\"hs-subscribe-{{ block.id }}\" class=\"hs-subscribe-banner\" href=\"/discount/FLOWSAVE15?redirect=/products/{{ p.handle }}\">\n  <span class=\"hs-subscribe-banner__icon\" aria-hidden=\"true\">\n    <svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" fill=\"none\"><path d=\"M4 10a6 6 0 0110-4.5M16 10a6 6 0 01-10 4.5M14 3v3h-3M6 17v-3h3\" stroke=\"#A0522D\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </span>\n  <span>Save 15% with Subscribe &amp; Save — use code <strong>FLOWSAVE15</strong></span>\n</a>\n<style>\n  #hs-subscribe-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-top: 12px;\n    padding: 12px 14px;\n    background: #FBF3EE;\n    border: 1px solid #E3C9BA;\n    text-decoration: none;\n    color: #2E2C29;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    line-height: 1.4;\n    transition: background 0.2s ease;\n  }\n  #hs-subscribe-{{ block.id }}:hover {\n    background: #F5E6DD;\n  }\n  #hs-subscribe-{{ block.id }} .hs-subscribe-banner__icon {\n    flex-shrink: 0;\n    display: inline-flex;\n  }\n  #hs-subscribe-{{ block.id }} strong {\n    color: #A0522D;\n  }\n</style>"
+              },
+              "blocks": {}
+            },
+            "ship_micro": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Ships within 1–2 business days &middot; Free shipping &amp; returns</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "0.8125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#706C63",
+                "text_color": "#706c63",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 4,
+                "padding-block-start": 8,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -351,7 +368,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#D9D2C4",
+                "border_color": "#d9d2c4",
                 "border_radius": 0,
                 "link": "",
                 "open_in_new_tab": false,
@@ -408,7 +425,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2E2C29"
+                        "icon_color": "#2e2c29"
                       },
                       "blocks": {}
                     },
@@ -427,7 +444,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2E2C29",
+                        "text_color": "#2e2c29",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -490,7 +507,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2E2C29"
+                        "icon_color": "#2e2c29"
                       },
                       "blocks": {}
                     },
@@ -509,7 +526,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2E2C29",
+                        "text_color": "#2e2c29",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -572,7 +589,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2E2C29"
+                        "icon_color": "#2e2c29"
                       },
                       "blocks": {}
                     },
@@ -591,7 +608,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2E2C29",
+                        "text_color": "#2e2c29",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -615,207 +632,6 @@
                 "warranty"
               ]
             },
-            "specs_accordion": {
-              "type": "accordion",
-              "name": "Product details accordion",
-              "settings": {
-                "icon": "plus",
-                "dividers": true,
-                "divider_color": "#D9D2C4",
-                "type_preset": "h6",
-                "padding-block-start": 8,
-                "padding-block-end": 0
-              },
-              "blocks": {
-                "row_materials": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Materials &amp; Specifications",
-                    "open_by_default": true,
-                    "icon": "box"
-                  },
-                  "blocks": {
-                    "body": {
-                      "type": "text",
-                      "name": "Body",
-                      "settings": {
-                        "text": "<p>Built from 304 stainless steel and architectural glass — no BPA plastics, painted finishes, or adhesive seals anywhere the water touches. Every unit is NSF/ANSI 42 &amp; 53 certified and individually pressure-tested before it leaves the workshop.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.9375rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "#706C63",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "body"
-                  ]
-                },
-                "row_shipping": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Shipping &amp; Returns",
-                    "open_by_default": false,
-                    "icon": "truck"
-                  },
-                  "blocks": {
-                    "body": {
-                      "type": "text",
-                      "name": "Body",
-                      "settings": {
-                        "text": "<p>Free standard shipping on every order within the contiguous United States. Every purchase ships with a 100-night trial — if it's not right for you, return it any time within 100 nights for a full refund, free of charge.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.9375rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "#706C63",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "body"
-                  ]
-                },
-                "row_warranty": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Warranty",
-                    "open_by_default": false,
-                    "icon": "lock"
-                  },
-                  "blocks": {
-                    "body": {
-                      "type": "text",
-                      "name": "Body",
-                      "settings": {
-                        "text": "<p>Every component is covered for 15 years, full stop — no fine print, no prorated coverage. If a covered defect appears, we repair or replace the affected part at no cost to you.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.9375rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "#706C63",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "body"
-                  ]
-                },
-                "row_care": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Care &amp; Cartridge Life",
-                    "open_by_default": false,
-                    "icon": "clipboard"
-                  },
-                  "blocks": {
-                    "body": {
-                      "type": "text",
-                      "name": "Body",
-                      "settings": {
-                        "text": "<p>Filter cartridges are engineered for a 6-month service life under normal household use. Rinse the exterior with a damp cloth as needed — no harsh chemicals, no disassembly required.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.9375rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "#706C63",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "body"
-                  ]
-                }
-              },
-              "block_order": [
-                "row_materials",
-                "row_shipping",
-                "row_warranty",
-                "row_care"
-              ]
-            },
-            "ship_micro": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Ships within 1–2 business days &middot; Free shipping &amp; returns</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "0.8125rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#706C63",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 8,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "cross_sell_callout": {
               "type": "group",
               "settings": {
@@ -834,7 +650,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#FFFFFF",
+                "background_color": "#ffffff",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -844,7 +660,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#D9D2C4",
+                "border_color": "#d9d2c4",
                 "border_radius": 0,
                 "link": "/discount/FLOWSAVE15?redirect=/products/item-2",
                 "open_in_new_tab": false,
@@ -908,7 +724,7 @@
                         "letter_spacing": "loose",
                         "case": "uppercase",
                         "wrap": "pretty",
-                        "text_color": "#2E2C29",
+                        "text_color": "#2e2c29",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -933,7 +749,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706C63",
+                        "text_color": "#706c63",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -964,7 +780,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#2E2C29",
+                    "text_color": "#2e2c29",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -981,6 +797,221 @@
                 "arrow"
               ]
             },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#706c63",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "specs_accordion": {
+              "type": "accordion",
+              "name": "Product details accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "divider_color": "#d9d2c4",
+                "type_preset": "h6",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "row_materials": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Materials &amp; Specifications",
+                    "open_by_default": true,
+                    "icon": "box",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "Body",
+                      "settings": {
+                        "text": "<p>Built from 304 stainless steel and architectural glass — no BPA plastics, painted finishes, or adhesive seals anywhere the water touches. Every unit is NSF/ANSI 42 &amp; 53 certified and individually pressure-tested before it leaves the workshop.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.9375rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "#706c63",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                },
+                "row_shipping": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Shipping &amp; Returns",
+                    "open_by_default": false,
+                    "icon": "truck",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "Body",
+                      "settings": {
+                        "text": "<p>Free standard shipping on every order within the contiguous United States. Every purchase ships with a 100-night trial — if it's not right for you, return it any time within 100 nights for a full refund, free of charge.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.9375rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "#706c63",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                },
+                "row_warranty": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Warranty",
+                    "open_by_default": false,
+                    "icon": "lock",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "Body",
+                      "settings": {
+                        "text": "<p>Every component is covered for 15 years, full stop — no fine print, no prorated coverage. If a covered defect appears, we repair or replace the affected part at no cost to you.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.9375rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "#706c63",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                },
+                "row_care": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Care &amp; Cartridge Life",
+                    "open_by_default": false,
+                    "icon": "clipboard",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "Body",
+                      "settings": {
+                        "text": "<p>Filter cartridges are engineered for a 6-month service life under normal household use. Rinse the exterior with a damp cloth as needed — no harsh chemicals, no disassembly required.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.9375rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "#706c63",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                }
+              },
+              "block_order": [
+                "row_materials",
+                "row_shipping",
+                "row_warranty",
+                "row_care"
+              ]
+            },
             "payment_trust": {
               "type": "payment-icons",
               "settings": {
@@ -990,22 +1021,6 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "checkmark_highlights": {
-              "type": "custom-liquid",
-              "name": "Checkmark highlights",
-              "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #2E2C29;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2E2C29;\n  }\n</style>"
-              },
-              "blocks": {}
-            },
-            "subscribe_save_link": {
-              "type": "custom-liquid",
-              "name": "Subscribe & Save banner",
-              "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<a id=\"hs-subscribe-{{ block.id }}\" class=\"hs-subscribe-banner\" href=\"/discount/FLOWSAVE15?redirect=/products/{{ p.handle }}\">\n  <span class=\"hs-subscribe-banner__icon\" aria-hidden=\"true\">\n    <svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" fill=\"none\"><path d=\"M4 10a6 6 0 0110-4.5M16 10a6 6 0 01-10 4.5M14 3v3h-3M6 17v-3h3\" stroke=\"#A0522D\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </span>\n  <span>Save 15% with Subscribe &amp; Save — use code <strong>FLOWSAVE15</strong></span>\n</a>\n<style>\n  #hs-subscribe-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-top: 12px;\n    padding: 12px 14px;\n    background: #FBF3EE;\n    border: 1px solid #E3C9BA;\n    text-decoration: none;\n    color: #2E2C29;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    line-height: 1.4;\n    transition: background 0.2s ease;\n  }\n  #hs-subscribe-{{ block.id }}:hover {\n    background: #F5E6DD;\n  }\n  #hs-subscribe-{{ block.id }} .hs-subscribe-banner__icon {\n    flex-shrink: 0;\n    display: inline-flex;\n  }\n  #hs-subscribe-{{ block.id }} strong {\n    color: #A0522D;\n  }\n</style>"
               },
               "blocks": {}
             }
@@ -1059,7 +1074,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#2E2C29",
+            "text_color": "#2e2c29",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1080,7 +1095,7 @@
             "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
-            "border_color": "#D9D2C4",
+            "border_color": "#d9d2c4",
             "border_radius": 0,
             "padding-block-start": 20,
             "padding-block-end": 20,
@@ -1182,10 +1197,53 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "1783027098a017e1bd": {
+      "type": "_blocks",
+      "blocks": {
+        "ali_reviews_widget_box_EzBMHV": {
+          "type": "shopify://apps/ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "ali_reviews_widget_box_EzBMHV"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "1783027098a017e1bd"
   ]
 }
