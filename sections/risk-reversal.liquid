@@ -1,0 +1,281 @@
+{% liquid
+  assign bg = section.settings.background_color
+  assign fg = section.settings.foreground_color
+%}
+
+<div
+  class="section section--full-width risk-reversal spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %} --rr-bg: {{ bg }}; --rr-fg: {{ fg }};"
+  data-testid="risk-reversal"
+>
+  <div class="risk-reversal__row">
+    {% for block in section.blocks %}
+      {% if block.type == 'item' %}
+        <div class="risk-reversal__item" {{ block.shopify_attributes }}>
+          <div class="risk-reversal__icon">
+            {% case block.settings.icon %}
+              {% when 'trial' %}
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M16 6 A10 10 0 1 1 6.6 12.4" stroke="currentColor" stroke-width="1.3"/>
+                  <path d="M6 6 L6.6 12.4 L13 11.6" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+              {% when 'warranty' %}
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M16 5 L25 9 V16 C25 22 21 26 16 28 C11 26 7 22 7 16 V9 Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <path d="M11.5 16 L14.5 19.5 L21 12" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+              {% when 'shipping' %}
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M5 11 L16 6 L27 11 L16 16 Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <path d="M5 11 V22 L16 27 V16" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <path d="M27 11 V22 L16 27" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                </svg>
+              {% when 'certified' %}
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="16" cy="13" r="7.5" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M12 19.5 L9 27 L16 24 L23 27 L20 19.5" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                </svg>
+            {% endcase %}
+          </div>
+          <div class="risk-reversal__copy">
+            {% if block.settings.heading != blank %}
+              <h3 class="risk-reversal__heading">{{ block.settings.heading }}</h3>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <p class="risk-reversal__text">{{ block.settings.text }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% javascript %}
+  (function () {
+    if (window.__rrRevealInit) return;
+    window.__rrRevealInit = true;
+
+    const reduceMotion =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const items = document.querySelectorAll('.risk-reversal__item');
+
+    if (!items.length) return;
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      items.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: '0px 0px -8% 0px' }
+    );
+
+    items.forEach((el) => io.observe(el));
+  })();
+{% endjavascript %}
+
+{% stylesheet %}
+  .risk-reversal {
+    background: var(--rr-bg, #F7F5F0);
+    color: var(--rr-fg, #2E2C29);
+    border-top: 1px solid rgba(46, 44, 41, 0.14);
+    border-bottom: 1px solid rgba(46, 44, 41, 0.14);
+  }
+
+  .risk-reversal__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 64px);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .risk-reversal__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 0;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.7s var(--animation-timing-fade-in, ease), transform 0.7s var(--animation-timing-fade-in, ease);
+
+    @media screen and (min-width: 750px) {
+      padding: 4px clamp(16px, 2.5vw, 32px);
+      border-left: 1px dashed rgba(46, 44, 41, 0.3);
+    }
+  }
+
+  .risk-reversal__item:not(:first-child) {
+    border-top: 1px dashed rgba(46, 44, 41, 0.18);
+
+    @media screen and (min-width: 750px) {
+      border-top: none;
+    }
+  }
+
+  .risk-reversal__item:first-child {
+    @media screen and (min-width: 750px) {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
+
+  .risk-reversal__item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .risk-reversal__icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    color: #2E2C29;
+    opacity: 0.85;
+  }
+
+  .risk-reversal__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .risk-reversal__heading {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: 1.0625rem;
+    line-height: 1.2;
+    margin: 0 0 4px;
+  }
+
+  .risk-reversal__text {
+    font-family: var(--font-body--family);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #706C63;
+    margin: 0;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Risk reversal bar",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F7F5F0"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "label": "Text color",
+      "default": "#2E2C29"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "trial", "label": "Trial" },
+            { "value": "warranty", "label": "Warranty" },
+            { "value": "shipping", "label": "Shipping" },
+            { "value": "certified", "label": "Certified" }
+          ],
+          "default": "trial"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "100-Night Trial"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Live with it. If it's not right, return it for a full refund."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Risk reversal bar",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "icon": "trial",
+            "heading": "100-Night Trial",
+            "text": "Live with it. If it's not right, return it for a full refund."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "warranty",
+            "heading": "15-Year Warranty",
+            "text": "Every component covered, full stop — no fine print."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "heading": "Free Shipping & Returns",
+            "text": "On every order, no thresholds, no exceptions."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

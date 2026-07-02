@@ -118,6 +118,43 @@
         "padding-block-end": 96
       }
     },
+    "risk_reversal_01": {
+      "type": "risk-reversal",
+      "name": "Risk reversal bar",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "trial",
+            "heading": "100-Night Trial",
+            "text": "Live with it. If it's not right, return it for a full refund."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "warranty",
+            "heading": "15-Year Warranty",
+            "text": "Every component covered, full stop — no fine print."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "heading": "Free Shipping & Returns",
+            "text": "On every order, no thresholds, no exceptions."
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3"],
+      "settings": {
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -517,13 +554,74 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
+    },
+    "faq_01": {
+      "type": "faq",
+      "name": "FAQ",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "How often do I need to replace the filter cartridge?",
+            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Do I need a plumber to install it?",
+            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "What does the filtration actually remove?",
+            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Is HAUSTAS certified?",
+            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "What's covered under warranty?",
+            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "What if it's not right for me?",
+            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
+          }
+        }
+      },
+      "block_order": ["question_1", "question_2", "question_3", "question_4", "question_5", "question_6"],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before You Buy.",
+        "intro_text": "Everything you need to know, in one place.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "cta_label": "View The Collection",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
+    "risk_reversal_01",
     "product_list_fa6P9H",
     "engineered_precision_01",
     "filtration_process_01",
-    "haustas_standard_01"
+    "haustas_standard_01",
+    "faq_01"
   ]
 }
