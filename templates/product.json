@@ -187,11 +187,29 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "tagline_hook": {
+                  "type": "custom-liquid",
+                  "name": "Benefit tagline",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign tag = 'The flagship system built to disappear into your countertop — and your life.'\n    when 'item-3'\n      assign tag = 'Full filtration, compact footprint — built for spaces that count every inch.'\n    when 'item-1'\n      assign tag = 'More capacity, same trusted filtration — for households that go through water fast.'\n    when 'item-2'\n      assign tag = 'Keep your system running at full strength, every single day.'\n    when 'haustas-reserve-2'\n      assign tag = 'A limited-run edition of the standard you already trust.'\n    else\n      assign tag = 'Engineered water filtration you can trust for decades.'\n  endcase\n%}\n<p id=\"hs-tagline-{{ block.id }}\">{{ tag }}</p>\n<style>\n  #hs-tagline-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 1rem;\n    line-height: 1.5;\n    color: #706C63;\n  }\n</style>"
+                  },
+                  "blocks": {}
+                },
+                "value_anchor": {
+                  "type": "custom-liquid",
+                  "name": "Value anchor",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-2'\n      assign val = 'Just $0.16/day for full filtration.'\n    when 'item-1'\n      assign val = 'Just $0.27/day for full filtration.'\n    when 'item-4'\n      assign val = 'Under $1/month over its 15-year warranty.'\n    when 'item-3'\n      assign val = 'Under $3/year over its 15-year warranty.'\n    when 'haustas-reserve-2'\n      assign val = 'Under $10/year over its 15-year warranty.'\n    else\n      assign val = ''\n  endcase\n%}\n{% if val != blank %}\n<p id=\"hs-value-{{ block.id }}\">{{ val }}</p>\n<style>\n  #hs-value-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #9A968C;\n    padding-top: 2px;\n  }\n</style>\n{% endif %}"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
+                "tagline_hook",
                 "price_tVjtKg",
+                "value_anchor",
                 "inventory_status"
               ]
             },
@@ -1014,6 +1032,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "risk_reversal_microcopy": {
+              "type": "custom-liquid",
+              "name": "Risk reversal microcopy",
+              "settings": {
+                "custom_liquid": "<div id=\"hs-riskline-{{ block.id }}\">\n  <span>Free Shipping</span><span class=\"hs-riskline-dot\">&middot;</span><span>100-Night Trial</span><span class=\"hs-riskline-dot\">&middot;</span><span>15-Year Warranty</span>\n</div>\n<style>\n  #hs-riskline-{{ block.id }} {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    letter-spacing: 0.02em;\n    color: #706C63;\n  }\n  #hs-riskline-{{ block.id }} .hs-riskline-dot {\n    color: #D9D2C4;\n  }\n</style>"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -1022,6 +1048,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "risk_reversal_microcopy",
             "subscribe_save_link",
             "ship_micro",
             "trust_row",
