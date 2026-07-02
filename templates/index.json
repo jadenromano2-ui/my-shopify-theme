@@ -5,8 +5,7 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * ------------------------------------------------------------
- */{
+ * ------------------------------------------------------------*/{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
@@ -245,16 +244,16 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 20,
+            "product_card_gap": 16,
             "border": "solid",
             "border_width": 1,
-            "border_opacity": 35,
+            "border_opacity": 100,
             "border_color": "#D9D2C4",
             "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 32,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
           },
           "blocks": {
             "product_card_gallery_677WP3": {
@@ -293,8 +292,8 @@
                 "corner_radius": 0,
                 "padding-block-start": 12,
                 "padding-block-end": 0,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -316,62 +315,24 @@
                 "case": "none",
                 "padding-block-start": 6,
                 "padding-block-end": 0,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
             "product_description_9kLq2m": {
-              "type": "text",
-              "name": "Description",
+              "type": "custom-liquid",
+              "name": "Product tagline",
               "settings": {
-                "text": "<p>{{ closest.product.description }}</p>",
-                "text_color": "#706C63",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "0.9375rem",
-                "line_height": "loose",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 12,
-                "padding-block-end": 0,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
-              },
-              "blocks": {}
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge \u2014 a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:0; font-family: var(--font-body--family); font-size: 0.9375rem; line-height: 1.6; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
+              }
             },
             "product_learn_more_7Tz3vN": {
-              "type": "text",
-              "name": "Learn more link",
+              "type": "custom-liquid",
+              "name": "Buy now",
               "settings": {
-                "text": "<p>Learn More \u2192</p>",
-                "text_color": "#2E2C29",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "loose",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 16,
-                "padding-block-end": 0,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
-              },
-              "blocks": {}
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:4px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F5F0; background: #2E2C29; border: 1px solid #2E2C29; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#F7F5F0\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:4px; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
+              }
             }
           },
           "block_order": [
@@ -389,11 +350,11 @@
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
-        "columns": 3,
+        "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "82cqw",
-        "columns_gap": 40,
-        "rows_gap": 24,
+        "columns_gap": 48,
+        "rows_gap": 32,
         "icons_style": "chevron_large",
         "icons_shape": "none",
         "section_width": "page-width",
