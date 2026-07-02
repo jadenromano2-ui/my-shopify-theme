@@ -135,7 +135,7 @@
           "settings": {
             "icon": "warranty",
             "heading": "15-Year Warranty",
-            "text": "Every component covered, full stop — no fine print."
+            "text": "Every component covered, full stop \u2014 no fine print."
           }
         },
         "item_3": {
@@ -147,7 +147,11 @@
           }
         }
       },
-      "block_order": ["item_1", "item_2", "item_3"],
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ],
       "settings": {
         "background_color": "#F7F5F0",
         "foreground_color": "#2E2C29",
@@ -347,7 +351,7 @@
               "type": "text",
               "name": "Learn more link",
               "settings": {
-                "text": "<p>Learn More →</p>",
+                "text": "<p>Learn More \u2192</p>",
                 "text_color": "#2E2C29",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -584,7 +588,11 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["gallery", "title", "price"]
+              "block_order": [
+                "gallery",
+                "title",
+                "price"
+              ]
             },
             "text_cs_plus": {
               "type": "text",
@@ -689,10 +697,18 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["gallery", "title", "price"]
+              "block_order": [
+                "gallery",
+                "title",
+                "price"
+              ]
             }
           },
-          "block_order": ["product_card_primary", "text_cs_plus", "product_card_companion"]
+          "block_order": [
+            "product_card_primary",
+            "text_cs_plus",
+            "product_card_companion"
+          ]
         },
         "button_cs_view_all": {
           "type": "button",
@@ -710,7 +726,13 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_cs_eyebrow", "text_cs_heading", "text_cs_intro", "group_cs_bundle", "button_cs_view_all"],
+      "block_order": [
+        "text_cs_eyebrow",
+        "text_cs_heading",
+        "text_cs_intro",
+        "group_cs_bundle",
+        "button_cs_view_all"
+      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -734,9 +756,9 @@
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
             "body": "Precision-milled from raw stainless steel and assembled by hand.",
-            "spec_line_1": "Process — CNC Machined",
-            "spec_line_2": "Tolerance — ±0.05mm",
-            "spec_line_3": "Assembly — Hand-fitted",
+            "spec_line_1": "Process \u2014 CNC Machined",
+            "spec_line_2": "Tolerance \u2014 \u00b10.05mm",
+            "spec_line_3": "Assembly \u2014 Hand-fitted",
             "diagram": "craftsmanship",
             "row_theme": "light"
           }
@@ -747,10 +769,10 @@
             "spec_code": "MAT / COMPOSITION",
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
-            "spec_line_1": "Shell — 304 Stainless Steel",
-            "spec_line_2": "Core — Architectural Glass",
-            "spec_line_3": "Trim — Brushed Steel",
+            "body": "304 stainless steel and architectural glass \u2014 nothing plastic, nothing temporary.",
+            "spec_line_1": "Shell \u2014 304 Stainless Steel",
+            "spec_line_2": "Core \u2014 Architectural Glass",
+            "spec_line_3": "Trim \u2014 Brushed Steel",
             "diagram": "materials",
             "row_theme": "dark"
           }
@@ -762,9 +784,9 @@
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
             "body": "Multi-stage filtration tuned to disappear into daily life.",
-            "spec_line_1": "Stages — 4-Stage Filtration",
-            "spec_line_2": "Flow Rate — 2.5 L / min",
-            "spec_line_3": "Media Life — 6 Months",
+            "spec_line_1": "Stages \u2014 4-Stage Filtration",
+            "spec_line_2": "Flow Rate \u2014 2.5 L / min",
+            "spec_line_3": "Media Life \u2014 6 Months",
             "diagram": "engineering",
             "row_theme": "light"
           }
@@ -776,19 +798,24 @@
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
             "body": "A form language built on restraint, made to sit quietly in any home for decades.",
-            "spec_line_1": "Warranty — 15 Years",
-            "spec_line_2": "Finish — Hand-brushed",
-            "spec_line_3": "Certification — NSF/ANSI 42",
+            "spec_line_1": "Warranty \u2014 15 Years",
+            "spec_line_2": "Finish \u2014 Hand-brushed",
+            "spec_line_3": "Certification \u2014 NSF/ANSI 42",
             "diagram": "timeless",
             "row_theme": "dark"
           }
         }
       },
-      "block_order": ["panel_1", "panel_2", "panel_3", "panel_4"],
+      "block_order": [
+        "panel_1",
+        "panel_2",
+        "panel_3",
+        "panel_4"
+      ],
       "settings": {
         "eyebrow": "Engineering Philosophy",
         "heading": "Engineered Without Compromise.",
-        "intro_text": "Four principles guide every object we build — none of them negotiable.",
+        "intro_text": "Four principles guide every object we build \u2014 none of them negotiable.",
         "light_background": "#F7F5F0",
         "light_foreground": "#2E2C29",
         "dark_background": "#211F1C",
@@ -834,11 +861,16 @@
           }
         }
       },
-      "block_order": ["stage_1", "stage_2", "stage_3", "stage_4"],
+      "block_order": [
+        "stage_1",
+        "stage_2",
+        "stage_3",
+        "stage_4"
+      ],
       "settings": {
         "eyebrow": "The Process",
         "heading": "How Filtration Works.",
-        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added.",
+        "intro_text": "Four mechanical and chemical stages, working in sequence \u2014 nothing skipped, nothing added.",
         "background_color": "#F7F5F0",
         "foreground_color": "#2E2C29",
         "stat_1_value": "5 Micron",
@@ -862,10 +894,10 @@
         "intro_text": "We don't publish reviews. We publish specifications.",
         "background_color": "#F7F5F0",
         "foreground_color": "#2E2C29",
-        "credential_1": "Material — 304 Stainless Steel, Medical Grade",
-        "credential_2": "Certification — NSF/ANSI 42 & 53",
-        "credential_3": "Warranty — 15 Years, Full Coverage",
-        "credential_4": "Testing — 500+ Hours of Stress Testing",
+        "credential_1": "Material \u2014 304 Stainless Steel, Medical Grade",
+        "credential_2": "Certification \u2014 NSF/ANSI 42 & 53",
+        "credential_3": "Warranty \u2014 15 Years, Full Coverage",
+        "credential_4": "Testing \u2014 500+ Hours of Stress Testing",
         "credential_note": "Every unit is individually pressure-tested before it leaves the workshop.",
         "built_1": "304 Stainless Steel",
         "built_2": "Borosilicate Glass",
@@ -894,39 +926,46 @@
           "type": "question",
           "settings": {
             "question": "Do I need a plumber to install it?",
-            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
+            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture \u2014 most people are up and running in under 15 minutes, no tools beyond what's in the box."
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
             "question": "What does the filtration actually remove?",
-            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
+            "answer": "A 4-stage sequence \u2014 sediment, carbon block, KDF media, and a final polish \u2014 reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
             "question": "Is HAUSTAS certified?",
-            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
+            "answer": "Yes \u2014 every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
           }
         },
         "question_5": {
           "type": "question",
           "settings": {
             "question": "What's covered under warranty?",
-            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
+            "answer": "Every component is covered for 15 years, full stop \u2014 no fine print, no prorated coverage."
           }
         },
         "question_6": {
           "type": "question",
           "settings": {
             "question": "What if it's not right for me?",
-            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
+            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund \u2014 no questions asked."
           }
         }
       },
-      "block_order": ["question_1", "question_2", "question_3", "question_4", "question_5", "question_6"],
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6"
+      ],
       "settings": {
         "eyebrow": "Questions",
         "heading": "Before You Buy.",
@@ -937,6 +976,37 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
+    },
+    "photo_spotlight_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
+        "image_alt": "The HAUSTAS Pure One water filtration system",
+        "image_position": "left",
+        "eyebrow": "The Flagship",
+        "heading": "The HAUSTAS Pure One.",
+        "body_text": "Our most complete system \u2014 full 4-stage filtration housed in a single hand-finished stainless body, built to sit quietly on the counter for decades.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "cta_label": "Shop The Pure One",
+        "cta_link": "shopify://products/item-4",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "closing_statement_01": {
+      "type": "closing-statement",
+      "settings": {
+        "eyebrow": "HAUSTAS",
+        "heading": "Precision, Delivered Quietly.",
+        "subtext": "Every unit is engineered, tested, and finished by hand \u2014 built to disappear into your home for decades, not years.",
+        "background_color": "#2E2C29",
+        "foreground_color": "#F7F5F0",
+        "cta_label": "Explore The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 96,
+        "padding-block-end": 96
+      }
     }
   },
   "order": [
@@ -944,9 +1014,11 @@
     "risk_reversal_01",
     "product_list_fa6P9H",
     "complete_system_01",
+    "photo_spotlight_01",
     "engineered_precision_01",
     "filtration_process_01",
     "haustas_standard_01",
-    "faq_01"
+    "faq_01",
+    "closing_statement_01"
   ]
 }
