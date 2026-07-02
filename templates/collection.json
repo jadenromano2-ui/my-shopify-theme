@@ -119,21 +119,22 @@
           "type": "_product-card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
-            "border": "none",
+            "product_card_gap": 12,
+            "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20,
+            "border_color": "#D9D2C4"
           },
           "blocks": {
             "card-gallery": {
               "type": "_product-card-gallery",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -197,31 +198,12 @@
                 "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge \u2014 a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:6px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.4; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
               }
             },
-            "trust_line_cat_01": {
-              "type": "text",
-              "name": "Trust micro-line",
+            "buy_now_cat_01": {
+              "type": "custom-liquid",
+              "name": "Buy now",
               "settings": {
-                "text": "<p>100-Night Trial &middot; Free Shipping</p>",
-                "text_color": "#9A968C",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-accent--family)",
-                "font_size": "0.6875rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 6,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:16px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F5F0; background: #2E2C29; border: 1px solid #2E2C29; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#F7F5F0\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:16px; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
+              }
             }
           },
           "block_order": [
@@ -229,18 +211,18 @@
             "product_title_4nY4eT",
             "tagline_cat_01",
             "price_EzJzMm",
-            "trust_line_cat_01"
+            "buy_now_cat_01"
           ]
         }
       },
       "settings": {
         "layout_type": "grid",
-        "product_card_size": "medium",
+        "product_card_size": "large",
         "mobile_product_card_size": "small",
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 16,
-        "columns_gap_vertical": 24,
+        "columns_gap_horizontal": 28,
+        "columns_gap_vertical": 36,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "background_color": "{{ settings.color_palette.background }}",
