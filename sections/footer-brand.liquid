@@ -1,0 +1,158 @@
+{% liquid
+  assign bg = section.settings.background_color
+  assign fg = section.settings.foreground_color
+%}
+
+<div
+  class="section section--full-width footer-brand spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %} --fb-bg: {{ bg }}; --fb-fg: {{ fg }};"
+  data-testid="footer-brand"
+>
+  {% if section.settings.trust_1 != blank or section.settings.trust_2 != blank or section.settings.trust_3 != blank %}
+    <div class="footer-brand__trust">
+      {% if section.settings.trust_1 != blank %}
+        <span class="footer-brand__trust-item">{{ section.settings.trust_1 }}</span>
+      {% endif %}
+      {% if section.settings.trust_2 != blank %}
+        <span class="footer-brand__trust-item">{{ section.settings.trust_2 }}</span>
+      {% endif %}
+      {% if section.settings.trust_3 != blank %}
+        <span class="footer-brand__trust-item">{{ section.settings.trust_3 }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if section.settings.wordmark != blank %}
+    <div class="footer-brand__wordmark-row">
+      <p class="footer-brand__wordmark">{{ section.settings.wordmark }}</p>
+    </div>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .footer-brand {
+    background: var(--fb-bg, #F7F5F0);
+    color: var(--fb-fg, #2E2C29);
+    overflow: hidden;
+  }
+
+  .footer-brand__trust {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(14px, 3vw, 28px);
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 64px);
+    padding-bottom: clamp(28px, 4vw, 44px);
+    border-bottom: 1px solid rgba(46, 44, 41, 0.14);
+  }
+
+  .footer-brand__trust-item {
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #706C63;
+    white-space: nowrap;
+  }
+
+  .footer-brand__trust-item:not(:last-child)::after {
+    content: '\2022';
+    margin-left: clamp(14px, 3vw, 28px);
+    color: #D9D2C4;
+  }
+
+  .footer-brand__wordmark-row {
+    padding-top: clamp(18px, 3vw, 32px);
+    text-align: center;
+    line-height: 0;
+  }
+
+  .footer-brand__wordmark {
+    margin: 0;
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: clamp(3.2rem, 14vw, 10.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(46, 44, 41, 0.55);
+    white-space: nowrap;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Footer brand strip",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "trust_1",
+      "label": "Trust item 1",
+      "default": "100-Night Trial"
+    },
+    {
+      "type": "text",
+      "id": "trust_2",
+      "label": "Trust item 2",
+      "default": "15-Year Warranty"
+    },
+    {
+      "type": "text",
+      "id": "trust_3",
+      "label": "Trust item 3",
+      "default": "NSF/ANSI 42 & 53 Certified"
+    },
+    {
+      "type": "text",
+      "id": "wordmark",
+      "label": "Wordmark",
+      "default": "HAUSTAS"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F7F5F0"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "label": "Text color",
+      "default": "#2E2C29"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ]
+}
+{% endschema %}

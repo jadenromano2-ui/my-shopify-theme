@@ -151,11 +151,32 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "menu_shop_02": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer-shop",
+            "heading": "Shop",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "background_color": "#00000000",
+            "text_color": "#2E2C29",
+            "heading_preset": "h4",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "group_H6VpwJ",
-        "menu_Tf82Qx"
+        "menu_Tf82Qx",
+        "menu_shop_02"
       ],
       "name": "t:names.footer",
       "settings": {
@@ -164,6 +185,20 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 64,
         "padding-block-end": 40
+      }
+    },
+    "footer_brand_01": {
+      "type": "footer-brand",
+      "name": "Footer brand strip",
+      "settings": {
+        "trust_1": "100-Night Trial",
+        "trust_2": "15-Year Warranty",
+        "trust_3": "NSF/ANSI 42 & 53 Certified",
+        "wordmark": "HAUSTAS",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "padding-block-start": 40,
+        "padding-block-end": 0
       }
     },
     "footer_utilities_jLGE8U": {
@@ -219,6 +254,7 @@
   },
   "order": [
     "footer_m9NzUG",
+    "footer_brand_01",
     "footer_utilities_jLGE8U"
   ]
 }
