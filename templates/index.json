@@ -5,8 +5,7 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+ * ------------------------------------------------------------*/
 {
   "sections": {
     "hero_jVaWmY": {
@@ -42,7 +41,7 @@
           "type": "text",
           "name": "Supporting sentence",
           "settings": {
-            "text": "<p>Precision-engineered filtration, designed to disappear into modern architecture.</p>",
+            "text": "<p>Four-stage filtration engineered in 304 stainless steel — precise enough to trust, quiet enough to disappear into modern architecture.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -82,9 +81,36 @@
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "text_hero_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Four-Stage Filtration — Engineered In Stainless Steel</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#D9D2C4",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 6,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
+        "text_hero_eyebrow",
         "text_YLPk4p",
         "hero_subtext_2Kd9wR",
         "button_H9gpTf"
@@ -130,7 +156,7 @@
           "settings": {
             "icon": "trial",
             "heading": "100-Night Trial",
-            "text": "Live with it. If it's not right, return it for a full refund."
+            "text": "Live with it. If it's not right, return it any time within 100 nights for a full refund."
           }
         },
         "item_2": {
@@ -138,7 +164,7 @@
           "settings": {
             "icon": "warranty",
             "heading": "15-Year Warranty",
-            "text": "Every component covered, full stop — no fine print."
+            "text": "Every component covered for 15 years, full stop — no fine print, no prorated coverage."
           }
         },
         "item_3": {
@@ -146,7 +172,7 @@
           "settings": {
             "icon": "shipping",
             "heading": "Free Shipping & Returns",
-            "text": "On every order, no thresholds, no exceptions."
+            "text": "Free standard shipping and free returns on every order — no thresholds, no exceptions."
           }
         }
       },
@@ -436,7 +462,7 @@
         "text_cs_intro": {
           "type": "text",
           "settings": {
-            "text": "<p>Most owners keep a spare cartridge on hand, so filtration never skips a beat.</p>",
+            "text": "<p>Pair your system with a spare HAUSTAS Flow cartridge and filtration never skips a beat — swap it in seconds the moment performance starts to taper, no waiting on shipping.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -773,7 +799,7 @@
         "image_position": "left",
         "eyebrow": "The Flagship",
         "heading": "The HAUSTAS Pure One.",
-        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished stainless body, built to sit quietly on the counter for decades.",
+        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished 304 stainless steel body. No under-sink installation, no plumber required: it sits on the counter and starts working in minutes, built to stay there for decades.",
         "background_color": "#f7f5f0",
         "foreground_color": "#2e2c29",
         "cta_label": "Shop The Pure One",
@@ -790,7 +816,7 @@
         "badge_text": "Save 15%",
         "eyebrow": "Never Run Dry",
         "heading": "Stock Up On Cartridges & Save 15%.",
-        "body_text": "Every HAUSTAS cartridge lasts about 6 months. Stock up now and save 15% on HAUSTAS Flow replacements — one less thing to think about later.",
+        "body_text": "Every HAUSTAS cartridge lasts about 6 months before performance starts to taper. Stock up now and save 15% on HAUSTAS Flow replacements, so clean water is never something you have to remember.",
         "price_original": "$29.00",
         "price_discounted": "$24.65",
         "cta_label": "Save 15% Now",
@@ -813,7 +839,7 @@
             "spec_code": "MAT / 304-SS",
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
-            "body": "Precision-milled from raw stainless steel and assembled by hand.",
+            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
             "spec_line_1": "Process — CNC Machined",
             "spec_line_2": "Tolerance — ±0.05mm",
             "spec_line_3": "Assembly — Hand-fitted",
@@ -827,7 +853,7 @@
             "spec_code": "MAT / COMPOSITION",
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
+            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
             "spec_line_1": "Shell — 304 Stainless Steel",
             "spec_line_2": "Core — Architectural Glass",
             "spec_line_3": "Trim — Brushed Steel",
@@ -841,7 +867,7 @@
             "spec_code": "ENG / FILTRATION",
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
-            "body": "Multi-stage filtration tuned to disappear into daily life.",
+            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
             "spec_line_1": "Stages — 4-Stage Filtration",
             "spec_line_2": "Flow Rate — 2.5 L / min",
             "spec_line_3": "Media Life — 6 Months",
@@ -855,7 +881,7 @@
             "spec_code": "FORM / LONGEVITY",
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
-            "body": "A form language built on restraint, made to sit quietly in any home for decades.",
+            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
             "spec_line_1": "Warranty — 15 Years",
             "spec_line_2": "Finish — Hand-brushed",
             "spec_line_3": "Certification — NSF/ANSI 42",
@@ -880,7 +906,7 @@
         "dark_background": "#211f1c",
         "dark_foreground": "#f2efe9",
         "cta_label": "View The Collection",
-        "cta_link": "",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 0
       }
@@ -893,7 +919,7 @@
           "settings": {
             "tag_number": "STAGE 01",
             "name": "Sediment Pre-Filter",
-            "description": "Removes sand, rust, and particulate down to 5 microns."
+            "description": "Removes sand, rust, and particulate down to 5 microns, protecting every stage that follows."
           }
         },
         "stage_2": {
@@ -901,7 +927,7 @@
           "settings": {
             "tag_number": "STAGE 02",
             "name": "Carbon Block",
-            "description": "Absorbs chlorine, odor, and volatile compounds."
+            "description": "Absorbs chlorine, odor, and volatile organic compounds for noticeably cleaner taste and smell."
           }
         },
         "stage_3": {
@@ -909,7 +935,7 @@
           "settings": {
             "tag_number": "STAGE 03",
             "name": "KDF Media",
-            "description": "Reduces heavy metals through redox filtration."
+            "description": "Reduces heavy metals like lead and mercury through KDF redox filtration."
           }
         },
         "stage_4": {
@@ -917,7 +943,7 @@
           "settings": {
             "tag_number": "STAGE 04",
             "name": "Polishing Filter",
-            "description": "Final 0.5-micron pass for clarity and taste."
+            "description": "A final 0.5-micron pass for clarity, taste, and total peace of mind."
           }
         }
       },
@@ -931,7 +957,7 @@
       "settings": {
         "eyebrow": "The Process",
         "heading": "How Filtration Works.",
-        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added.",
+        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added. Each stage is engineered to catch what the last one missed.",
         "background_color": "#f7f5f0",
         "foreground_color": "#2e2c29",
         "stat_1_value": "5 Micron",
@@ -943,7 +969,7 @@
         "stat_4_value": "4-Stage",
         "stat_4_label": "Sequential Process",
         "cta_label": "View The Collection",
-        "cta_link": "",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -954,7 +980,7 @@
       "settings": {
         "eyebrow": "The Standard",
         "heading": "The HAUSTAS Standard.",
-        "intro_text": "We don't publish reviews. We publish specifications.",
+        "intro_text": "We don't publish reviews. We publish specifications. Every material, every test, every tolerance — laid out plainly, because that's what earns trust.",
         "background_color": "#f7f5f0",
         "foreground_color": "#2e2c29",
         "credential_1": "Material — 304 Stainless Steel, Medical Grade",
@@ -971,7 +997,7 @@
         "avoid_3": "Adhesive Seals",
         "avoid_4": "Disposable Components",
         "cta_label": "View The Collection",
-        "cta_link": "",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -1026,6 +1052,22 @@
             "haustas_value": "100 Nights",
             "typical_value": "None"
           }
+        },
+        "row_7": {
+          "type": "row",
+          "settings": {
+            "label": "Materials",
+            "haustas_value": "304 Stainless Steel & Architectural Glass",
+            "typical_value": "BPA Plastic"
+          }
+        },
+        "row_8": {
+          "type": "row",
+          "settings": {
+            "label": "Installation",
+            "haustas_value": "No Plumber Required — Under 15 Minutes",
+            "typical_value": "Varies, Often Requires Tools"
+          }
         }
       },
       "block_order": [
@@ -1034,13 +1076,15 @@
         "row_3",
         "row_4",
         "row_5",
-        "row_6"
+        "row_6",
+        "row_7",
+        "row_8"
       ],
       "name": "Comparison table",
       "settings": {
         "eyebrow": "The Difference",
         "heading": "Not All Filtration Is Equal.",
-        "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
+        "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter — the difference shows up in the water, not just the spec sheet.",
         "background_color": "#f7f5f0",
         "foreground_color": "#2e2c29",
         "cta_label": "Shop The Collection",
@@ -1093,6 +1137,20 @@
             "question": "What if it's not right for me?",
             "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
           }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "question": "What comes in the box?",
+            "answer": "Your HAUSTAS system, the installed filter cartridge, all connection hardware, and a printed setup guide — everything you need, nothing you'll have to source separately."
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "question": "Can I subscribe to replacement filters?",
+            "answer": "Not yet as an automatic subscription — but you can stock up on HAUSTAS Flow cartridges and save 15% any time, or simply reorder when you're running low."
+          }
         }
       },
       "block_order": [
@@ -1101,7 +1159,9 @@
         "question_3",
         "question_4",
         "question_5",
-        "question_6"
+        "question_6",
+        "question_7",
+        "question_8"
       ],
       "name": "FAQ",
       "settings": {
@@ -1111,7 +1171,7 @@
         "background_color": "#f7f5f0",
         "foreground_color": "#2e2c29",
         "cta_label": "View The Collection",
-        "cta_link": "",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -1148,13 +1208,13 @@
     "hero_jVaWmY",
     "risk_reversal_01",
     "product_list_fa6P9H",
-    "complete_system_01",
-    "photo_spotlight_01",
-    "subscribe_save_01",
+    "comparison_table_01",
     "engineered_precision_01",
     "filtration_process_01",
     "haustas_standard_01",
-    "comparison_table_01",
+    "photo_spotlight_01",
+    "complete_system_01",
+    "subscribe_save_01",
     "faq_01",
     "closing_statement_01",
     "sticky_shop_bar_01"
