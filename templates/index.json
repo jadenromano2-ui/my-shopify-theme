@@ -1007,6 +1007,114 @@
         "padding-block-start": 96,
         "padding-block-end": 96
       }
+    },
+    "subscribe_save_01": {
+      "type": "subscribe-save",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/2C9B0546-6C26-44BA-B8E9-0DE754B16C86.png?v=1782787825",
+        "image_alt": "HAUSTAS Flow replacement filter cartridge",
+        "badge_text": "Save 15%",
+        "eyebrow": "Never Run Dry",
+        "heading": "Stock Up On Cartridges & Save 15%.",
+        "body_text": "Every HAUSTAS cartridge lasts about 6 months. Stock up now and save 15% on HAUSTAS Flow replacements \u2014 one less thing to think about later.",
+        "price_original": "$29.00",
+        "price_discounted": "$24.65",
+        "cta_label": "Save 15% Now",
+        "cta_link": "/discount/FLOWSAVE15?redirect=/products/item-2",
+        "discount_code": "FLOWSAVE15",
+        "code_note": "Or use code",
+        "code_note_suffix": "at checkout.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "comparison_table_01": {
+      "type": "comparison-table",
+      "name": "Comparison table",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "label": "Filtration Stages",
+            "haustas_value": "4-Stage (Sediment, Carbon Block, KDF, Polish)",
+            "typical_value": "1-Stage (Basic Carbon)"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "label": "Heavy Metal Reduction",
+            "haustas_value": "Yes \u2014 KDF Redox Filtration",
+            "typical_value": "Rarely Addressed"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "label": "Certification",
+            "haustas_value": "NSF/ANSI 42 & 53",
+            "typical_value": "Often Uncertified"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "label": "Cartridge Life",
+            "haustas_value": "6 Months",
+            "typical_value": "~2 Months"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "label": "Warranty",
+            "haustas_value": "15 Years",
+            "typical_value": "None"
+          }
+        },
+        "row_6": {
+          "type": "row",
+          "settings": {
+            "label": "Trial Period",
+            "haustas_value": "100 Nights",
+            "typical_value": "None"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6"
+      ],
+      "settings": {
+        "eyebrow": "The Difference",
+        "heading": "Not All Filtration Is Equal.",
+        "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
+        "background_color": "#F7F5F0",
+        "foreground_color": "#2E2C29",
+        "cta_label": "Shop The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "sticky_shop_bar_01": {
+      "type": "sticky-shop-bar",
+      "name": "Sticky mobile shop bar",
+      "settings": {
+        "product_name": "HAUSTAS Pure One",
+        "price_text": "From $179.99",
+        "scroll_threshold": 480,
+        "background_color": "#2E2C29",
+        "foreground_color": "#F7F5F0",
+        "cta_label": "Shop Now",
+        "cta_link": "shopify://collections/all"
+      }
     }
   },
   "order": [
@@ -1015,10 +1123,13 @@
     "product_list_fa6P9H",
     "complete_system_01",
     "photo_spotlight_01",
+    "subscribe_save_01",
     "engineered_precision_01",
     "filtration_process_01",
     "haustas_standard_01",
+    "comparison_table_01",
     "faq_01",
-    "closing_statement_01"
+    "closing_statement_01",
+    "sticky_shop_bar_01"
   ]
 }

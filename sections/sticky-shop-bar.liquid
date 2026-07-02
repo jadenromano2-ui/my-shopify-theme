@@ -1,0 +1,204 @@
+{% liquid
+  assign bg = section.settings.background_color
+  assign fg = section.settings.foreground_color
+%}
+
+<div
+  class="sticky-shop-bar"
+  style="--ssb-bg: {{ bg }}; --ssb-fg: {{ fg }}; --ssb-threshold: {{ section.settings.scroll_threshold }}px;"
+  data-testid="sticky-shop-bar"
+  data-threshold="{{ section.settings.scroll_threshold }}"
+>
+  <div class="sticky-shop-bar__inner">
+    <div class="sticky-shop-bar__info">
+      {% if section.settings.product_name != blank %}
+        <span class="sticky-shop-bar__name">{{ section.settings.product_name }}</span>
+      {% endif %}
+      {% if section.settings.price_text != blank %}
+        <span class="sticky-shop-bar__price">{{ section.settings.price_text }}</span>
+      {% endif %}
+    </div>
+    {% if section.settings.cta_label != blank %}
+      <a href="{{ section.settings.cta_link | default: 'shopify://collections/all' }}" class="sticky-shop-bar__cta">
+        {{ section.settings.cta_label }}
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+{% javascript %}
+  (function () {
+    if (window.__ssbInit) return;
+    window.__ssbInit = true;
+
+    const bar = document.querySelector('.sticky-shop-bar');
+    if (!bar) return;
+
+    const threshold = parseInt(bar.getAttribute('data-threshold'), 10) || 480;
+    let ticking = false;
+
+    function update() {
+      ticking = false;
+      if (window.scrollY > threshold) {
+        bar.classList.add('is-visible');
+      } else {
+        bar.classList.remove('is-visible');
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    update();
+  })();
+{% endjavascript %}
+
+{% stylesheet %}
+  .sticky-shop-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    background: var(--ssb-bg, #2E2C29);
+    color: var(--ssb-fg, #F7F5F0);
+    border-top: 1px solid rgba(217, 210, 196, 0.3);
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  @media screen and (max-width: 749px) {
+    .sticky-shop-bar {
+      display: block;
+    }
+  }
+
+  .sticky-shop-bar.is-visible {
+    transform: translateY(0);
+  }
+
+  .sticky-shop-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .sticky-shop-bar__info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .sticky-shop-bar__name {
+    font-family: var(--font-heading--family);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sticky-shop-bar__price {
+    font-family: var(--font-body--family);
+    font-size: 0.75rem;
+    color: #B9B7B0;
+    margin-top: 2px;
+  }
+
+  .sticky-shop-bar__cta {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 22px;
+    font-family: var(--font-accent--family);
+    font-weight: var(--font-accent--weight);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #2E2C29;
+    background: #F7F5F0;
+    border: 1px solid #F7F5F0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+  }
+
+  .sticky-shop-bar__cta:active {
+    opacity: 0.75;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Sticky mobile shop bar",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "Product name",
+      "default": "HAUSTAS Pure One"
+    },
+    {
+      "type": "text",
+      "id": "price_text",
+      "label": "Price text",
+      "default": "From $179.99"
+    },
+    {
+      "type": "range",
+      "id": "scroll_threshold",
+      "label": "Reveal after scrolling (px)",
+      "min": 100,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "default": 480
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#2E2C29"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "label": "Text color",
+      "default": "#F7F5F0"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky mobile shop bar"
+    }
+  ]
+}
+{% endschema %}
