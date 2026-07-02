@@ -26,7 +26,7 @@
             "letter_spacing": "tight",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#f7f5f0",
+            "text_color": "#FFFFFF",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -72,7 +72,7 @@
             "open_in_new_tab": false,
             "style_class": "button-custom",
             "custom_button_background": "rgba(0,0,0,0)",
-            "custom_button_text": "#f7f5f0",
+            "custom_button_text": "#FFFFFF",
             "custom_button_border": "#d9d2c4",
             "link_text_color": "",
             "width": "fit-content",
@@ -183,7 +183,7 @@
       ],
       "name": "Risk reversal bar",
       "settings": {
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "padding-block-start": 40,
         "padding-block-end": 40
@@ -260,8 +260,8 @@
                 "open_in_new_tab": false,
                 "style_class": "button-unstyled",
                 "custom_button_background": "#2E2C29",
-                "custom_button_text": "#F7F5F0",
-                "custom_button_border": "#F7F5F0",
+                "custom_button_text": "#FFFFFF",
+                "custom_button_border": "#FFFFFF",
                 "link_text_color": "#706c63",
                 "width": "fit-content",
                 "custom_width": 100,
@@ -363,7 +363,7 @@
               "type": "custom-liquid",
               "name": "Badge + editable description",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign badge = ''\n  case p.handle\n    when 'item-4'\n      assign badge = 'Flagship'\n    when 'item-2'\n      assign badge = 'Essential'\n    when 'item-1'\n      assign badge = 'High Capacity'\n    when 'item-3'\n      assign badge = 'Compact'\n    when 'haustas-reserve-2'\n      assign badge = 'Limited Release'\n  endcase\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if badge != blank %}\n  <span class=\"hs-card-badge\">{{ badge }}</span>\n{% endif %}\n{% if desc != blank %}\n  <p class=\"hs-card-desc\">{{ desc | truncatewords: 22 }}</p>\n{% endif %}\n<style>\n  #shopify-section-{{ closest.section.id }} .product-card {\n    position: relative;\n    transition: transform 0.25s ease, box-shadow 0.25s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .product-card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 10px 24px rgba(46, 44, 41, 0.08);\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-badge {\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    z-index: 2;\n    padding: 5px 10px;\n    background: #2E2C29;\n    color: #F7F5F0;\n    font-family: var(--font-accent--family);\n    font-weight: var(--font-accent--weight);\n    font-size: 0.6875rem;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    pointer-events: none;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-desc {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    line-height: 1.6;\n    color: #706C63;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    overflow: hidden;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn {\n    transition: background-color 0.2s ease, border-color 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover {\n    background-color: #45423d !important;\n    border-color: #45423d !important;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn svg {\n    transition: transform 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover svg {\n    transform: translateX(3px);\n  }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign badge = ''\n  case p.handle\n    when 'item-4'\n      assign badge = 'Flagship'\n    when 'item-2'\n      assign badge = 'Essential'\n    when 'item-1'\n      assign badge = 'High Capacity'\n    when 'item-3'\n      assign badge = 'Compact'\n    when 'haustas-reserve-2'\n      assign badge = 'Limited Release'\n  endcase\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if badge != blank %}\n  <span class=\"hs-card-badge\">{{ badge }}</span>\n{% endif %}\n{% if desc != blank %}\n  <p class=\"hs-card-desc\">{{ desc | truncatewords: 22 }}</p>\n{% endif %}\n<style>\n  #shopify-section-{{ closest.section.id }} .product-card {\n    position: relative;\n    transition: transform 0.25s ease, box-shadow 0.25s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .product-card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 10px 24px rgba(46, 44, 41, 0.08);\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-badge {\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    z-index: 2;\n    padding: 5px 10px;\n    background: #2E2C29;\n    color: #FFFFFF;\n    font-family: var(--font-accent--family);\n    font-weight: var(--font-accent--weight);\n    font-size: 0.6875rem;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    pointer-events: none;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-desc {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    line-height: 1.6;\n    color: #706C63;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    overflow: hidden;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn {\n    transition: background-color 0.2s ease, border-color 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover {\n    background-color: #8A4526 !important;\n    border-color: #8A4526 !important;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn svg {\n    transition: transform 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover svg {\n    transform: translateX(3px);\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -371,7 +371,7 @@
               "type": "custom-liquid",
               "name": "Buy now",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:4px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" class=\"hs-buy-now-btn\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F5F0; background: #2E2C29; border: 1px solid #2E2C29; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#F7F5F0\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:4px; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:4px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" class=\"hs-buy-now-btn\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #A0522D; border: 1px solid #A0522D; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#FFFFFF\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:4px; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
               },
               "blocks": {}
             }
@@ -744,7 +744,7 @@
             "style_class": "button-unstyled",
             "custom_button_background": "#2E2C29",
             "custom_button_text": "#2e2c29",
-            "custom_button_border": "#F7F5F0",
+            "custom_button_border": "#FFFFFF",
             "link_text_color": "",
             "width": "fit-content",
             "custom_width": 100,
@@ -775,7 +775,7 @@
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -800,7 +800,7 @@
         "eyebrow": "The Flagship",
         "heading": "The HAUSTAS Pure One.",
         "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished 304 stainless steel body. No under-sink installation, no plumber required: it sits on the counter and starts working in minutes, built to stay there for decades.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "cta_label": "Shop The Pure One",
         "cta_link": "shopify://products/item-4",
@@ -824,7 +824,7 @@
         "discount_code": "FLOWSAVE15",
         "code_note": "Or use code",
         "code_note_suffix": "at checkout.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "padding-block-start": 72,
         "padding-block-end": 72
@@ -901,7 +901,7 @@
         "eyebrow": "Engineering Philosophy",
         "heading": "Engineered Without Compromise.",
         "intro_text": "Four principles guide every object we build — none of them negotiable.",
-        "light_background": "#f7f5f0",
+        "light_background": "#FFFFFF",
         "light_foreground": "#2e2c29",
         "dark_background": "#211f1c",
         "dark_foreground": "#f2efe9",
@@ -958,7 +958,7 @@
         "eyebrow": "The Process",
         "heading": "How Filtration Works.",
         "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added. Each stage is engineered to catch what the last one missed.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "stat_1_value": "5 Micron",
         "stat_1_label": "Sediment Capture",
@@ -981,7 +981,7 @@
         "eyebrow": "The Standard",
         "heading": "The HAUSTAS Standard.",
         "intro_text": "We don't publish reviews. We publish specifications. Every material, every test, every tolerance — laid out plainly, because that's what earns trust.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "credential_1": "Material — 304 Stainless Steel, Medical Grade",
         "credential_2": "Certification — NSF/ANSI 42 & 53",
@@ -1085,7 +1085,7 @@
         "eyebrow": "The Difference",
         "heading": "Not All Filtration Is Equal.",
         "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter — the difference shows up in the water, not just the spec sheet.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "cta_label": "Shop The Collection",
         "cta_link": "shopify://collections/all",
@@ -1168,7 +1168,7 @@
         "eyebrow": "Questions",
         "heading": "Before You Buy.",
         "intro_text": "Everything you need to know, in one place.",
-        "background_color": "#f7f5f0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2e2c29",
         "cta_label": "View The Collection",
         "cta_link": "shopify://collections/all",
@@ -1183,7 +1183,7 @@
         "heading": "Precision, Delivered Quietly.",
         "subtext": "Every unit is engineered, tested, and finished by hand — built to disappear into your home for decades, not years.",
         "background_color": "#2e2c29",
-        "foreground_color": "#f7f5f0",
+        "foreground_color": "#FFFFFF",
         "cta_label": "Explore The Collection",
         "cta_link": "shopify://collections/all",
         "padding-block-start": 96,
@@ -1198,7 +1198,7 @@
         "price_text": "From $179.99",
         "scroll_threshold": 480,
         "background_color": "#2e2c29",
-        "foreground_color": "#f7f5f0",
+        "foreground_color": "#FFFFFF",
         "cta_label": "Shop Now",
         "cta_link": "shopify://collections/all"
       }

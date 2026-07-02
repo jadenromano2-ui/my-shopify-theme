@@ -5,7 +5,8 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * ------------------------------------------------------------*/{
+ * ------------------------------------------------------------*/
+{
   "sections": {
     "section": {
       "type": "section",
@@ -195,14 +196,14 @@
               "type": "custom-liquid",
               "name": "Product tagline",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge \u2014 a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:6px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.4; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge — a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:6px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.4; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
               }
             },
             "buy_now_cat_01": {
               "type": "custom-liquid",
               "name": "Buy now",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:16px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F5F0; background: #2E2C29; border: 1px solid #2E2C29; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#F7F5F0\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:16px; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:16px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #A0522D; border: 1px solid #A0522D; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#FFFFFF\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:16px; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
               }
             }
           },
@@ -247,7 +248,7 @@
           "settings": {
             "icon": "warranty",
             "heading": "15-Year Warranty",
-            "text": "Every component covered, full stop \u2014 no fine print."
+            "text": "Every component covered, full stop — no fine print."
           }
         },
         "item_3": {
@@ -265,7 +266,7 @@
         "item_3"
       ],
       "settings": {
-        "background_color": "#F7F5F0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2E2C29",
         "padding-block-start": 32,
         "padding-block-end": 32
@@ -287,7 +288,7 @@
           "type": "row",
           "settings": {
             "label": "Heavy Metal Reduction",
-            "haustas_value": "Yes \u2014 KDF Redox Filtration",
+            "haustas_value": "Yes — KDF Redox Filtration",
             "typical_value": "Rarely Addressed"
           }
         },
@@ -336,7 +337,7 @@
         "eyebrow": "Before You Choose",
         "heading": "Not All Filtration Is Equal.",
         "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
-        "background_color": "#F7F5F0",
+        "background_color": "#FFFFFF",
         "foreground_color": "#2E2C29",
         "cta_label": "",
         "padding-block-start": 64,

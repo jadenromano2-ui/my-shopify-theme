@@ -213,12 +213,12 @@
                 "show_swatches": false,
                 "option_label_text_color": "",
                 "variant_style_class": "default",
-                "custom_variant_background": "#F7F5F0",
+                "custom_variant_background": "#FFFFFF",
                 "custom_variant_text": "#2E2C29",
                 "custom_variant_border": "#D9D2C4",
                 "selected_variant_style_class": "default",
                 "custom_selected_variant_background": "#2E2C29",
-                "custom_selected_variant_text": "#F7F5F0",
+                "custom_selected_variant_text": "#FFFFFF",
                 "custom_selected_variant_border": "#2E2C29",
                 "alignment": "left",
                 "padding-block-start": 4,
@@ -273,9 +273,9 @@
                   "static": true,
                   "settings": {
                     "style_class": "button",
-                    "custom_button_background": "#2E2C29",
-                    "custom_button_text": "#F7F5F0",
-                    "custom_button_border": "#2E2C29"
+                    "custom_button_background": "#A0522D",
+                    "custom_button_text": "#FFFFFF",
+                    "custom_button_border": "#A0522D"
                   },
                   "blocks": {}
                 },
@@ -825,7 +825,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#F7F5F0",
+                "background_color": "#FFFFFF",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
