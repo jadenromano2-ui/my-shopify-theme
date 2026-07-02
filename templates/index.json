@@ -1607,20 +1607,6 @@
         "padding-block-end": 72
       }
     },
-    "closing_statement_01": {
-      "type": "closing-statement",
-      "settings": {
-        "eyebrow": "HAUSTAS",
-        "heading": "Precision, Delivered Quietly.",
-        "subtext": "Every unit is engineered, tested, and finished by hand — built to disappear into your home for decades, not years.",
-        "background_color": "#2e2c29",
-        "foreground_color": "#f7f5f0",
-        "cta_label": "Explore The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 96,
-        "padding-block-end": 96
-      }
-    },
     "sticky_shop_bar_01": {
       "type": "sticky-shop-bar",
       "name": "Sticky mobile shop bar",
@@ -1648,7 +1634,6 @@
     "complete_system_01",
     "subscribe_save_01",
     "faq_01",
-    "closing_statement_01",
     "sticky_shop_bar_01"
   ]
 }
