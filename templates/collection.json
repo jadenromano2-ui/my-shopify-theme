@@ -194,9 +194,9 @@
             },
             "tagline_cat_01": {
               "type": "custom-liquid",
-              "name": "Product tagline",
+              "name": "Product description",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge — a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:6px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.4; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if desc != blank %}\n  <p style=\"margin:6px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.4; color: #706C63;\">{{ desc | truncatewords: 16 }}</p>\n{% endif %}"
               }
             },
             "buy_now_cat_01": {
