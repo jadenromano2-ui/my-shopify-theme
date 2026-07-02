@@ -5,7 +5,9 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * ------------------------------------------------------------*/{
+ * ------------------------------------------------------------
+ */
+{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
@@ -15,7 +17,6 @@
           "name": "t:names.heading",
           "settings": {
             "text": "<p>Water Filters Built For The Modern Home.</p>",
-            "text_color": "#F7F5F0",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -26,6 +27,7 @@
             "letter_spacing": "tight",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#f7f5f0",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -41,7 +43,6 @@
           "name": "Supporting sentence",
           "settings": {
             "text": "<p>Precision-engineered filtration, designed to disappear into modern architecture.</p>",
-            "text_color": "#E4E0D6",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -52,6 +53,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#e4e0d6",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -71,8 +73,9 @@
             "open_in_new_tab": false,
             "style_class": "button-custom",
             "custom_button_background": "rgba(0,0,0,0)",
-            "custom_button_text": "#F7F5F0",
-            "custom_button_border": "#D9D2C4",
+            "custom_button_text": "#f7f5f0",
+            "custom_button_border": "#d9d2c4",
+            "link_text_color": "",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -89,11 +92,13 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/9F1AFE1B-8835-48BE-ABF2-BE11CC8B7545.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
+        "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -106,9 +111,9 @@
         "section_width": "full-width",
         "section_height": "full-screen",
         "section_height_custom": 50,
-        "background_color": "#2E2C29",
+        "background_color": "#2e2c29",
         "toggle_overlay": false,
-        "overlay_color": "#2E2C2999",
+        "overlay_color": "#2e2c2999",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
@@ -119,7 +124,6 @@
     },
     "risk_reversal_01": {
       "type": "risk-reversal",
-      "name": "Risk reversal bar",
       "blocks": {
         "item_1": {
           "type": "item",
@@ -134,7 +138,7 @@
           "settings": {
             "icon": "warranty",
             "heading": "15-Year Warranty",
-            "text": "Every component covered, full stop \u2014 no fine print."
+            "text": "Every component covered, full stop — no fine print."
           }
         },
         "item_3": {
@@ -151,9 +155,10 @@
         "item_2",
         "item_3"
       ],
+      "name": "Risk reversal bar",
       "settings": {
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
         "padding-block-start": 40,
         "padding-block-end": 40
       }
@@ -181,11 +186,13 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -198,16 +205,17 @@
               "name": "t:names.collection_title",
               "settings": {
                 "text": "<h2>The Collection</h2>",
-                "text_color": "#2E2C29",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h2",
                 "font": "var(--font-heading--family)",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "tight",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#2e2c29",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -225,7 +233,10 @@
                 "label": "View All",
                 "open_in_new_tab": false,
                 "style_class": "button-unstyled",
-                "link_text_color": "#706C63",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "#706c63",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -245,10 +256,11 @@
           "static": true,
           "settings": {
             "product_card_gap": 16,
+            "background_color": "",
             "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
-            "border_color": "#D9D2C4",
+            "border_color": "#d9d2c4",
             "border_radius": 0,
             "padding-block-start": 20,
             "padding-block-end": 20,
@@ -264,6 +276,7 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -276,7 +289,6 @@
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
-                "text_color": "#2E2C29",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -287,6 +299,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#2e2c29",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -301,7 +314,6 @@
               "type": "price",
               "name": "t:names.product_price",
               "settings": {
-                "text_color": "#706C63",
                 "show_sale_price_first": true,
                 "show_installments": false,
                 "show_tax_info": false,
@@ -313,6 +325,7 @@
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
+                "text_color": "#706c63",
                 "padding-block-start": 6,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -324,15 +337,17 @@
               "type": "custom-liquid",
               "name": "Product tagline",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge \u2014 a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:0; font-family: var(--font-body--family); font-size: 0.9375rem; line-height: 1.6; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
-              }
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign tagline = ''\n  case p.handle\n    when 'item-1'\n      assign tagline = 'Extended-capacity cartridge for high-volume households.'\n    when 'item-2'\n      assign tagline = 'The standard HAUSTAS replacement cartridge — a 6-month supply.'\n    when 'item-3'\n      assign tagline = 'A compact, all-in-one filter for smaller spaces.'\n    when 'item-4'\n      assign tagline = 'Our flagship. The complete 4-stage countertop system.'\n    when 'haustas-reserve-2'\n      assign tagline = 'A limited release from the HAUSTAS workshop.'\n  endcase\n%}\n{% if tagline != blank %}\n  <p style=\"margin:0; font-family: var(--font-body--family); font-size: 0.9375rem; line-height: 1.6; color: #706C63;\">{{ tagline }}</p>\n{% endif %}"
+              },
+              "blocks": {}
             },
             "product_learn_more_7Tz3vN": {
               "type": "custom-liquid",
               "name": "Buy now",
               "settings": {
                 "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n{% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"margin-top:4px;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/checkout\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F5F0; background: #2E2C29; border: 1px solid #2E2C29; cursor: pointer;\">\n      <span>Buy Now</span>\n      <svg viewBox=\"0 0 16 16\" width=\"13\" height=\"13\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"#F7F5F0\" stroke-width=\"1.2\"/></svg>\n    </button>\n  </form>\n{% else %}\n  <button type=\"button\" disabled style=\"display:flex; align-items:center; justify-content:center; width:100%; margin-top:4px; padding:14px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed;\">\n    Sold Out\n  </button>\n{% endif %}"
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -360,19 +375,18 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 48,
+        "background_color": "",
         "padding-block-start": 100,
         "padding-block-end": 100
       }
     },
     "complete_system_01": {
       "type": "section",
-      "name": "Complete The System",
       "blocks": {
         "text_cs_eyebrow": {
           "type": "text",
           "settings": {
             "text": "<p>Complete The System</p>",
-            "text_color": "#706C63",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -383,6 +397,7 @@
             "letter_spacing": "loose",
             "case": "uppercase",
             "wrap": "pretty",
+            "text_color": "#706c63",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -397,16 +412,17 @@
           "type": "text",
           "settings": {
             "text": "<h2>Built To Work Together.</h2>",
-            "text_color": "#2E2C29",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-heading--family)",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "tight",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#2e2c29",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -421,7 +437,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Most owners keep a spare cartridge on hand, so filtration never skips a beat.</p>",
-            "text_color": "#706C63",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -432,6 +447,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#706c63",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -460,11 +476,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
-            "toggle_overlay": false,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 40,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -479,7 +505,12 @@
                 "width": "custom",
                 "custom_width": 38,
                 "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "background_color": "",
                 "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -494,6 +525,7 @@
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
+                    "border_color": "",
                     "border_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -505,7 +537,6 @@
                 "title": {
                   "type": "product-title",
                   "settings": {
-                    "text_color": "#2E2C29",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -516,6 +547,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "text_color": "#2e2c29",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -529,7 +561,6 @@
                 "price": {
                   "type": "price",
                   "settings": {
-                    "text_color": "#706C63",
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
@@ -541,6 +572,7 @@
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
+                    "text_color": "#706c63",
                     "padding-block-start": 4,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -559,7 +591,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>+</p>",
-                "text_color": "#D9D2C4",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -570,6 +601,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#d9d2c4",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -588,7 +620,12 @@
                 "width": "custom",
                 "custom_width": 38,
                 "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "background_color": "",
                 "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -603,6 +640,7 @@
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
+                    "border_color": "",
                     "border_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -614,7 +652,6 @@
                 "title": {
                   "type": "product-title",
                   "settings": {
-                    "text_color": "#2E2C29",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -625,6 +662,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "text_color": "#2e2c29",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -638,7 +676,6 @@
                 "price": {
                   "type": "price",
                   "settings": {
-                    "text_color": "#706C63",
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
@@ -650,6 +687,7 @@
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
+                    "text_color": "#706c63",
                     "padding-block-start": 4,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -678,7 +716,10 @@
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button-unstyled",
-            "custom_button_text": "#2E2C29",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "#2e2c29",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -694,21 +735,77 @@
         "group_cs_bundle",
         "button_cs_view_all"
       ],
+      "name": "Complete The System",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 24,
         "section_width": "page-width",
-        "background_color": "#F7F5F0",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#f7f5f0",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "photo_spotlight_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
+        "image_alt": "The HAUSTAS Pure One water filtration system",
+        "image_position": "left",
+        "eyebrow": "The Flagship",
+        "heading": "The HAUSTAS Pure One.",
+        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished stainless body, built to sit quietly on the counter for decades.",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop The Pure One",
+        "cta_link": "shopify://products/item-4",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "subscribe_save_01": {
+      "type": "subscribe-save",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/2C9B0546-6C26-44BA-B8E9-0DE754B16C86.png?v=1782787825",
+        "image_alt": "HAUSTAS Flow replacement filter cartridge",
+        "badge_text": "Save 15%",
+        "eyebrow": "Never Run Dry",
+        "heading": "Stock Up On Cartridges & Save 15%.",
+        "body_text": "Every HAUSTAS cartridge lasts about 6 months. Stock up now and save 15% on HAUSTAS Flow replacements — one less thing to think about later.",
+        "price_original": "$29.00",
+        "price_discounted": "$24.65",
+        "cta_label": "Save 15% Now",
+        "cta_link": "/discount/FLOWSAVE15?redirect=/products/item-2",
+        "discount_code": "FLOWSAVE15",
+        "code_note": "Or use code",
+        "code_note_suffix": "at checkout.",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
     },
     "engineered_precision_01": {
       "type": "engineered-precision",
-      "name": "Engineered panels",
       "blocks": {
         "panel_1": {
           "type": "panel",
@@ -717,9 +814,9 @@
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
             "body": "Precision-milled from raw stainless steel and assembled by hand.",
-            "spec_line_1": "Process \u2014 CNC Machined",
-            "spec_line_2": "Tolerance \u2014 \u00b10.05mm",
-            "spec_line_3": "Assembly \u2014 Hand-fitted",
+            "spec_line_1": "Process — CNC Machined",
+            "spec_line_2": "Tolerance — ±0.05mm",
+            "spec_line_3": "Assembly — Hand-fitted",
             "diagram": "craftsmanship",
             "row_theme": "light"
           }
@@ -730,10 +827,10 @@
             "spec_code": "MAT / COMPOSITION",
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass \u2014 nothing plastic, nothing temporary.",
-            "spec_line_1": "Shell \u2014 304 Stainless Steel",
-            "spec_line_2": "Core \u2014 Architectural Glass",
-            "spec_line_3": "Trim \u2014 Brushed Steel",
+            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary.",
+            "spec_line_1": "Shell — 304 Stainless Steel",
+            "spec_line_2": "Core — Architectural Glass",
+            "spec_line_3": "Trim — Brushed Steel",
             "diagram": "materials",
             "row_theme": "dark"
           }
@@ -745,9 +842,9 @@
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
             "body": "Multi-stage filtration tuned to disappear into daily life.",
-            "spec_line_1": "Stages \u2014 4-Stage Filtration",
-            "spec_line_2": "Flow Rate \u2014 2.5 L / min",
-            "spec_line_3": "Media Life \u2014 6 Months",
+            "spec_line_1": "Stages — 4-Stage Filtration",
+            "spec_line_2": "Flow Rate — 2.5 L / min",
+            "spec_line_3": "Media Life — 6 Months",
             "diagram": "engineering",
             "row_theme": "light"
           }
@@ -759,9 +856,9 @@
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
             "body": "A form language built on restraint, made to sit quietly in any home for decades.",
-            "spec_line_1": "Warranty \u2014 15 Years",
-            "spec_line_2": "Finish \u2014 Hand-brushed",
-            "spec_line_3": "Certification \u2014 NSF/ANSI 42",
+            "spec_line_1": "Warranty — 15 Years",
+            "spec_line_2": "Finish — Hand-brushed",
+            "spec_line_3": "Certification — NSF/ANSI 42",
             "diagram": "timeless",
             "row_theme": "dark"
           }
@@ -773,21 +870,23 @@
         "panel_3",
         "panel_4"
       ],
+      "name": "Engineered panels",
       "settings": {
         "eyebrow": "Engineering Philosophy",
         "heading": "Engineered Without Compromise.",
-        "intro_text": "Four principles guide every object we build \u2014 none of them negotiable.",
-        "light_background": "#F7F5F0",
-        "light_foreground": "#2E2C29",
-        "dark_background": "#211F1C",
-        "dark_foreground": "#F2EFE9",
+        "intro_text": "Four principles guide every object we build — none of them negotiable.",
+        "light_background": "#f7f5f0",
+        "light_foreground": "#2e2c29",
+        "dark_background": "#211f1c",
+        "dark_foreground": "#f2efe9",
+        "cta_label": "View The Collection",
+        "cta_link": "",
         "padding-block-start": 72,
         "padding-block-end": 0
       }
     },
     "filtration_process_01": {
       "type": "filtration-process",
-      "name": "Filtration process",
       "blocks": {
         "stage_1": {
           "type": "stage",
@@ -828,12 +927,13 @@
         "stage_3",
         "stage_4"
       ],
+      "name": "Filtration process",
       "settings": {
         "eyebrow": "The Process",
         "heading": "How Filtration Works.",
-        "intro_text": "Four mechanical and chemical stages, working in sequence \u2014 nothing skipped, nothing added.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
+        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added.",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
         "stat_1_value": "5 Micron",
         "stat_1_label": "Sediment Capture",
         "stat_2_value": "0.5 Micron",
@@ -842,6 +942,8 @@
         "stat_3_label": "Chlorine Reduction",
         "stat_4_value": "4-Stage",
         "stat_4_label": "Sequential Process",
+        "cta_label": "View The Collection",
+        "cta_link": "",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -853,12 +955,12 @@
         "eyebrow": "The Standard",
         "heading": "The HAUSTAS Standard.",
         "intro_text": "We don't publish reviews. We publish specifications.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
-        "credential_1": "Material \u2014 304 Stainless Steel, Medical Grade",
-        "credential_2": "Certification \u2014 NSF/ANSI 42 & 53",
-        "credential_3": "Warranty \u2014 15 Years, Full Coverage",
-        "credential_4": "Testing \u2014 500+ Hours of Stress Testing",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
+        "credential_1": "Material — 304 Stainless Steel, Medical Grade",
+        "credential_2": "Certification — NSF/ANSI 42 & 53",
+        "credential_3": "Warranty — 15 Years, Full Coverage",
+        "credential_4": "Testing — 500+ Hours of Stress Testing",
         "credential_note": "Every unit is individually pressure-tested before it leaves the workshop.",
         "built_1": "304 Stainless Steel",
         "built_2": "Borosilicate Glass",
@@ -868,132 +970,14 @@
         "avoid_2": "Painted or Coated Finishes",
         "avoid_3": "Adhesive Seals",
         "avoid_4": "Disposable Components",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "faq_01": {
-      "type": "faq",
-      "name": "FAQ",
-      "blocks": {
-        "question_1": {
-          "type": "question",
-          "settings": {
-            "question": "How often do I need to replace the filter cartridge?",
-            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
-          }
-        },
-        "question_2": {
-          "type": "question",
-          "settings": {
-            "question": "Do I need a plumber to install it?",
-            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture \u2014 most people are up and running in under 15 minutes, no tools beyond what's in the box."
-          }
-        },
-        "question_3": {
-          "type": "question",
-          "settings": {
-            "question": "What does the filtration actually remove?",
-            "answer": "A 4-stage sequence \u2014 sediment, carbon block, KDF media, and a final polish \u2014 reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
-          }
-        },
-        "question_4": {
-          "type": "question",
-          "settings": {
-            "question": "Is HAUSTAS certified?",
-            "answer": "Yes \u2014 every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
-          }
-        },
-        "question_5": {
-          "type": "question",
-          "settings": {
-            "question": "What's covered under warranty?",
-            "answer": "Every component is covered for 15 years, full stop \u2014 no fine print, no prorated coverage."
-          }
-        },
-        "question_6": {
-          "type": "question",
-          "settings": {
-            "question": "What if it's not right for me?",
-            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund \u2014 no questions asked."
-          }
-        }
-      },
-      "block_order": [
-        "question_1",
-        "question_2",
-        "question_3",
-        "question_4",
-        "question_5",
-        "question_6"
-      ],
-      "settings": {
-        "eyebrow": "Questions",
-        "heading": "Before You Buy.",
-        "intro_text": "Everything you need to know, in one place.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
         "cta_label": "View The Collection",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "photo_spotlight_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
-        "image_alt": "The HAUSTAS Pure One water filtration system",
-        "image_position": "left",
-        "eyebrow": "The Flagship",
-        "heading": "The HAUSTAS Pure One.",
-        "body_text": "Our most complete system \u2014 full 4-stage filtration housed in a single hand-finished stainless body, built to sit quietly on the counter for decades.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "closing_statement_01": {
-      "type": "closing-statement",
-      "settings": {
-        "eyebrow": "HAUSTAS",
-        "heading": "Precision, Delivered Quietly.",
-        "subtext": "Every unit is engineered, tested, and finished by hand \u2014 built to disappear into your home for decades, not years.",
-        "background_color": "#2E2C29",
-        "foreground_color": "#F7F5F0",
-        "cta_label": "Explore The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 96,
-        "padding-block-end": 96
-      }
-    },
-    "subscribe_save_01": {
-      "type": "subscribe-save",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/2C9B0546-6C26-44BA-B8E9-0DE754B16C86.png?v=1782787825",
-        "image_alt": "HAUSTAS Flow replacement filter cartridge",
-        "badge_text": "Save 15%",
-        "eyebrow": "Never Run Dry",
-        "heading": "Stock Up On Cartridges & Save 15%.",
-        "body_text": "Every HAUSTAS cartridge lasts about 6 months. Stock up now and save 15% on HAUSTAS Flow replacements \u2014 one less thing to think about later.",
-        "price_original": "$29.00",
-        "price_discounted": "$24.65",
-        "cta_label": "Save 15% Now",
-        "cta_link": "/discount/FLOWSAVE15?redirect=/products/item-2",
-        "discount_code": "FLOWSAVE15",
-        "code_note": "Or use code",
-        "code_note_suffix": "at checkout.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
+        "cta_link": "",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
     },
     "comparison_table_01": {
       "type": "comparison-table",
-      "name": "Comparison table",
       "blocks": {
         "row_1": {
           "type": "row",
@@ -1007,7 +991,7 @@
           "type": "row",
           "settings": {
             "label": "Heavy Metal Reduction",
-            "haustas_value": "Yes \u2014 KDF Redox Filtration",
+            "haustas_value": "Yes — KDF Redox Filtration",
             "typical_value": "Rarely Addressed"
           }
         },
@@ -1052,16 +1036,98 @@
         "row_5",
         "row_6"
       ],
+      "name": "Comparison table",
       "settings": {
         "eyebrow": "The Difference",
         "heading": "Not All Filtration Is Equal.",
         "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
-        "background_color": "#F7F5F0",
-        "foreground_color": "#2E2C29",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
         "cta_label": "Shop The Collection",
         "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
+      }
+    },
+    "faq_01": {
+      "type": "faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "How often do I need to replace the filter cartridge?",
+            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Do I need a plumber to install it?",
+            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "What does the filtration actually remove?",
+            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Is HAUSTAS certified?",
+            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "What's covered under warranty?",
+            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "What if it's not right for me?",
+            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before You Buy.",
+        "intro_text": "Everything you need to know, in one place.",
+        "background_color": "#f7f5f0",
+        "foreground_color": "#2e2c29",
+        "cta_label": "View The Collection",
+        "cta_link": "",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "closing_statement_01": {
+      "type": "closing-statement",
+      "settings": {
+        "eyebrow": "HAUSTAS",
+        "heading": "Precision, Delivered Quietly.",
+        "subtext": "Every unit is engineered, tested, and finished by hand — built to disappear into your home for decades, not years.",
+        "background_color": "#2e2c29",
+        "foreground_color": "#f7f5f0",
+        "cta_label": "Explore The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 96,
+        "padding-block-end": 96
       }
     },
     "sticky_shop_bar_01": {
@@ -1071,8 +1137,8 @@
         "product_name": "HAUSTAS Pure One",
         "price_text": "From $179.99",
         "scroll_threshold": 480,
-        "background_color": "#2E2C29",
-        "foreground_color": "#F7F5F0",
+        "background_color": "#2e2c29",
+        "foreground_color": "#f7f5f0",
         "cta_label": "Shop Now",
         "cta_link": "shopify://collections/all"
       }
