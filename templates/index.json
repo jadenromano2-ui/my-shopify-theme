@@ -410,7 +410,7 @@
     "ultrafiltration_01": {
       "type": "photo-spotlight",
       "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232.png?v=1783115703",
         "image_alt": "HAUSTAS Pure ultrafiltration system",
         "image_position": "left",
         "eyebrow": "Ultrafiltration",
@@ -1328,6 +1328,89 @@
         "padding-block-end": 72
       }
     },
+    "faq_01": {
+      "type": "faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "How often do I need to replace the filter cartridge?",
+            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Do I need a plumber to install it?",
+            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "What does the filtration actually remove?",
+            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Is HAUSTAS certified?",
+            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "What's covered under warranty?",
+            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "What if it's not right for me?",
+            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "question": "What comes in the box?",
+            "answer": "Your HAUSTAS system, the installed filter cartridge, all connection hardware, and a printed setup guide — everything you need, nothing you'll have to source separately."
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "question": "Can I subscribe to replacement filters?",
+            "answer": "Not yet as an automatic subscription — but you can stock up on HAUSTAS Flow cartridges and save 15% any time, or simply reorder when you're running low."
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before You Buy.",
+        "intro_text": "Everything you need to know, in one place.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "View The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
     "email_capture_01": {
       "type": "section",
       "blocks": {
@@ -1474,89 +1557,6 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "faq_01": {
-      "type": "faq",
-      "blocks": {
-        "question_1": {
-          "type": "question",
-          "settings": {
-            "question": "How often do I need to replace the filter cartridge?",
-            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
-          }
-        },
-        "question_2": {
-          "type": "question",
-          "settings": {
-            "question": "Do I need a plumber to install it?",
-            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
-          }
-        },
-        "question_3": {
-          "type": "question",
-          "settings": {
-            "question": "What does the filtration actually remove?",
-            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
-          }
-        },
-        "question_4": {
-          "type": "question",
-          "settings": {
-            "question": "Is HAUSTAS certified?",
-            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
-          }
-        },
-        "question_5": {
-          "type": "question",
-          "settings": {
-            "question": "What's covered under warranty?",
-            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
-          }
-        },
-        "question_6": {
-          "type": "question",
-          "settings": {
-            "question": "What if it's not right for me?",
-            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
-          }
-        },
-        "question_7": {
-          "type": "question",
-          "settings": {
-            "question": "What comes in the box?",
-            "answer": "Your HAUSTAS system, the installed filter cartridge, all connection hardware, and a printed setup guide — everything you need, nothing you'll have to source separately."
-          }
-        },
-        "question_8": {
-          "type": "question",
-          "settings": {
-            "question": "Can I subscribe to replacement filters?",
-            "answer": "Not yet as an automatic subscription — but you can stock up on HAUSTAS Flow cartridges and save 15% any time, or simply reorder when you're running low."
-          }
-        }
-      },
-      "block_order": [
-        "question_1",
-        "question_2",
-        "question_3",
-        "question_4",
-        "question_5",
-        "question_6",
-        "question_7",
-        "question_8"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "eyebrow": "Questions",
-        "heading": "Before You Buy.",
-        "intro_text": "Everything you need to know, in one place.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2e2c29",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
