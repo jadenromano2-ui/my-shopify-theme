@@ -543,9 +543,9 @@
               "settings": {
                 "label": "Send Message",
                 "style_class": "button",
-                "custom_button_background": "#A0522D",
+                "custom_button_background": "#2F5D62",
                 "custom_button_text": "#FFFFFF",
-                "custom_button_border": "#A0522D",
+                "custom_button_border": "#2F5D62",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
