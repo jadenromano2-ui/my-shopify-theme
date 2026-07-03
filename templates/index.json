@@ -407,6 +407,57 @@
         "padding-block-end": 100
       }
     },
+    "ultrafiltration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
+        "image_alt": "HAUSTAS Pure ultrafiltration system",
+        "image_position": "left",
+        "eyebrow": "Ultrafiltration",
+        "heading": "Membrane Filtration, Without The Waste.",
+        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop The Pure One",
+        "cta_link": "shopify://products/item-4",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "reverse_osmosis_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/IMG-1860.png?v=1782843561",
+        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
+        "image_position": "right",
+        "eyebrow": "Reverse Osmosis",
+        "heading": "The Most Thorough Filtration Available.",
+        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
+        "background_color": "#f3f7f6",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop Reserve 2",
+        "cta_link": "shopify://products/haustas-reserve-2",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "faucet_filtration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
+        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
+        "image_position": "left",
+        "eyebrow": "Faucet Filtration",
+        "heading": "Filtration Built Into The Faucet Itself.",
+        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop HAUSTAS Flow",
+        "cta_link": "shopify://products/item-1",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
     "comparison_table_01": {
       "type": "comparison-table",
       "blocks": {
@@ -579,6 +630,179 @@
         "padding-block-end": 0
       }
     },
+    "water_risks_01": {
+      "type": "section",
+      "blocks": {
+        "text_wr_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Why Filtration Matters</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#2f5d62",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wr_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>What's Actually In Your Tap Water?</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#2e2c29",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wr_intro": {
+          "type": "text",
+          "name": "Intro",
+          "settings": {
+            "text": "<p>Municipal treatment removes some contaminants, but not all of them. Here's what published EPA and CDC research says about what can pass through untreated.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#706c63",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_wr_list": {
+          "type": "custom-liquid",
+          "name": "Risk accordion list",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-water-risks\" style=\"max-width:760px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <details class=\"hs-wr-item\" open style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M12 7v5l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Lead &amp; Heavy Metals</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging pipes and fixtures can leach lead into tap water. The CDC states there is no known safe level of lead exposure, with young children at the greatest risk of developmental effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M12 3l6 9-6 9-6-9 6-9z\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Chlorine &amp; Disinfection Byproducts</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Chlorine keeps municipal water safe from bacteria, but it also reacts with organic matter to form byproducts like trihalomethanes, and is a well-known contributor to dry skin, brittle hair, and off tastes and odors.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M7 3h10M9 3v4a5 5 0 002 4 5 5 0 00-2 4v6M15 3v4a5 5 0 01-2 4 5 5 0 012 4v6M7 21h10\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">PFAS (\"Forever Chemicals\")</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">PFAS are synthetic chemicals that don't break down in the environment or the body. The EPA's health advisories note that long-term PFAS exposure has been associated with increased health risks, including certain cancers and immune and hormonal effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"9\" cy=\"9\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><circle cx=\"16\" cy=\"15\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M11 11l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Bacteria &amp; Parasites</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging infrastructure and boil-water advisories are more common than most households realize. Organisms like E. coli, Giardia, and Cryptosporidium can enter the water supply through pipe breaks, runoff, or treatment lapses.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"7\" cy=\"8\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"13\" cy=\"6\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"17\" cy=\"11\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"9\" cy=\"15\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"15\" cy=\"17\" r=\"1.4\" fill=\"#2F5D62\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Microplastics &amp; Sediment</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Researchers have detected microplastic particles in tap water samples worldwide. Long-term health effects are still being studied, but sediment and particulate filtration remains one of the simplest ways to reduce daily exposure.</p>\n  </details>\n</div>\n<style>\n  #hs-water-risks details > summary::-webkit-details-marker { display: none; }\n  #hs-water-risks details[open] .hs-wr-vert { display: none; }\n  #hs-water-risks details[open] summary span:last-child svg path:first-child { stroke: #2F5D62; }\n</style>"
+          },
+          "blocks": {}
+        },
+        "text_wr_source": {
+          "type": "text",
+          "name": "Source note",
+          "settings": {
+            "text": "<p>Sourced from publicly available EPA and CDC guidance on common drinking-water contaminants.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#9a968c",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_wr_cta": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Filtration Systems",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-unstyled",
+            "custom_button_background": "#2f5d62",
+            "custom_button_text": "#ffffff",
+            "custom_button_border": "#2f5d62",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_wr_eyebrow",
+        "text_wr_heading",
+        "text_wr_intro",
+        "custom_liquid_wr_list",
+        "text_wr_source",
+        "button_wr_cta"
+      ],
+      "name": "Water Risks Accordion",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#faf9f6",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 80,
+        "padding-block-end": 40
+      }
+    },
     "filtration_process_01": {
       "type": "filtration-process",
       "blocks": {
@@ -642,34 +866,6 @@
         "padding-block-end": 72
       }
     },
-    "haustas_standard_01": {
-      "type": "haustas-standard",
-      "name": "HAUSTAS standard",
-      "settings": {
-        "eyebrow": "The Standard",
-        "heading": "The HAUSTAS Standard.",
-        "intro_text": "We don't publish reviews. We publish specifications. Every material, every test, every tolerance — laid out plainly, because that's what earns trust.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "credential_1": "Material — 304 Stainless Steel, Medical Grade",
-        "credential_2": "Certification — NSF/ANSI 42 & 53",
-        "credential_3": "Warranty — 15 Years, Full Coverage",
-        "credential_4": "Testing — 500+ Hours of Stress Testing",
-        "credential_note": "Every unit is individually pressure-tested before it leaves the workshop.",
-        "built_1": "304 Stainless Steel",
-        "built_2": "Borosilicate Glass",
-        "built_3": "Brushed Metal Hardware",
-        "built_4": "FSC-Certified Packaging",
-        "avoid_1": "BPA Plastics",
-        "avoid_2": "Painted or Coated Finishes",
-        "avoid_3": "Adhesive Seals",
-        "avoid_4": "Disposable Components",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
     "materials_sourcing_01": {
       "type": "section",
       "blocks": {
@@ -688,7 +884,7 @@
             "letter_spacing": "loose",
             "case": "uppercase",
             "wrap": "pretty",
-            "text_color": "#2F5D62",
+            "text_color": "#2f5d62",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -714,7 +910,7 @@
             "letter_spacing": "tight",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#2E2C29",
+            "text_color": "#2e2c29",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -740,7 +936,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#706C63",
+            "text_color": "#706c63",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -810,7 +1006,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#FAF9F6",
+                "background_color": "#faf9f6",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -820,7 +1016,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#D9D2C4",
+                "border_color": "#d9d2c4",
                 "border_radius": 0,
                 "link": "",
                 "open_in_new_tab": false,
@@ -846,7 +1042,7 @@
                     "letter_spacing": "loose",
                     "case": "uppercase",
                     "wrap": "pretty",
-                    "text_color": "#2F5D62",
+                    "text_color": "#2f5d62",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -872,7 +1068,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#706C63",
+                    "text_color": "#706c63",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -908,7 +1104,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#FAF9F6",
+                "background_color": "#faf9f6",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -918,7 +1114,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#D9D2C4",
+                "border_color": "#d9d2c4",
                 "border_radius": 0,
                 "link": "",
                 "open_in_new_tab": false,
@@ -944,7 +1140,7 @@
                     "letter_spacing": "loose",
                     "case": "uppercase",
                     "wrap": "pretty",
-                    "text_color": "#2F5D62",
+                    "text_color": "#2f5d62",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -970,7 +1166,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#706C63",
+                    "text_color": "#706c63",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1008,7 +1204,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#2E2C29",
+            "text_color": "#2e2c29",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1026,10 +1222,10 @@
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button-unstyled",
-            "custom_button_background": "#2E2C29",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#2E2C29",
-            "link_text_color": "#2E2C29",
+            "custom_button_background": "#2e2c29",
+            "custom_button_text": "#ffffff",
+            "custom_button_border": "#2e2c29",
+            "link_text_color": "#2e2c29",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -1060,7 +1256,7 @@
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -1093,13 +1289,53 @@
         "padding-block-end": 72
       }
     },
-    "complete_system_01": {
+    "why_we_exist_teaser_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
+        "image_alt": "The HAUSTAS Pure water filtration system",
+        "image_position": "right",
+        "eyebrow": "Why We Exist",
+        "heading": "Filtration Deserves Better Engineering.",
+        "body_text": "Most filtration products are built to hit a price point, not a standard — plastic housings, generic cartridges, and marketing that rarely matches what's inside the box. We started from the material up instead: 304 stainless steel, a real 4-stage filtration sequence, and specifications we're willing to publish instead of testimonials we'd rather you just trust.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Read Our Story",
+        "cta_link": "shopify://pages/about-us",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "subscribe_save_01": {
+      "type": "subscribe-save",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/2C9B0546-6C26-44BA-B8E9-0DE754B16C86.png?v=1782787825",
+        "image_alt": "HAUSTAS Flow replacement filter cartridge",
+        "badge_text": "Save 15%",
+        "eyebrow": "Never Run Dry",
+        "heading": "Stock Up On Cartridges & Save 15%.",
+        "body_text": "Every HAUSTAS cartridge lasts about 6 months before performance starts to taper. Stock up now and save 15% on HAUSTAS Flow replacements, so clean water is never something you have to remember.",
+        "price_original": "$29.00",
+        "price_discounted": "$24.65",
+        "cta_label": "Save 15% Now",
+        "cta_link": "/discount/FLOWSAVE15?redirect=/products/item-2",
+        "discount_code": "FLOWSAVE15",
+        "code_note": "Or use code",
+        "code_note_suffix": "at checkout.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "email_capture_01": {
       "type": "section",
       "blocks": {
-        "text_cs_eyebrow": {
+        "eyebrow": {
           "type": "text",
+          "name": "Eyebrow",
           "settings": {
-            "text": "<p>Complete The System</p>",
+            "text": "<p>Stay Connected</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1110,7 +1346,7 @@
             "letter_spacing": "loose",
             "case": "uppercase",
             "wrap": "pretty",
-            "text_color": "#2F5D62",
+            "text_color": "#2f5d62",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1121,10 +1357,11 @@
           },
           "blocks": {}
         },
-        "text_cs_heading": {
+        "heading": {
           "type": "text",
+          "name": "Heading",
           "settings": {
-            "text": "<h2>Built To Work Together.</h2>",
+            "text": "<h2>Join The List.</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1146,21 +1383,22 @@
           },
           "blocks": {}
         },
-        "text_cs_intro": {
+        "intro": {
           "type": "text",
+          "name": "Intro",
           "settings": {
-            "text": "<p>Pair your system with a spare HAUSTAS Flow cartridge and filtration never skips a beat — swap it in seconds the moment performance starts to taper, no waiting on shipping.</p>",
+            "text": "<p>Water care tips, new system updates, and occasional offers — no spam, unsubscribe any time.</p>",
             "width": "100%",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "1.0625rem",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#706c63",
+            "text_color": "#4a5f5d",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1171,284 +1409,46 @@
           },
           "blocks": {}
         },
-        "group_cs_bundle": {
-          "type": "group",
+        "signup": {
+          "type": "email-signup",
           "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "center",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 32,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
+            "width": "custom",
+            "custom_width": 44,
+            "heading": "",
+            "heading_text_color": "",
+            "heading_preset": "h3",
+            "border_style": "all",
+            "input_style": "custom",
             "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 40,
+            "border_radius": 100,
+            "input_background_color": "#ffffff",
+            "input_text_color": "#2e2c29",
+            "input_border_color": "#bfd6d3",
+            "input_type_preset": "paragraph",
+            "style_class": "custom",
+            "custom_button_background": "#2f5d62",
+            "custom_button_text": "#ffffff",
+            "custom_button_border": "#2f5d62",
+            "link_text_color": "",
+            "display_type": "separate",
+            "label": "Sign Up",
+            "integrated_button": false,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_primary": {
-              "type": "product-card",
-              "settings": {
-                "product": "item-4",
-                "product_card_gap": 10,
-                "width": "custom",
-                "custom_width": 38,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "background_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "gallery": {
-                  "type": "_product-card-gallery",
-                  "settings": {
-                    "image_ratio": "portrait",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_color": "",
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "title": {
-                  "type": "product-title",
-                  "settings": {
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h4",
-                    "font": "var(--font-heading--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "#2e2c29",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 14,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "h6",
-                    "width": "100%",
-                    "alignment": "center",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "#706c63",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "gallery",
-                "title",
-                "price"
-              ]
-            },
-            "text_cs_plus": {
-              "type": "text",
-              "settings": {
-                "text": "<p>+</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "2rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#d9d2c4",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_card_companion": {
-              "type": "product-card",
-              "settings": {
-                "product": "item-2",
-                "product_card_gap": 10,
-                "width": "custom",
-                "custom_width": 38,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "background_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "gallery": {
-                  "type": "_product-card-gallery",
-                  "settings": {
-                    "image_ratio": "portrait",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_color": "",
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "title": {
-                  "type": "product-title",
-                  "settings": {
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h4",
-                    "font": "var(--font-heading--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "#2e2c29",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 14,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "h6",
-                    "width": "100%",
-                    "alignment": "center",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "#706c63",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "gallery",
-                "title",
-                "price"
-              ]
-            }
-          },
-          "block_order": [
-            "product_card_primary",
-            "text_cs_plus",
-            "product_card_companion"
-          ]
-        },
-        "button_cs_view_all": {
-          "type": "button",
-          "settings": {
-            "label": "View Full Collection",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-unstyled",
-            "custom_button_background": "#2e2c29",
-            "custom_button_text": "#2e2c29",
-            "custom_button_border": "#ffffff",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "text_cs_eyebrow",
-        "text_cs_heading",
-        "text_cs_intro",
-        "group_cs_bundle",
-        "button_cs_view_all"
+        "eyebrow",
+        "heading",
+        "intro",
+        "signup"
       ],
-      "name": "Complete The System",
+      "name": "Stay Connected",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1457,12 +1457,12 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 24,
+        "gap": 16,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "#ffffff",
+        "background_color": "#eaf3f2",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -1474,28 +1474,6 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "subscribe_save_01": {
-      "type": "subscribe-save",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/2C9B0546-6C26-44BA-B8E9-0DE754B16C86.png?v=1782787825",
-        "image_alt": "HAUSTAS Flow replacement filter cartridge",
-        "badge_text": "Save 15%",
-        "eyebrow": "Never Run Dry",
-        "heading": "Stock Up On Cartridges & Save 15%.",
-        "body_text": "Every HAUSTAS cartridge lasts about 6 months before performance starts to taper. Stock up now and save 15% on HAUSTAS Flow replacements, so clean water is never something you have to remember.",
-        "price_original": "$29.00",
-        "price_discounted": "$24.65",
-        "cta_label": "Save 15% Now",
-        "cta_link": "/discount/FLOWSAVE15?redirect=/products/item-2",
-        "discount_code": "FLOWSAVE15",
-        "code_note": "Or use code",
-        "code_note_suffix": "at checkout.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -1595,405 +1573,25 @@
         "cta_label": "Shop Now",
         "cta_link": "shopify://collections/all"
       }
-    },
-    "why_we_exist_teaser_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "The HAUSTAS Pure water filtration system",
-        "image_position": "right",
-        "eyebrow": "Why We Exist",
-        "heading": "Filtration Deserves Better Engineering.",
-        "body_text": "Most filtration products are built to hit a price point, not a standard — plastic housings, generic cartridges, and marketing that rarely matches what's inside the box. We started from the material up instead: 304 stainless steel, a real 4-stage filtration sequence, and specifications we're willing to publish instead of testimonials we'd rather you just trust.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Read Our Story",
-        "cta_link": "shopify://pages/about-us",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
-    "email_capture_01": {
-      "type": "section",
-      "name": "Stay Connected",
-      "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "name": "Eyebrow",
-          "settings": {
-            "text": "<p>Stay Connected</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-accent--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "loose",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "text_color": "#2F5D62",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "heading": {
-          "type": "text",
-          "name": "Heading",
-          "settings": {
-            "text": "<h2>Join The List.</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#2E2C29",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "intro": {
-          "type": "text",
-          "name": "Intro",
-          "settings": {
-            "text": "<p>Water care tips, new system updates, and occasional offers — no spam, unsubscribe any time.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#4A5F5D",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "signup": {
-          "type": "email-signup",
-          "settings": {
-            "width": "custom",
-            "custom_width": 44,
-            "heading": "",
-            "border_style": "all",
-            "input_style": "custom",
-            "input_background_color": "#FFFFFF",
-            "input_text_color": "#2E2C29",
-            "input_border_color": "#BFD6D3",
-            "style_class": "custom",
-            "custom_button_background": "#2F5D62",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#2F5D62",
-            "display_type": "separate",
-            "label": "Sign Up"
-          }
-        }
-      },
-      "block_order": [
-        "eyebrow",
-        "heading",
-        "intro",
-        "signup"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#EAF3F2",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "ultrafiltration_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "HAUSTAS Pure ultrafiltration system",
-        "image_position": "left",
-        "eyebrow": "Ultrafiltration",
-        "heading": "Membrane Filtration, Without The Waste.",
-        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "reverse_osmosis_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/IMG-1860.png?v=1782843561",
-        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
-        "image_position": "right",
-        "eyebrow": "Reverse Osmosis",
-        "heading": "The Most Thorough Filtration Available.",
-        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
-        "background_color": "#F3F7F6",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop Reserve 2",
-        "cta_link": "shopify://products/haustas-reserve-2",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "faucet_filtration_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
-        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
-        "image_position": "left",
-        "eyebrow": "Faucet Filtration",
-        "heading": "Filtration Built Into The Faucet Itself.",
-        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop HAUSTAS Flow",
-        "cta_link": "shopify://products/item-1",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "water_risks_01": {
-      "type": "section",
-      "name": "Water Risks Accordion",
-      "blocks": {
-        "text_wr_eyebrow": {
-          "type": "text",
-          "name": "Eyebrow",
-          "settings": {
-            "text": "<p>Why Filtration Matters</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-accent--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "loose",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "text_color": "#2F5D62",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_wr_heading": {
-          "type": "text",
-          "name": "Heading",
-          "settings": {
-            "text": "<h2>What's Actually In Your Tap Water?</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#2E2C29",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_wr_intro": {
-          "type": "text",
-          "name": "Intro",
-          "settings": {
-            "text": "<p>Municipal treatment removes some contaminants, but not all of them. Here's what published EPA and CDC research says about what can pass through untreated.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1.0625rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#706C63",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "custom_liquid_wr_list": {
-          "type": "custom-liquid",
-          "name": "Risk accordion list",
-          "settings": {
-            "custom_liquid": "<div id=\"hs-water-risks\" style=\"max-width:760px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <details class=\"hs-wr-item\" open style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M12 7v5l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Lead &amp; Heavy Metals</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging pipes and fixtures can leach lead into tap water. The CDC states there is no known safe level of lead exposure, with young children at the greatest risk of developmental effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M12 3l6 9-6 9-6-9 6-9z\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Chlorine &amp; Disinfection Byproducts</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Chlorine keeps municipal water safe from bacteria, but it also reacts with organic matter to form byproducts like trihalomethanes, and is a well-known contributor to dry skin, brittle hair, and off tastes and odors.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M7 3h10M9 3v4a5 5 0 002 4 5 5 0 00-2 4v6M15 3v4a5 5 0 01-2 4 5 5 0 012 4v6M7 21h10\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">PFAS (\"Forever Chemicals\")</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">PFAS are synthetic chemicals that don't break down in the environment or the body. The EPA's health advisories note that long-term PFAS exposure has been associated with increased health risks, including certain cancers and immune and hormonal effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"9\" cy=\"9\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><circle cx=\"16\" cy=\"15\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M11 11l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Bacteria &amp; Parasites</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging infrastructure and boil-water advisories are more common than most households realize. Organisms like E. coli, Giardia, and Cryptosporidium can enter the water supply through pipe breaks, runoff, or treatment lapses.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"7\" cy=\"8\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"13\" cy=\"6\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"17\" cy=\"11\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"9\" cy=\"15\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"15\" cy=\"17\" r=\"1.4\" fill=\"#2F5D62\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Microplastics &amp; Sediment</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Researchers have detected microplastic particles in tap water samples worldwide. Long-term health effects are still being studied, but sediment and particulate filtration remains one of the simplest ways to reduce daily exposure.</p>\n  </details>\n</div>\n<style>\n  #hs-water-risks details > summary::-webkit-details-marker { display: none; }\n  #hs-water-risks details[open] .hs-wr-vert { display: none; }\n  #hs-water-risks details[open] summary span:last-child svg path:first-child { stroke: #2F5D62; }\n</style>"
-          },
-          "blocks": {}
-        },
-        "text_wr_source": {
-          "type": "text",
-          "name": "Source note",
-          "settings": {
-            "text": "<p>Sourced from publicly available EPA and CDC guidance on common drinking-water contaminants.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#9A968C",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 20,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_wr_cta": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop Filtration Systems",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-unstyled",
-            "custom_button_background": "#2F5D62",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#2F5D62",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_wr_eyebrow",
-        "text_wr_heading",
-        "text_wr_intro",
-        "custom_liquid_wr_list",
-        "text_wr_source",
-        "button_wr_cta"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#FAF9F6",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 80,
-        "padding-block-end": 40
-      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "water_risks_01",
     "risk_reversal_01",
+    "product_list_fa6P9H",
     "ultrafiltration_01",
     "reverse_osmosis_01",
     "faucet_filtration_01",
-    "product_list_fa6P9H",
     "comparison_table_01",
     "engineered_precision_01",
+    "water_risks_01",
     "filtration_process_01",
-    "haustas_standard_01",
     "materials_sourcing_01",
     "photo_spotlight_01",
     "why_we_exist_teaser_01",
-    "complete_system_01",
     "subscribe_save_01",
-    "email_capture_01",
     "faq_01",
+    "email_capture_01",
     "sticky_shop_bar_01"
   ]
 }
