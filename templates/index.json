@@ -1800,10 +1800,184 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
+    },
+    "water_risks_01": {
+      "type": "section",
+      "name": "Water Risks Accordion",
+      "blocks": {
+        "text_wr_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Why Filtration Matters</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#2F5D62",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wr_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>What's Actually In Your Tap Water?</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#2E2C29",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wr_intro": {
+          "type": "text",
+          "name": "Intro",
+          "settings": {
+            "text": "<p>Municipal treatment removes some contaminants, but not all of them. Here's what published EPA and CDC research says about what can pass through untreated.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#706C63",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_wr_list": {
+          "type": "custom-liquid",
+          "name": "Risk accordion list",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-water-risks\" style=\"max-width:760px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <details class=\"hs-wr-item\" open style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M12 7v5l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Lead &amp; Heavy Metals</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging pipes and fixtures can leach lead into tap water. The CDC states there is no known safe level of lead exposure, with young children at the greatest risk of developmental effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M12 3l6 9-6 9-6-9 6-9z\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Chlorine &amp; Disinfection Byproducts</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Chlorine keeps municipal water safe from bacteria, but it also reacts with organic matter to form byproducts like trihalomethanes, and is a well-known contributor to dry skin, brittle hair, and off tastes and odors.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M7 3h10M9 3v4a5 5 0 002 4 5 5 0 00-2 4v6M15 3v4a5 5 0 01-2 4 5 5 0 012 4v6M7 21h10\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">PFAS (\"Forever Chemicals\")</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">PFAS are synthetic chemicals that don't break down in the environment or the body. The EPA's health advisories note that long-term PFAS exposure has been associated with increased health risks, including certain cancers and immune and hormonal effects.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"border-bottom:1px solid #E4E0D6; padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"9\" cy=\"9\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><circle cx=\"16\" cy=\"15\" r=\"2.6\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/><path d=\"M11 11l3 2\" stroke=\"#2F5D62\" stroke-width=\"1.3\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Bacteria &amp; Parasites</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Aging infrastructure and boil-water advisories are more common than most households realize. Organisms like E. coli, Giardia, and Cryptosporidium can enter the water supply through pipe breaks, runoff, or treatment lapses.</p>\n  </details>\n  <details class=\"hs-wr-item\" style=\"padding:6px 0;\">\n    <summary style=\"display:flex; align-items:center; gap:16px; padding:16px 4px; cursor:pointer; list-style:none;\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"7\" cy=\"8\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"13\" cy=\"6\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"17\" cy=\"11\" r=\"1.4\" fill=\"#2F5D62\"/><circle cx=\"9\" cy=\"15\" r=\"1\" fill=\"#2F5D62\"/><circle cx=\"15\" cy=\"17\" r=\"1.4\" fill=\"#2F5D62\"/></svg>\n      <span style=\"flex:1; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#2E2C29;\">Microplastics &amp; Sediment</span>\n      <span class=\"hs-wr-toggle\" style=\"flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:#2F5D62;\">\n        <svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\"><path d=\"M2 8h12\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path class=\"hs-wr-vert\" d=\"M8 2v12\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>\n      </span>\n    </summary>\n    <p style=\"margin:0 0 16px 42px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#706C63; max-width:34rem;\">Researchers have detected microplastic particles in tap water samples worldwide. Long-term health effects are still being studied, but sediment and particulate filtration remains one of the simplest ways to reduce daily exposure.</p>\n  </details>\n</div>\n<style>\n  #hs-water-risks details > summary::-webkit-details-marker { display: none; }\n  #hs-water-risks details[open] .hs-wr-vert { display: none; }\n  #hs-water-risks details[open] summary span:last-child svg path:first-child { stroke: #2F5D62; }\n</style>"
+          },
+          "blocks": {}
+        },
+        "text_wr_source": {
+          "type": "text",
+          "name": "Source note",
+          "settings": {
+            "text": "<p>Sourced from publicly available EPA and CDC guidance on common drinking-water contaminants.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#9A968C",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_wr_cta": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Filtration Systems",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-unstyled",
+            "custom_button_background": "#2F5D62",
+            "custom_button_text": "#FFFFFF",
+            "custom_button_border": "#2F5D62",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_wr_eyebrow",
+        "text_wr_heading",
+        "text_wr_intro",
+        "custom_liquid_wr_list",
+        "text_wr_source",
+        "button_wr_cta"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#FAF9F6",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 80,
+        "padding-block-end": 40
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
+    "water_risks_01",
     "risk_reversal_01",
     "ultrafiltration_01",
     "reverse_osmosis_01",
