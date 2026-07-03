@@ -190,6 +190,57 @@
         "padding-block-end": 40
       }
     },
+    "ultrafiltration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
+        "image_alt": "HAUSTAS Pure ultrafiltration system",
+        "image_position": "left",
+        "eyebrow": "Ultrafiltration",
+        "heading": "Membrane Filtration, Without The Waste.",
+        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop The Pure One",
+        "cta_link": "shopify://products/item-4",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "reverse_osmosis_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/IMG-1860.png?v=1782843561",
+        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
+        "image_position": "right",
+        "eyebrow": "Reverse Osmosis",
+        "heading": "The Most Thorough Filtration Available.",
+        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
+        "background_color": "#f3f7f6",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop Reserve 2",
+        "cta_link": "shopify://products/haustas-reserve-2",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "faucet_filtration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
+        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
+        "image_position": "left",
+        "eyebrow": "Faucet Filtration",
+        "heading": "Filtration Built Into The Faucet Itself.",
+        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop HAUSTAS Flow",
+        "cta_link": "shopify://products/item-1",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -496,87 +547,6 @@
         "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
-      }
-    },
-    "engineered_precision_01": {
-      "type": "engineered-precision",
-      "blocks": {
-        "panel_1": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "MAT / 304-SS",
-            "fig_number": "FIG. 01",
-            "heading": "Every Component, Considered.",
-            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
-            "spec_line_1": "Process — CNC Machined",
-            "spec_line_2": "Tolerance — ±0.05mm",
-            "spec_line_3": "Assembly — Hand-fitted",
-            "diagram": "craftsmanship",
-            "row_theme": "light"
-          }
-        },
-        "panel_2": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "MAT / COMPOSITION",
-            "fig_number": "FIG. 02",
-            "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
-            "spec_line_1": "Shell — 304 Stainless Steel",
-            "spec_line_2": "Core — Architectural Glass",
-            "spec_line_3": "Trim — Brushed Steel",
-            "diagram": "materials",
-            "row_theme": "dark"
-          }
-        },
-        "panel_3": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "ENG / FILTRATION",
-            "fig_number": "FIG. 03",
-            "heading": "Engineered For Silence.",
-            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
-            "spec_line_1": "Stages — 4-Stage Filtration",
-            "spec_line_2": "Flow Rate — 2.5 L / min",
-            "spec_line_3": "Media Life — 6 Months",
-            "diagram": "engineering",
-            "row_theme": "light"
-          }
-        },
-        "panel_4": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "FORM / LONGEVITY",
-            "fig_number": "FIG. 04",
-            "heading": "Designed To Never Go Out Of Style.",
-            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
-            "spec_line_1": "Warranty — 15 Years",
-            "spec_line_2": "Finish — Hand-brushed",
-            "spec_line_3": "Certification — NSF/ANSI 42",
-            "diagram": "timeless",
-            "row_theme": "dark"
-          }
-        }
-      },
-      "block_order": [
-        "panel_1",
-        "panel_2",
-        "panel_3",
-        "panel_4"
-      ],
-      "name": "Engineered panels",
-      "settings": {
-        "eyebrow": "Engineering Philosophy",
-        "heading": "Engineered Without Compromise.",
-        "intro_text": "Four principles guide every object we build — none of them negotiable.",
-        "light_background": "#ffffff",
-        "light_foreground": "#2e2c29",
-        "dark_background": "#211f1c",
-        "dark_foreground": "#f2efe9",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 72,
-        "padding-block-end": 0
       }
     },
     "filtration_process_01": {
@@ -1076,408 +1046,6 @@
         "padding-block-end": 80
       }
     },
-    "photo_spotlight_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
-        "image_alt": "The HAUSTAS Pure One water filtration system",
-        "image_position": "left",
-        "eyebrow": "The Flagship",
-        "heading": "The HAUSTAS Pure One.",
-        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished 304 stainless steel body. No under-sink installation, no plumber required: it sits on the counter and starts working in minutes, built to stay there for decades.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "complete_system_01": {
-      "type": "section",
-      "blocks": {
-        "text_cs_eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Complete The System</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-accent--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "loose",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "text_color": "#706c63",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_cs_heading": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Built To Work Together.</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#2e2c29",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_cs_intro": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair your system with a spare HAUSTAS Flow cartridge and filtration never skips a beat — swap it in seconds the moment performance starts to taper, no waiting on shipping.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1.0625rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#706c63",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_cs_bundle": {
-          "type": "group",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "center",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 32,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 40,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_primary": {
-              "type": "product-card",
-              "settings": {
-                "product": "item-4",
-                "product_card_gap": 10,
-                "width": "custom",
-                "custom_width": 38,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "background_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "gallery": {
-                  "type": "_product-card-gallery",
-                  "settings": {
-                    "image_ratio": "portrait",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_color": "",
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "title": {
-                  "type": "product-title",
-                  "settings": {
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h4",
-                    "font": "var(--font-heading--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "#2e2c29",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 14,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "h6",
-                    "width": "100%",
-                    "alignment": "center",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "#706c63",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "gallery",
-                "title",
-                "price"
-              ]
-            },
-            "text_cs_plus": {
-              "type": "text",
-              "settings": {
-                "text": "<p>+</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "2rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#d9d2c4",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_card_companion": {
-              "type": "product-card",
-              "settings": {
-                "product": "item-2",
-                "product_card_gap": 10,
-                "width": "custom",
-                "custom_width": 38,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "background_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "gallery": {
-                  "type": "_product-card-gallery",
-                  "settings": {
-                    "image_ratio": "portrait",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_color": "",
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "title": {
-                  "type": "product-title",
-                  "settings": {
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h4",
-                    "font": "var(--font-heading--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "#2e2c29",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 14,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "h6",
-                    "width": "100%",
-                    "alignment": "center",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "#706c63",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "gallery",
-                "title",
-                "price"
-              ]
-            }
-          },
-          "block_order": [
-            "product_card_primary",
-            "text_cs_plus",
-            "product_card_companion"
-          ]
-        },
-        "button_cs_view_all": {
-          "type": "button",
-          "settings": {
-            "label": "View Full Collection",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-unstyled",
-            "custom_button_background": "#2e2c29",
-            "custom_button_text": "#2e2c29",
-            "custom_button_border": "#ffffff",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_cs_eyebrow",
-        "text_cs_heading",
-        "text_cs_intro",
-        "group_cs_bundle",
-        "button_cs_view_all"
-      ],
-      "name": "Complete The System",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#ffffff",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
     "subscribe_save_01": {
       "type": "subscribe-save",
       "settings": {
@@ -1496,6 +1064,156 @@
         "code_note_suffix": "at checkout.",
         "background_color": "#ffffff",
         "foreground_color": "#2e2c29",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "email_capture_01": {
+      "type": "section",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Stay Connected</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#b8b2a6",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>Join The List.</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#f2efe9",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "intro": {
+          "type": "text",
+          "name": "Intro",
+          "settings": {
+            "text": "<p>Water care tips, new system updates, and occasional offers — no spam, unsubscribe any time.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#b8b2a6",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "signup": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 44,
+            "heading": "",
+            "heading_text_color": "",
+            "heading_preset": "h3",
+            "border_style": "all",
+            "input_style": "custom",
+            "border_width": 1,
+            "border_radius": 100,
+            "input_background_color": "#211f1c",
+            "input_text_color": "#f2efe9",
+            "input_border_color": "#3a3733",
+            "input_type_preset": "paragraph",
+            "style_class": "custom",
+            "custom_button_background": "#2f5d62",
+            "custom_button_text": "#ffffff",
+            "custom_button_border": "#2f5d62",
+            "link_text_color": "",
+            "display_type": "separate",
+            "label": "Sign Up",
+            "integrated_button": false,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "intro",
+        "signup"
+      ],
+      "name": "Stay Connected",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#211f1c",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -1595,228 +1313,19 @@
         "cta_label": "Shop Now",
         "cta_link": "shopify://collections/all"
       }
-    },
-    "why_we_exist_teaser_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "The HAUSTAS Pure water filtration system",
-        "image_position": "right",
-        "eyebrow": "Why We Exist",
-        "heading": "Filtration Deserves Better Engineering.",
-        "body_text": "Most filtration products are built to hit a price point, not a standard — plastic housings, generic cartridges, and marketing that rarely matches what's inside the box. We started from the material up instead: 304 stainless steel, a real 4-stage filtration sequence, and specifications we're willing to publish instead of testimonials we'd rather you just trust.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Read Our Story",
-        "cta_link": "shopify://pages/about-us",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
-    "email_capture_01": {
-      "type": "section",
-      "name": "Stay Connected",
-      "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "name": "Eyebrow",
-          "settings": {
-            "text": "<p>Stay Connected</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-accent--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "loose",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "text_color": "#B8B2A6",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "heading": {
-          "type": "text",
-          "name": "Heading",
-          "settings": {
-            "text": "<h2>Join The List.</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#F2EFE9",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "intro": {
-          "type": "text",
-          "name": "Intro",
-          "settings": {
-            "text": "<p>Water care tips, new system updates, and occasional offers — no spam, unsubscribe any time.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#B8B2A6",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "signup": {
-          "type": "email-signup",
-          "settings": {
-            "width": "custom",
-            "custom_width": 44,
-            "heading": "",
-            "border_style": "all",
-            "input_style": "custom",
-            "input_background_color": "#211F1C",
-            "input_text_color": "#F2EFE9",
-            "input_border_color": "#3A3733",
-            "style_class": "custom",
-            "custom_button_background": "#2F5D62",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#2F5D62",
-            "display_type": "separate",
-            "label": "Sign Up"
-          }
-        }
-      },
-      "block_order": [
-        "eyebrow",
-        "heading",
-        "intro",
-        "signup"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#211F1C",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "ultrafiltration_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "HAUSTAS Pure ultrafiltration system",
-        "image_position": "left",
-        "eyebrow": "Ultrafiltration",
-        "heading": "Membrane Filtration, Without The Waste.",
-        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "reverse_osmosis_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/IMG-1860.png?v=1782843561",
-        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
-        "image_position": "right",
-        "eyebrow": "Reverse Osmosis",
-        "heading": "The Most Thorough Filtration Available.",
-        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
-        "background_color": "#F3F7F6",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop Reserve 2",
-        "cta_link": "shopify://products/haustas-reserve-2",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "faucet_filtration_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
-        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
-        "image_position": "left",
-        "eyebrow": "Faucet Filtration",
-        "heading": "Filtration Built Into The Faucet Itself.",
-        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2E2C29",
-        "cta_label": "Shop HAUSTAS Flow",
-        "cta_link": "shopify://products/item-1",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "risk_reversal_01",
+    "product_list_fa6P9H",
+    "faucet_filtration_01",
     "ultrafiltration_01",
     "reverse_osmosis_01",
-    "faucet_filtration_01",
-    "product_list_fa6P9H",
     "comparison_table_01",
-    "engineered_precision_01",
     "filtration_process_01",
     "haustas_standard_01",
     "materials_sourcing_01",
-    "photo_spotlight_01",
-    "why_we_exist_teaser_01",
-    "complete_system_01",
     "subscribe_save_01",
     "email_capture_01",
     "faq_01",

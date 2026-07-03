@@ -1218,17 +1218,6 @@
     },
     "1783027098a017e1bd": {
       "type": "_blocks",
-      "blocks": {
-        "ali_reviews_widget_box_EzBMHV": {
-          "type": "shopify://apps/ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "ali_reviews_widget_box_EzBMHV"
-      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
