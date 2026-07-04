@@ -140,7 +140,7 @@
         "section_height_custom": 50,
         "background_color": "#ffffff",
         "toggle_overlay": true,
-        "overlay_color": "#FFFFFF85",
+        "overlay_color": "#ffffff85",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "blurred_reflection": false,
@@ -407,55 +407,85 @@
         "padding-block-end": 100
       }
     },
-    "ultrafiltration_01": {
-      "type": "photo-spotlight",
+    "engineered_precision_01": {
+      "type": "engineered-precision",
+      "blocks": {
+        "panel_1": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "PROCESS / MACHINING",
+            "fig_number": "FIG. 01",
+            "heading": "Every Component, Considered.",
+            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
+            "spec_line_1": "Process — CNC Machined",
+            "spec_line_2": "Tolerance — ±0.05mm",
+            "spec_line_3": "Assembly — Hand-fitted",
+            "diagram": "craftsmanship",
+            "row_theme": "light"
+          }
+        },
+        "panel_2": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "MATERIALS / COMPOSITION",
+            "fig_number": "FIG. 02",
+            "heading": "Materials That Outlast Trends.",
+            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
+            "spec_line_1": "Shell — 304 Stainless Steel",
+            "spec_line_2": "Core — Architectural Glass",
+            "spec_line_3": "Trim — Brushed Steel",
+            "diagram": "materials",
+            "row_theme": "light"
+          }
+        },
+        "panel_3": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "SYSTEM / FILTRATION",
+            "fig_number": "FIG. 03",
+            "heading": "Engineered For Silence.",
+            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
+            "spec_line_1": "Stages — 4-Stage Filtration",
+            "spec_line_2": "Flow Rate — 2.5 L / min",
+            "spec_line_3": "Media Life — 6 Months",
+            "diagram": "engineering",
+            "row_theme": "light"
+          }
+        },
+        "panel_4": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "FORM / LONGEVITY",
+            "fig_number": "FIG. 04",
+            "heading": "Designed To Never Go Out Of Style.",
+            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
+            "spec_line_1": "Warranty — 15 Years",
+            "spec_line_2": "Finish — Hand-brushed",
+            "spec_line_3": "Certification — NSF/ANSI 42",
+            "diagram": "timeless",
+            "row_theme": "light"
+          }
+        }
+      },
+      "block_order": [
+        "panel_1",
+        "panel_2",
+        "panel_3",
+        "panel_4"
+      ],
+      "name": "Engineered panels",
       "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232.jpg?v=1783115930",
-        "image_alt": "HAUSTAS Pure ultrafiltration system",
-        "image_position": "right",
-        "eyebrow": "Ultrafiltration",
-        "heading": "Membrane Filtration, Without The Waste.",
-        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
+        "eyebrow": "Engineering Philosophy",
+        "heading": "Engineered Without Compromise.",
+        "intro_text": "Four principles guide every object we build — none of them negotiable.",
+        "light_background": "#ffffff",
+        "light_foreground": "#2e2c29",
+        "dark_background": "#faf9f6",
+        "dark_foreground": "#2e2c29",
+        "cta_label": "View The Collection",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "reverse_osmosis_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232_63806bf2-497d-4170-ad03-74bef1d07b5e.jpg?v=1783124840",
-        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
-        "image_position": "left",
-        "eyebrow": "Reverse Osmosis",
-        "heading": "The Most Thorough Filtration Available.",
-        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
-        "background_color": "#f3f7f6",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop Reverse Osmosis",
-        "cta_link": "shopify://products/5-stage",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "faucet_filtration_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
-        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
-        "image_position": "right",
-        "eyebrow": "Faucet Filtration",
-        "heading": "Filtration Built Into The Faucet Itself.",
-        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop HAUSTAS Flow",
-        "cta_link": "shopify://products/item-1",
-        "padding-block-start": 72,
-        "padding-block-end": 72
+        "padding-block-end": 0
       }
     },
     "comparison_table_01": {
@@ -547,87 +577,6 @@
         "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
-      }
-    },
-    "engineered_precision_01": {
-      "type": "engineered-precision",
-      "blocks": {
-        "panel_1": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "PROCESS / MACHINING",
-            "fig_number": "FIG. 01",
-            "heading": "Every Component, Considered.",
-            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
-            "spec_line_1": "Process — CNC Machined",
-            "spec_line_2": "Tolerance — ±0.05mm",
-            "spec_line_3": "Assembly — Hand-fitted",
-            "diagram": "craftsmanship",
-            "row_theme": "light"
-          }
-        },
-        "panel_2": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "MATERIALS / COMPOSITION",
-            "fig_number": "FIG. 02",
-            "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
-            "spec_line_1": "Shell — 304 Stainless Steel",
-            "spec_line_2": "Core — Architectural Glass",
-            "spec_line_3": "Trim — Brushed Steel",
-            "diagram": "materials",
-            "row_theme": "light"
-          }
-        },
-        "panel_3": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "SYSTEM / FILTRATION",
-            "fig_number": "FIG. 03",
-            "heading": "Engineered For Silence.",
-            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
-            "spec_line_1": "Stages — 4-Stage Filtration",
-            "spec_line_2": "Flow Rate — 2.5 L / min",
-            "spec_line_3": "Media Life — 6 Months",
-            "diagram": "engineering",
-            "row_theme": "light"
-          }
-        },
-        "panel_4": {
-          "type": "panel",
-          "settings": {
-            "spec_code": "FORM / LONGEVITY",
-            "fig_number": "FIG. 04",
-            "heading": "Designed To Never Go Out Of Style.",
-            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
-            "spec_line_1": "Warranty — 15 Years",
-            "spec_line_2": "Finish — Hand-brushed",
-            "spec_line_3": "Certification — NSF/ANSI 42",
-            "diagram": "timeless",
-            "row_theme": "light"
-          }
-        }
-      },
-      "block_order": [
-        "panel_1",
-        "panel_2",
-        "panel_3",
-        "panel_4"
-      ],
-      "name": "Engineered panels",
-      "settings": {
-        "eyebrow": "Engineering Philosophy",
-        "heading": "Engineered Without Compromise.",
-        "intro_text": "Four principles guide every object we build — none of them negotiable.",
-        "light_background": "#ffffff",
-        "light_foreground": "#2e2c29",
-        "dark_background": "#faf9f6",
-        "dark_foreground": "#2e2c29",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 72,
-        "padding-block-end": 0
       }
     },
     "water_risks_01": {
@@ -801,6 +750,57 @@
         "border_radius": 0,
         "padding-block-start": 80,
         "padding-block-end": 40
+      }
+    },
+    "ultrafiltration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232.jpg?v=1783115930",
+        "image_alt": "HAUSTAS Pure ultrafiltration system",
+        "image_position": "right",
+        "eyebrow": "Ultrafiltration",
+        "heading": "Membrane Filtration, Without The Waste.",
+        "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop The Pure One",
+        "cta_link": "shopify://products/item-4",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "reverse_osmosis_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232_63806bf2-497d-4170-ad03-74bef1d07b5e.jpg?v=1783124840",
+        "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
+        "image_position": "left",
+        "eyebrow": "Reverse Osmosis",
+        "heading": "The Most Thorough Filtration Available.",
+        "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
+        "background_color": "#f3f7f6",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop Reverse Osmosis",
+        "cta_link": "shopify://products/5-stage",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "faucet_filtration_01": {
+      "type": "photo-spotlight",
+      "settings": {
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
+        "image_alt": "HAUSTAS Flow Pro faucet filtration system",
+        "image_position": "right",
+        "eyebrow": "Faucet Filtration",
+        "heading": "Filtration Built Into The Faucet Itself.",
+        "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "Shop HAUSTAS Flow",
+        "cta_link": "shopify://products/item-1",
+        "padding-block-start": 72,
+        "padding-block-end": 72
       }
     },
     "filtration_process_01": {
@@ -1545,12 +1545,12 @@
     "hero_jVaWmY",
     "risk_reversal_01",
     "product_list_fa6P9H",
+    "engineered_precision_01",
+    "comparison_table_01",
+    "water_risks_01",
     "ultrafiltration_01",
     "reverse_osmosis_01",
     "faucet_filtration_01",
-    "comparison_table_01",
-    "engineered_precision_01",
-    "water_risks_01",
     "filtration_process_01",
     "materials_sourcing_01",
     "subscribe_save_01",
