@@ -199,7 +199,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#ffffff",
+                "text_color": "#2E2C29",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -224,7 +224,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#d9d2c4",
+                "text_color": "#706C63",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -251,7 +251,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#d9d2c4",
+            "text_color": "#706C63",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -271,7 +271,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#d9d2c4",
+            "text_color": "#706C63",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -291,7 +291,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#d9d2c4",
+            "text_color": "#706C63",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -354,7 +354,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#ffffff",
+                "text_color": "#2E2C29",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -368,7 +368,7 @@
             "social_links_follow": {
               "type": "social-links",
               "settings": {
-                "icon_color": "#d9d2c4",
+                "icon_color": "#2E2C29",
                 "facebook_url": "https://www.facebook.com/",
                 "instagram_url": "https://www.instagram.com/",
                 "youtube_url": "",
@@ -416,7 +416,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 48,
-        "background_color": "#2e2c29",
+        "background_color": "#FFFFFF",
         "padding-block-start": 64,
         "padding-block-end": 48
       }
@@ -428,7 +428,7 @@
           "type": "footer-copyright",
           "settings": {
             "show_powered_by": false,
-            "text_color": "#d9d2c4",
+            "text_color": "#706C63",
             "font_size": "0.75rem",
             "case": "none"
           },
@@ -442,9 +442,9 @@
       "settings": {
         "section_width": "page-width",
         "gap": 24,
-        "background_color": "#2e2c29",
+        "background_color": "#FFFFFF",
         "divider_thickness": 1,
-        "divider_color": "#45423d",
+        "divider_color": "#D9D2C4",
         "padding-block-start": 20,
         "padding-block-end": 40
       }
