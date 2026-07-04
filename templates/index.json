@@ -364,7 +364,7 @@
               "type": "custom-liquid",
               "name": "Badge + editable description",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign badge = p.metafields.custom.card_badge.value\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if badge != blank %}\n  <span class=\"hs-card-badge\">{{ badge }}</span>\n{% endif %}\n{% if desc != blank %}\n  <p class=\"hs-card-desc\">{{ desc | truncatewords: 22 }}</p>\n{% endif %}\n<style>\n  #shopify-section-{{ closest.section.id }} .product-card {\n    position: relative;\n    transition: transform 0.25s ease, box-shadow 0.25s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .product-card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 10px 24px rgba(46, 44, 41, 0.08);\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-badge {\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    z-index: 2;\n    padding: 5px 10px;\n    background: #2E2C29;\n    color: #FFFFFF;\n    font-family: var(--font-accent--family);\n    font-weight: var(--font-accent--weight);\n    font-size: 0.6875rem;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    pointer-events: none;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-desc {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    line-height: 1.6;\n    color: #706C63;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    overflow: hidden;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn {\n    transition: background-color 0.2s ease, border-color 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover {\n    background-color: #1F4448 !important;\n    border-color: #1F4448 !important;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn svg {\n    transition: transform 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover svg {\n    transform: translateX(3px);\n  }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign badge = p.metafields.custom.card_badge.value\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if badge != blank %}\n  <span class=\"hs-card-badge\">{{ badge }}</span>\n{% endif %}\n{% if desc != blank %}\n  <p class=\"hs-card-desc\">{{ desc | truncatewords: 22 }}</p>\n{% endif %}\n<style>\n  #shopify-section-{{ closest.section.id }} .product-card {\n    position: relative;\n    transition: transform 0.25s ease, box-shadow 0.25s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .product-card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 10px 24px rgba(46, 44, 41, 0.08);\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-badge {\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    z-index: 2;\n    padding: 5px 10px;\n    background: #2E2C29;\n    color: #FFFFFF;\n    font-family: var(--font-accent--family);\n    font-weight: var(--font-accent--weight);\n    font-size: 0.6875rem;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    pointer-events: none;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-card-desc {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    line-height: 1.6;\n    color: #706C63;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    overflow: hidden;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn {\n    transition: background-color 0.2s ease, border-color 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover {\n    background-color: #1F4448 !important;\n    border-color: #1F4448 !important;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn svg {\n    transition: transform 0.2s ease;\n  }\n  #shopify-section-{{ closest.section.id }} .hs-buy-now-btn:hover svg {\n    transform: translateX(3px);\n  }\n  #shopify-section-{{ closest.section.id }} .card-gallery {\n    position: relative;\n  }\n  #shopify-section-{{ closest.section.id }} .card-gallery::after {\n    content: '';\n    position: absolute;\n    inset: 0;\n    pointer-events: none;\n    z-index: 1;\n    background-image:\n      linear-gradient(to right, #2F5D62 2px, transparent 2px),\n      linear-gradient(to right, #2F5D62 2px, transparent 2px),\n      linear-gradient(to left, #2F5D62 2px, transparent 2px),\n      linear-gradient(to left, #2F5D62 2px, transparent 2px),\n      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),\n      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),\n      linear-gradient(to top, #2F5D62 2px, transparent 2px),\n      linear-gradient(to top, #2F5D62 2px, transparent 2px);\n    background-position: top left, bottom left, top right, bottom right, top left, top right, bottom left, bottom right;\n    background-repeat: no-repeat;\n    background-size: 16px 2px, 16px 2px, 16px 2px, 16px 2px, 2px 16px, 2px 16px, 2px 16px, 2px 16px;\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -555,8 +555,8 @@
         "panel_1": {
           "type": "panel",
           "settings": {
-            "spec_code": "",
-            "fig_number": "",
+            "spec_code": "PROCESS / MACHINING",
+            "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
             "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
             "spec_line_1": "Process — CNC Machined",
@@ -569,8 +569,8 @@
         "panel_2": {
           "type": "panel",
           "settings": {
-            "spec_code": "",
-            "fig_number": "",
+            "spec_code": "MATERIALS / COMPOSITION",
+            "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
             "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
             "spec_line_1": "Shell — 304 Stainless Steel",
@@ -583,8 +583,8 @@
         "panel_3": {
           "type": "panel",
           "settings": {
-            "spec_code": "",
-            "fig_number": "",
+            "spec_code": "SYSTEM / FILTRATION",
+            "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
             "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
             "spec_line_1": "Stages — 4-Stage Filtration",
@@ -597,8 +597,8 @@
         "panel_4": {
           "type": "panel",
           "settings": {
-            "spec_code": "",
-            "fig_number": "",
+            "spec_code": "FORM / LONGEVITY",
+            "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
             "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
             "spec_line_1": "Warranty — 15 Years",

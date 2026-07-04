@@ -240,6 +240,25 @@
     pointer-events: none;
   }
 
+  .filtration-process__diagram-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, #2F5D62 2px, transparent 2px),
+      linear-gradient(to right, #2F5D62 2px, transparent 2px),
+      linear-gradient(to left, #2F5D62 2px, transparent 2px),
+      linear-gradient(to left, #2F5D62 2px, transparent 2px),
+      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),
+      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),
+      linear-gradient(to top, #2F5D62 2px, transparent 2px),
+      linear-gradient(to top, #2F5D62 2px, transparent 2px);
+    background-position: top left, bottom left, top right, bottom right, top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 16px 2px, 16px 2px, 16px 2px, 16px 2px, 2px 16px, 2px 16px, 2px 16px, 2px 16px;
+  }
+
   .filtration-process__diagram-frame.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -253,18 +272,18 @@
   }
 
   .fp-diagram-label {
-    font-family: var(--font-accent--family);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
     font-size: 9px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     fill: currentColor;
     opacity: 0.55;
   }
 
   .fp-diagram-tag {
-    font-family: var(--font-accent--family);
-    font-weight: var(--font-accent--weight);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+    font-weight: 600;
     font-size: 12px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     fill: currentColor;
     opacity: 0.72;
   }
@@ -316,10 +335,10 @@
 
   .filtration-process__stage-number {
     display: block;
-    font-family: var(--font-accent--family);
-    font-weight: var(--font-accent--weight);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+    font-weight: 500;
     font-size: 0.6875rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
     color: #706C63;
     margin-bottom: 10px;
   }
@@ -375,9 +394,9 @@
   }
 
   .filtration-process__stat-value {
-    font-family: var(--font-heading--family);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     letter-spacing: -0.01em;
   }
 

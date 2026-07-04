@@ -305,10 +305,10 @@
 
   .engineered-precision__spec-code,
   .engineered-precision__fig {
-    font-family: var(--font-accent--family);
-    font-weight: var(--font-accent--weight);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+    font-weight: 500;
     font-size: 0.6875rem;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     opacity: 0.65;
   }
@@ -358,10 +358,10 @@
   }
 
   .engineered-precision__datasheet-row dt {
-    font-family: var(--font-accent--family);
-    font-weight: var(--font-accent--weight);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+    font-weight: 500;
     font-size: 0.6875rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     opacity: 0.55;
     margin: 0;
@@ -369,8 +369,8 @@
   }
 
   .engineered-precision__datasheet-row dd {
-    font-family: var(--font-body--family);
-    font-size: 0.9375rem;
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+    font-size: 0.875rem;
     text-align: right;
     margin: 0;
     opacity: 0.92;
@@ -405,6 +405,25 @@
     pointer-events: none;
   }
 
+  .engineered-precision__diagram-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, #2F5D62 2px, transparent 2px),
+      linear-gradient(to right, #2F5D62 2px, transparent 2px),
+      linear-gradient(to left, #2F5D62 2px, transparent 2px),
+      linear-gradient(to left, #2F5D62 2px, transparent 2px),
+      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),
+      linear-gradient(to bottom, #2F5D62 2px, transparent 2px),
+      linear-gradient(to top, #2F5D62 2px, transparent 2px),
+      linear-gradient(to top, #2F5D62 2px, transparent 2px);
+    background-position: top left, bottom left, top right, bottom right, top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 16px 2px, 16px 2px, 16px 2px, 16px 2px, 2px 16px, 2px 16px, 2px 16px, 2px 16px;
+  }
+
   .engineered-precision__scale-tick {
     position: absolute;
     top: 8px;
@@ -429,9 +448,9 @@
   }
 
   .ep-diagram-label {
-    font-family: var(--font-accent--family);
+    font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
     font-size: 6.25px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     fill: currentColor;
     opacity: 0.62;
   }
