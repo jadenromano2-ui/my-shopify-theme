@@ -1272,40 +1272,6 @@
         "padding-block-end": 80
       }
     },
-    "photo_spotlight_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
-        "image_alt": "The HAUSTAS Pure One water filtration system",
-        "image_position": "left",
-        "eyebrow": "The Flagship",
-        "heading": "The HAUSTAS Pure One.",
-        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished 304 stainless steel body. No under-sink installation, no plumber required: it sits on the counter and starts working in minutes, built to stay there for decades.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "why_we_exist_teaser_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "The HAUSTAS Pure water filtration system",
-        "image_position": "right",
-        "eyebrow": "Why We Exist",
-        "heading": "Filtration Deserves Better Engineering.",
-        "body_text": "Most filtration products are built to hit a price point, not a standard — plastic housings, generic cartridges, and marketing that rarely matches what's inside the box. We started from the material up instead: 304 stainless steel, a real 4-stage filtration sequence, and specifications we're willing to publish instead of testimonials we'd rather you just trust.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Read Our Story",
-        "cta_link": "shopify://pages/about-us",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
     "subscribe_save_01": {
       "type": "subscribe-save",
       "settings": {
@@ -1587,8 +1553,6 @@
     "water_risks_01",
     "filtration_process_01",
     "materials_sourcing_01",
-    "photo_spotlight_01",
-    "why_we_exist_teaser_01",
     "subscribe_save_01",
     "faq_01",
     "email_capture_01",
