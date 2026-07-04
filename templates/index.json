@@ -410,9 +410,9 @@
     "ultrafiltration_01": {
       "type": "photo-spotlight",
       "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232.jpg?v=1783115930",
         "image_alt": "HAUSTAS Pure ultrafiltration system",
-        "image_position": "left",
+        "image_position": "right",
         "eyebrow": "Ultrafiltration",
         "heading": "Membrane Filtration, Without The Waste.",
         "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
@@ -427,9 +427,9 @@
     "reverse_osmosis_01": {
       "type": "photo-spotlight",
       "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/IMG-1860.png?v=1782843561",
+        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/EAA20BAB-E473-494E-B449-5BAE182C6232_63806bf2-497d-4170-ad03-74bef1d07b5e.jpg?v=1783124840",
         "image_alt": "HAUSTAS Reserve 2 reverse osmosis system",
-        "image_position": "right",
+        "image_position": "left",
         "eyebrow": "Reverse Osmosis",
         "heading": "The Most Thorough Filtration Available.",
         "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
@@ -446,7 +446,7 @@
       "settings": {
         "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/29A191BE-EC2F-431A-8EF1-3C04C3346050.png?v=1782787254",
         "image_alt": "HAUSTAS Flow Pro faucet filtration system",
-        "image_position": "left",
+        "image_position": "right",
         "eyebrow": "Faucet Filtration",
         "heading": "Filtration Built Into The Faucet Itself.",
         "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
@@ -1272,40 +1272,6 @@
         "padding-block-end": 80
       }
     },
-    "photo_spotlight_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/5D5B0916-61E7-418B-BCE8-4FA494F24E6C.png?v=1782786419",
-        "image_alt": "The HAUSTAS Pure One water filtration system",
-        "image_position": "left",
-        "eyebrow": "The Flagship",
-        "heading": "The HAUSTAS Pure One.",
-        "body_text": "Our most complete system — full 4-stage filtration housed in a single hand-finished 304 stainless steel body. No under-sink installation, no plumber required: it sits on the counter and starts working in minutes, built to stay there for decades.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Shop The Pure One",
-        "cta_link": "shopify://products/item-4",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "why_we_exist_teaser_01": {
-      "type": "photo-spotlight",
-      "settings": {
-        "image_url": "https://cdn.shopify.com/s/files/1/0730/5648/5512/files/DA317700-CD94-456C-86D2-E799C0EC7AD4.png?v=1782787531",
-        "image_alt": "The HAUSTAS Pure water filtration system",
-        "image_position": "right",
-        "eyebrow": "Why We Exist",
-        "heading": "Filtration Deserves Better Engineering.",
-        "body_text": "Most filtration products are built to hit a price point, not a standard — plastic housings, generic cartridges, and marketing that rarely matches what's inside the box. We started from the material up instead: 304 stainless steel, a real 4-stage filtration sequence, and specifications we're willing to publish instead of testimonials we'd rather you just trust.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
-        "cta_label": "Read Our Story",
-        "cta_link": "shopify://pages/about-us",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
     "subscribe_save_01": {
       "type": "subscribe-save",
       "settings": {
@@ -1324,6 +1290,89 @@
         "code_note_suffix": "at checkout.",
         "background_color": "#ffffff",
         "foreground_color": "#2e2c29",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "faq_01": {
+      "type": "faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "How often do I need to replace the filter cartridge?",
+            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Do I need a plumber to install it?",
+            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "What does the filtration actually remove?",
+            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Is HAUSTAS certified?",
+            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "What's covered under warranty?",
+            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "What if it's not right for me?",
+            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "question": "What comes in the box?",
+            "answer": "Your HAUSTAS system, the installed filter cartridge, all connection hardware, and a printed setup guide — everything you need, nothing you'll have to source separately."
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "question": "Can I subscribe to replacement filters?",
+            "answer": "Not yet as an automatic subscription — but you can stock up on HAUSTAS Flow cartridges and save 15% any time, or simply reorder when you're running low."
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before You Buy.",
+        "intro_text": "Everything you need to know, in one place.",
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+        "cta_label": "View The Collection",
+        "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -1478,89 +1527,6 @@
         "padding-block-end": 72
       }
     },
-    "faq_01": {
-      "type": "faq",
-      "blocks": {
-        "question_1": {
-          "type": "question",
-          "settings": {
-            "question": "How often do I need to replace the filter cartridge?",
-            "answer": "Every 6 months under normal household use. Each cartridge is engineered for a full 6-month service life before performance begins to taper."
-          }
-        },
-        "question_2": {
-          "type": "question",
-          "settings": {
-            "question": "Do I need a plumber to install it?",
-            "answer": "No. Every HAUSTAS unit connects directly to a standard fixture — most people are up and running in under 15 minutes, no tools beyond what's in the box."
-          }
-        },
-        "question_3": {
-          "type": "question",
-          "settings": {
-            "question": "What does the filtration actually remove?",
-            "answer": "A 4-stage sequence — sediment, carbon block, KDF media, and a final polish — reduces sediment, chlorine, and heavy metals, down to a 0.5-micron final pass."
-          }
-        },
-        "question_4": {
-          "type": "question",
-          "settings": {
-            "question": "Is HAUSTAS certified?",
-            "answer": "Yes — every unit is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop."
-          }
-        },
-        "question_5": {
-          "type": "question",
-          "settings": {
-            "question": "What's covered under warranty?",
-            "answer": "Every component is covered for 15 years, full stop — no fine print, no prorated coverage."
-          }
-        },
-        "question_6": {
-          "type": "question",
-          "settings": {
-            "question": "What if it's not right for me?",
-            "answer": "Every order ships with a 100-night trial. If it's not for you, return it for a full refund — no questions asked."
-          }
-        },
-        "question_7": {
-          "type": "question",
-          "settings": {
-            "question": "What comes in the box?",
-            "answer": "Your HAUSTAS system, the installed filter cartridge, all connection hardware, and a printed setup guide — everything you need, nothing you'll have to source separately."
-          }
-        },
-        "question_8": {
-          "type": "question",
-          "settings": {
-            "question": "Can I subscribe to replacement filters?",
-            "answer": "Not yet as an automatic subscription — but you can stock up on HAUSTAS Flow cartridges and save 15% any time, or simply reorder when you're running low."
-          }
-        }
-      },
-      "block_order": [
-        "question_1",
-        "question_2",
-        "question_3",
-        "question_4",
-        "question_5",
-        "question_6",
-        "question_7",
-        "question_8"
-      ],
-      "name": "FAQ",
-      "settings": {
-        "eyebrow": "Questions",
-        "heading": "Before You Buy.",
-        "intro_text": "Everything you need to know, in one place.",
-        "background_color": "#FFFFFF",
-        "foreground_color": "#2e2c29",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
     "sticky_shop_bar_01": {
       "type": "sticky-shop-bar",
       "name": "Sticky mobile shop bar",
@@ -1587,8 +1553,6 @@
     "water_risks_01",
     "filtration_process_01",
     "materials_sourcing_01",
-    "photo_spotlight_01",
-    "why_we_exist_teaser_01",
     "subscribe_save_01",
     "faq_01",
     "email_capture_01",
