@@ -31,6 +31,10 @@
           },
           "blocks": {}
         },
+        "judge_me_reviews_preview_badge_7rRxKf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
@@ -153,6 +157,14 @@
                   },
                   "blocks": {}
                 },
+                "tagline_hook": {
+                  "type": "custom-liquid",
+                  "name": "Benefit tagline",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign tag = 'The flagship system built to disappear into your countertop — and your life.'\n    when 'item-3'\n      assign tag = 'Full filtration, compact footprint — built for spaces that count every inch.'\n    when 'item-1'\n      assign tag = 'More capacity, same trusted filtration — for households that go through water fast.'\n    when 'item-2'\n      assign tag = 'Keep your system running at full strength, every single day.'\n    when 'haustas-reserve-2'\n      assign tag = 'A limited-run edition of the standard you already trust.'\n    else\n      assign tag = 'Engineered water filtration you can trust for decades.'\n  endcase\n%}\n<p id=\"hs-tagline-{{ block.id }}\">{{ tag }}</p>\n<style>\n  #hs-tagline-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 1rem;\n    line-height: 1.5;\n    color: #706C63;\n  }\n</style>"
+                  },
+                  "blocks": {}
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -175,6 +187,14 @@
                   },
                   "blocks": {}
                 },
+                "value_anchor": {
+                  "type": "custom-liquid",
+                  "name": "Value anchor",
+                  "settings": {
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-2'\n      assign val = 'Just $0.16/day for full filtration.'\n    when 'item-1'\n      assign val = 'Just $0.27/day for full filtration.'\n    when 'item-4'\n      assign val = 'Under $1/month over its 15-year warranty.'\n    when 'item-3'\n      assign val = 'Under $3/year over its 15-year warranty.'\n    when 'haustas-reserve-2'\n      assign val = 'Under $10/year over its 15-year warranty.'\n    else\n      assign val = ''\n  endcase\n%}\n{% if val != blank %}\n<p id=\"hs-value-{{ block.id }}\">{{ val }}</p>\n<style>\n  #hs-value-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #9A968C;\n    padding-top: 2px;\n  }\n</style>\n{% endif %}"
+                  },
+                  "blocks": {}
+                },
                 "inventory_status": {
                   "type": "product-inventory",
                   "settings": {
@@ -185,22 +205,6 @@
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "tagline_hook": {
-                  "type": "custom-liquid",
-                  "name": "Benefit tagline",
-                  "settings": {
-                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign tag = 'The flagship system built to disappear into your countertop — and your life.'\n    when 'item-3'\n      assign tag = 'Full filtration, compact footprint — built for spaces that count every inch.'\n    when 'item-1'\n      assign tag = 'More capacity, same trusted filtration — for households that go through water fast.'\n    when 'item-2'\n      assign tag = 'Keep your system running at full strength, every single day.'\n    when 'haustas-reserve-2'\n      assign tag = 'A limited-run edition of the standard you already trust.'\n    else\n      assign tag = 'Engineered water filtration you can trust for decades.'\n  endcase\n%}\n<p id=\"hs-tagline-{{ block.id }}\">{{ tag }}</p>\n<style>\n  #hs-tagline-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 1rem;\n    line-height: 1.5;\n    color: #706C63;\n  }\n</style>"
-                  },
-                  "blocks": {}
-                },
-                "value_anchor": {
-                  "type": "custom-liquid",
-                  "name": "Value anchor",
-                  "settings": {
-                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-2'\n      assign val = 'Just $0.16/day for full filtration.'\n    when 'item-1'\n      assign val = 'Just $0.27/day for full filtration.'\n    when 'item-4'\n      assign val = 'Under $1/month over its 15-year warranty.'\n    when 'item-3'\n      assign val = 'Under $3/year over its 15-year warranty.'\n    when 'haustas-reserve-2'\n      assign val = 'Under $10/year over its 15-year warranty.'\n    else\n      assign val = ''\n  endcase\n%}\n{% if val != blank %}\n<p id=\"hs-value-{{ block.id }}\">{{ val }}</p>\n<style>\n  #hs-value-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #9A968C;\n    padding-top: 2px;\n  }\n</style>\n{% endif %}"
                   },
                   "blocks": {}
                 }
@@ -301,9 +305,9 @@
                   "static": true,
                   "settings": {
                     "style_class": "button",
-                    "custom_button_background": "#2F5D62",
+                    "custom_button_background": "#2f5d62",
                     "custom_button_text": "#ffffff",
-                    "custom_button_border": "#2F5D62"
+                    "custom_button_border": "#2f5d62"
                   },
                   "blocks": {}
                 },
@@ -315,6 +319,14 @@
                 }
               },
               "block_order": []
+            },
+            "risk_reversal_microcopy": {
+              "type": "custom-liquid",
+              "name": "Risk reversal microcopy",
+              "settings": {
+                "custom_liquid": "<div id=\"hs-riskline-{{ block.id }}\">\n  <span>Free Shipping</span><span class=\"hs-riskline-dot\">&middot;</span><span>100-Night Trial</span><span class=\"hs-riskline-dot\">&middot;</span><span>15-Year Warranty</span>\n</div>\n<style>\n  #hs-riskline-{{ block.id }} {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    letter-spacing: 0.02em;\n    color: #706C63;\n  }\n  #hs-riskline-{{ block.id }} .hs-riskline-dot {\n    color: #D9D2C4;\n  }\n</style>"
+              },
+              "blocks": {}
             },
             "subscribe_save_link": {
               "type": "custom-liquid",
@@ -1032,14 +1044,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "risk_reversal_microcopy": {
-              "type": "custom-liquid",
-              "name": "Risk reversal microcopy",
-              "settings": {
-                "custom_liquid": "<div id=\"hs-riskline-{{ block.id }}\">\n  <span>Free Shipping</span><span class=\"hs-riskline-dot\">&middot;</span><span>100-Night Trial</span><span class=\"hs-riskline-dot\">&middot;</span><span>15-Year Warranty</span>\n</div>\n<style>\n  #hs-riskline-{{ block.id }} {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    letter-spacing: 0.02em;\n    color: #706C63;\n  }\n  #hs-riskline-{{ block.id }} .hs-riskline-dot {\n    color: #D9D2C4;\n  }\n</style>"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
@@ -1060,7 +1064,8 @@
         }
       },
       "block_order": [
-        "disclosures_g9mWze"
+        "disclosures_g9mWze",
+        "judge_me_reviews_preview_badge_7rRxKf"
       ],
       "settings": {
         "content_width": "content-center-aligned",
