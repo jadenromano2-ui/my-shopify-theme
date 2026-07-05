@@ -231,7 +231,7 @@
               "type": "custom-liquid",
               "name": "Checkmark highlights",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #202224;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #0F5E75;\n  }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #202224;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #3F7D5C;\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -1305,10 +1305,166 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "filtration_process_pdp": {
+      "type": "filtration-process",
+      "blocks": {
+        "stage_1": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 01",
+            "name": "Sediment Pre-Filter",
+            "description": "Removes sand, rust, and particulate down to 5 microns, protecting every stage that follows."
+          }
+        },
+        "stage_2": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 02",
+            "name": "Carbon Block",
+            "description": "Absorbs chlorine, odor, and volatile organic compounds for noticeably cleaner taste and smell."
+          }
+        },
+        "stage_3": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 03",
+            "name": "KDF Media",
+            "description": "Reduces heavy metals like lead and mercury through KDF redox filtration."
+          }
+        },
+        "stage_4": {
+          "type": "stage",
+          "settings": {
+            "tag_number": "STAGE 04",
+            "name": "Polishing Filter",
+            "description": "A final 0.5-micron pass for clarity, taste, and total peace of mind."
+          }
+        }
+      },
+      "block_order": [
+        "stage_1",
+        "stage_2",
+        "stage_3",
+        "stage_4"
+      ],
+      "name": "Filtration process",
+      "settings": {
+        "eyebrow": "The Process",
+        "heading": "How Filtration Works.",
+        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added. Each stage is engineered to catch what the last one missed.",
+        "background_color": "#FCFCFA",
+        "foreground_color": "#202224",
+        "stat_1_value": "5 Micron",
+        "stat_1_label": "Sediment Capture",
+        "stat_2_value": "0.5 Micron",
+        "stat_2_label": "Final Polish",
+        "stat_3_value": "99.9%",
+        "stat_3_label": "Chlorine Reduction",
+        "stat_4_value": "4-Stage",
+        "stat_4_label": "Sequential Process",
+        "cta_label": "View The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "comparison_table_pdp": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "label": "Filtration Stages",
+            "haustas_value": "4-Stage (Sediment, Carbon Block, KDF, Polish)",
+            "typical_value": "1-Stage (Basic Carbon)"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "label": "Heavy Metal Reduction",
+            "haustas_value": "Yes — KDF Redox Filtration",
+            "typical_value": "Rarely Addressed"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "label": "Certification",
+            "haustas_value": "NSF/ANSI 42 & 53",
+            "typical_value": "Often Uncertified"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "label": "Cartridge Life",
+            "haustas_value": "6 Months",
+            "typical_value": "~2 Months"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "label": "Warranty",
+            "haustas_value": "15 Years",
+            "typical_value": "None"
+          }
+        },
+        "row_6": {
+          "type": "row",
+          "settings": {
+            "label": "Trial Period",
+            "haustas_value": "100 Nights",
+            "typical_value": "None"
+          }
+        },
+        "row_7": {
+          "type": "row",
+          "settings": {
+            "label": "Materials",
+            "haustas_value": "304 Stainless Steel & Architectural Glass",
+            "typical_value": "BPA Plastic"
+          }
+        },
+        "row_8": {
+          "type": "row",
+          "settings": {
+            "label": "Installation",
+            "haustas_value": "No Plumber Required — Under 15 Minutes",
+            "typical_value": "Varies, Often Requires Tools"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6",
+        "row_7",
+        "row_8"
+      ],
+      "name": "Comparison table",
+      "settings": {
+        "eyebrow": "The Difference",
+        "heading": "Not All Filtration Is Equal.",
+        "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter — the difference shows up in the water, not just the spec sheet.",
+        "background_color": "#FCFCFA",
+        "foreground_color": "#202224",
+        "cta_label": "Shop The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
     }
   },
   "order": [
     "main",
+    "filtration_process_pdp",
+    "comparison_table_pdp",
     "product_recommendations_qggXJq",
     "1783027098a017e1bd",
     "1783183634b8d8926c"
