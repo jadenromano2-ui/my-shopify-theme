@@ -108,12 +108,21 @@
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "hero_trust_line": {
+          "type": "custom-liquid",
+          "name": "Hero trust line",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-hero-trust\">\n  <span class=\"hs-hero-trust__stars\" aria-hidden=\"true\">★★★★★</span>\n  <span>4.4 (200+ Reviews)</span>\n  <span class=\"hs-hero-trust__dot\">&middot;</span>\n  <span>NSF/ANSI 42 &amp; 53 Certified</span>\n</div>\n<style>\n  #hs-hero-trust {\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n    gap: 8px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #5C6368;\n  }\n  #hs-hero-trust .hs-hero-trust__stars {\n    color: #C9A24B;\n    letter-spacing: 1px;\n    font-size: 0.8125rem;\n  }\n  #hs-hero-trust .hs-hero-trust__dot {\n    color: #C8D1CC;\n  }\n</style>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_hero_eyebrow",
         "text_YLPk4p",
         "hero_subtext_2Kd9wR",
+        "hero_trust_line",
         "button_H9gpTf"
       ],
       "name": "t:names.hero",
@@ -388,7 +397,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "all",
+        "collection": "homepage-featured",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
@@ -1539,11 +1548,111 @@
         "cta_label": "Shop Now",
         "cta_link": "shopify://collections/all"
       }
+    },
+    "customer_proof_01": {
+      "type": "section",
+      "name": "Customer Proof",
+      "blocks": {
+        "sp_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>What Customers Say</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "sp_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>4.4★ Average Rating Across 200+ Reviews</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "sp_quotes": {
+          "type": "custom-liquid",
+          "name": "Review quotes",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-quotes\" class=\"hs-quotes\">\n  <div class=\"hs-quote\">\n    <span class=\"hs-quote__stars\" aria-hidden=\"true\">★★★★★</span>\n    <p class=\"hs-quote__text\">“This installed in just a few minutes and made an immediate improvement on the taste of my tap water and ice. Wish I had remembered to buy this sooner.”</p>\n    <p class=\"hs-quote__author\">Jon S. — HAUSTAS Flow™</p>\n  </div>\n  <div class=\"hs-quote\">\n    <span class=\"hs-quote__stars\" aria-hidden=\"true\">★★★★★</span>\n    <p class=\"hs-quote__text\">“I cannot believe how easy this is to install. So simple — I’m going to buy one for my parents too.”</p>\n    <p class=\"hs-quote__author\">Kateryna — HAUSTAS Pure™</p>\n  </div>\n  <div class=\"hs-quote\">\n    <span class=\"hs-quote__stars\" aria-hidden=\"true\">★★★★★</span>\n    <p class=\"hs-quote__text\">“Very high water flow! Tastes great and lasts a long time. So far so good and easy to install.”</p>\n    <p class=\"hs-quote__author\">KingRelex — HAUSTAS Reserve Max™</p>\n  </div>\n</div>\n<style>\n  .hs-quotes {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n    gap: 28px;\n    max-width: 1100px;\n    margin: 40px auto 0;\n    padding-inline: clamp(20px, 5vw, 64px);\n  }\n  .hs-quote {\n    background: #F1F4F3;\n    border: 1px solid #C8D1CC;\n    padding: 28px 24px;\n    text-align: left;\n  }\n  .hs-quote__stars {\n    color: #C9A24B;\n    font-size: 0.9375rem;\n    letter-spacing: 2px;\n  }\n  .hs-quote__text {\n    margin: 12px 0 16px;\n    font-family: var(--font-heading--family);\n    font-style: italic;\n    font-size: 1.0625rem;\n    line-height: 1.5;\n    color: #202224;\n  }\n  .hs-quote__author {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #5C6368;\n  }\n</style>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "sp_eyebrow",
+        "sp_heading",
+        "sp_quotes"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#FFFFFF",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "risk_reversal_01",
+    "customer_proof_01",
     "product_list_fa6P9H",
     "engineered_precision_01",
     "comparison_table_01",

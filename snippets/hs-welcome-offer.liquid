@@ -229,12 +229,26 @@
 
     var SESSION_KEY = 'hs_welcome_offer_shown';
     var FORM_SUBMITTED = modal.querySelector('[data-hs-welcome-success]') !== null;
+    var sawBottomSignup = false;
+
+    var bottomSignup = document.getElementById('shopify-section-email_capture_01');
+    if (bottomSignup && 'IntersectionObserver' in window) {
+      var signupObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            sawBottomSignup = true;
+            signupObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      signupObserver.observe(bottomSignup);
+    }
 
     function alreadyShown() {
       try {
-        return sessionStorage.getItem(SESSION_KEY) === '1' || localStorage.getItem('hs_welcome_offer_dismissed') === '1';
+        return sawBottomSignup || sessionStorage.getItem(SESSION_KEY) === '1' || localStorage.getItem('hs_welcome_offer_dismissed') === '1';
       } catch (e) {
-        return false;
+        return sawBottomSignup;
       }
     }
 
