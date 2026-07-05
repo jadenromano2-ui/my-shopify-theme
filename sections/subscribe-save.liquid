@@ -105,6 +105,8 @@
   .subscribe-save {
     background: var(--ss-bg, #FFFFFF);
     color: var(--ss-fg, #202224);
+    border-top: 1px solid rgba(15, 94, 117, 0.3);
+    border-bottom: 1px solid rgba(15, 94, 117, 0.3);
   }
 
   .subscribe-save__grid {
@@ -153,8 +155,8 @@
     top: 14px;
     right: 14px;
     z-index: 2;
-    background: #0F5E75;
-    color: #FFFFFF;
+    background: #C9A24B;
+    color: #202224;
     font-family: var(--font-accent--family);
     font-weight: var(--font-accent--weight);
     font-size: 0.6875rem;
@@ -218,10 +220,11 @@
   }
 
   .subscribe-save__price-discounted {
-    font-family: var(--font-heading--family);
+    font-family: var(--font-subheading--family);
     font-weight: 600;
     font-size: 1.375rem;
-    color: #0F5E75;
+    color: #202224;
+    font-variant-numeric: tabular-nums;
   }
 
   .subscribe-save__cta {

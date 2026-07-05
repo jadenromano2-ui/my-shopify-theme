@@ -4021,3 +4021,71 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .comparison-table__cell--typical {
   font-variant-numeric: tabular-nums;
 }
+
+/* HAUSTAS Brand Design System v2 -- Judge.me review stars recolored to
+   Warm Brass (filled) / Natural Mineral (empty), never default yellow */
+.jdgm-star.jdgm--on,
+.jdgm-star.jdgm--half {
+  color: #C9A24B !important;
+  fill: #C9A24B !important;
+}
+.jdgm-star:not(.jdgm--on):not(.jdgm--half) {
+  color: #C8D1CC !important;
+  fill: #C8D1CC !important;
+}
+.jdgm-prev-badge__text,
+.jdgm-rev-widg__summary-text,
+.jdgm-rev-widg__title {
+  font-family: var(--font-body--family);
+  color: #5C6368;
+}
+
+/* HAUSTAS Brand Design System v2 -- Verified badge component */
+.hs-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body--family);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  color: #5C6368;
+}
+.hs-verified-badge__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #3F7D5C;
+  flex-shrink: 0;
+}
+.hs-verified-badge__icon svg {
+  width: 8px;
+  height: 8px;
+}
+
+/* HAUSTAS Brand Design System v2 -- low-stock indicator */
+.hs-low-stock {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body--family);
+  font-size: 0.8125rem;
+  color: #5C6368;
+}
+.hs-low-stock__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #C9A24B;
+  flex-shrink: 0;
+}
+
+/* HAUSTAS Brand Design System v2 -- low-stock indicator uses Warm Brass dot,
+   consistent with the brand's engineering-batch language rather than red urgency */
+.product-inventory__icon-low svg,
+.product-inventory__icon-low svg * {
+  fill: #C9A24B !important;
+  color: #C9A24B !important;
+}

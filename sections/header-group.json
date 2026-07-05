@@ -17,8 +17,8 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Complimentary Shipping On All Orders",
-            "link": "",
+            "text": "NSF/ANSI 42 &amp; 53 Certified — View Certificate",
+            "link": "/pages/about-us",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "weight": "",
@@ -31,7 +31,7 @@
         "announcement_trial01": {
           "type": "_announcement",
           "settings": {
-            "text": "100-Night Trial — Free Returns",
+            "text": "100-Night Trial",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
@@ -45,7 +45,7 @@
         "announcement_warranty01": {
           "type": "_announcement",
           "settings": {
-            "text": "15-Year Warranty On Every Order",
+            "text": "15-Year Warranty",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",

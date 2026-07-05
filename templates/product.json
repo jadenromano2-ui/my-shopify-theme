@@ -207,6 +207,14 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "lab_tested_badge": {
+                  "type": "custom-liquid",
+                  "name": "Lab tested badge",
+                  "settings": {
+                    "custom_liquid": "<div class=\"hs-verified-badge\"><span class=\"hs-verified-badge__icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.8\"/></svg></span><span>Lab Tested — NSF/ANSI 42 &amp; 53</span></div>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -215,7 +223,8 @@
                 "tagline_hook",
                 "price_tVjtKg",
                 "value_anchor",
-                "inventory_status"
+                "inventory_status",
+                "lab_tested_badge"
               ]
             },
             "checkmark_highlights": {
@@ -672,7 +681,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#FCFCFA",
+                "background_color": "#EAF5F8",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -682,7 +691,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#C8D1CC",
+                "border_color": "#B7CFD6",
                 "border_radius": 0,
                 "link": "/discount/FLOWSAVE15?redirect=/products/item-2",
                 "open_in_new_tab": false,
