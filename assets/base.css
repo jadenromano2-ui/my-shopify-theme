@@ -4089,3 +4089,121 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   fill: #C9A24B !important;
   color: #C9A24B !important;
 }
+
+/* HAUSTAS Brand Design System v2 -- full Judge.me review widget re-skin,
+   so the "Customer Reviews" module matches site typography/palette instead
+   of Judge.me's default fonts and colors. Overrides use !important since
+   the widget injects its own inline/default stylesheet. */
+
+.jdgm-rev-widg,
+.jdgm-rev-widg * {
+  font-family: var(--font-body--family) !important;
+}
+
+.jdgm-rev-widg__title {
+  font-family: var(--font-heading--family) !important;
+  font-weight: 400 !important;
+  color: #202224 !important;
+  font-size: 1.75rem !important;
+}
+
+.jdgm-rev-widg__summary-text,
+.jdgm-r-days-ago,
+.jdgm-rev__timestamp {
+  color: #8B9398 !important;
+  font-size: 0.8125rem !important;
+}
+
+.jdgm-write-rev-link,
+.jdgm-form-btm-actions a,
+.jdgm-btn--reply {
+  color: #0F5E75 !important;
+  font-weight: 500 !important;
+}
+
+.jdgm-write-rev-btn,
+.jdgm-submit-btn,
+.jdgm-btn--add-photos {
+  background: #0F5E75 !important;
+  border-color: #0F5E75 !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-accent--family) !important;
+  font-weight: var(--font-accent--weight) !important;
+}
+
+.jdgm-write-rev-btn:hover,
+.jdgm-submit-btn:hover {
+  background: #0B4D60 !important;
+  border-color: #0B4D60 !important;
+}
+
+/* Histogram bars -> Warm Brass instead of Judge.me default */
+.jdgm-histogram__bar-content {
+  background: #C9A24B !important;
+}
+
+.jdgm-histogram__percentage,
+.jdgm-histogram__frequency {
+  color: #5C6368 !important;
+}
+
+/* Reviewer avatar circles -> flat Graphite instead of rainbow per-reviewer colors */
+.jdgm-rev__icon {
+  background: #5C6368 !important;
+  color: #FCFCFA !important;
+  font-family: var(--font-subheading--family) !important;
+}
+
+.jdgm-rev__author {
+  color: #202224 !important;
+  font-weight: 600 !important;
+}
+
+.jdgm-rev__title {
+  color: #202224 !important;
+  font-weight: 600 !important;
+}
+
+.jdgm-rev__body,
+.jdgm-rev__body p {
+  color: #5C6368 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+.jdgm-rev {
+  border-color: #C8D1CC !important;
+}
+
+.jdgm-divider-top {
+  border-top-color: #C8D1CC !important;
+}
+
+.jdgm-rev__transparency-badge,
+.jdgm-verified-buyer-badge,
+.jdgm-rev__buyer-badge {
+  color: #3F7D5C !important;
+  font-family: var(--font-body--family) !important;
+}
+
+/* Pagination -> Deep Water instead of default color */
+.jdgm-paginate__page {
+  color: #5C6368 !important;
+}
+
+.jdgm-paginate__page.jdgm-curt {
+  color: #FFFFFF !important;
+  background: #0F5E75 !important;
+}
+
+.jdgm-paginate__page:hover {
+  color: #0F5E75 !important;
+}
+
+/* Sort/filter dropdown */
+.jdgm-rev-widg__sort-wrapper select,
+.jdgm-form-inp {
+  font-family: var(--font-body--family) !important;
+  border-color: #C8D1CC !important;
+  color: #202224 !important;
+}
