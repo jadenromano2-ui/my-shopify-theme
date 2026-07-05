@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "search": {
       "type": "search-header",
@@ -85,7 +86,7 @@
             "padding-block-end": 20,
             "padding-inline-start": 20,
             "padding-inline-end": 20,
-            "border_color": "#D9D2C4"
+            "border_color": "#C8D1CC"
           },
           "blocks": {
             "product_card_gallery_cFExAi": {
@@ -112,7 +113,7 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -138,7 +139,7 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",

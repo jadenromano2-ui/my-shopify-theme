@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "cart-section": {
       "type": "main-cart",
@@ -181,7 +182,7 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -206,7 +207,7 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",

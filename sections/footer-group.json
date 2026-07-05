@@ -67,7 +67,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#2e2c29",
+                "text_color": "#202224",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -90,14 +90,14 @@
                 "input_style": "custom",
                 "border_width": 1,
                 "border_radius": 8,
-                "input_background_color": "#ffffff",
-                "input_text_color": "#2e2c29",
-                "input_border_color": "#d9d2c4",
+                "input_background_color": "#FCFCFA",
+                "input_text_color": "#202224",
+                "input_border_color": "#C8D1CC",
                 "input_type_preset": "paragraph",
                 "style_class": "button-custom",
-                "custom_button_background": "#2F5D62",
+                "custom_button_background": "#0F5E75",
                 "custom_button_text": "#ffffff",
-                "custom_button_border": "#2F5D62",
+                "custom_button_border": "#0F5E75",
                 "link_text_color": "",
                 "display_type": "arrow",
                 "label": "Subscribe",
@@ -124,7 +124,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 16,
-        "background_color": "#ffffff",
+        "background_color": "#FCFCFA",
         "padding-block-start": 56,
         "padding-block-end": 56
       }
@@ -137,8 +137,8 @@
         "trust_2": "15-Year Warranty",
         "trust_3": "NSF/ANSI 42 & 53 Certified",
         "wordmark": "",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
+        "background_color": "#FCFCFA",
+        "foreground_color": "#202224",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -199,7 +199,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#2E2C29",
+                "text_color": "#202224",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -224,7 +224,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#706C63",
+                "text_color": "#5C6368",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -251,7 +251,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#706C63",
+            "text_color": "#5C6368",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -271,7 +271,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#706C63",
+            "text_color": "#5C6368",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -291,7 +291,7 @@
             "accordion_icon": "caret",
             "accordion_dividers": false,
             "background_color": "rgba(0,0,0,0)",
-            "text_color": "#706C63",
+            "text_color": "#5C6368",
             "heading_preset": "h4",
             "link_preset": "paragraph",
             "padding-block-start": 0,
@@ -354,7 +354,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#2E2C29",
+                "text_color": "#202224",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -368,7 +368,7 @@
             "social_links_follow": {
               "type": "social-links",
               "settings": {
-                "icon_color": "#2E2C29",
+                "icon_color": "#202224",
                 "facebook_url": "https://www.facebook.com/",
                 "instagram_url": "https://www.instagram.com/",
                 "youtube_url": "",
@@ -416,7 +416,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 48,
-        "background_color": "#FFFFFF",
+        "background_color": "#FCFCFA",
         "padding-block-start": 64,
         "padding-block-end": 48
       }
@@ -428,7 +428,7 @@
           "type": "footer-copyright",
           "settings": {
             "show_powered_by": false,
-            "text_color": "#706C63",
+            "text_color": "#5C6368",
             "font_size": "0.75rem",
             "case": "none"
           },
@@ -442,9 +442,9 @@
       "settings": {
         "section_width": "page-width",
         "gap": 24,
-        "background_color": "#FFFFFF",
+        "background_color": "#FCFCFA",
         "divider_thickness": 1,
-        "divider_color": "#D9D2C4",
+        "divider_color": "#C8D1CC",
         "padding-block-start": 20,
         "padding-block-end": 40
       }

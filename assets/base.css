@@ -4012,3 +4012,12 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     margin-top: calc(var(--header-height) * var(--transparent-header-offset-boolean) * -1);
   }
 }
+
+/* HAUSTAS Brand Design System v2 -- tabular figures for prices/numerals
+   so values like $29.00 / $179.99 align in tables and comparison grids */
+.price,
+.compare-at-price,
+.comparison-table__cell--haustas,
+.comparison-table__cell--typical {
+  font-variant-numeric: tabular-nums;
+}

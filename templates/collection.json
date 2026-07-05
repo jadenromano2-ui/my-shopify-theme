@@ -27,7 +27,7 @@
             "letter_spacing": "0.16em",
             "case": "upper",
             "wrap": "pretty",
-            "text_color": "#2f5d62",
+            "text_color": "#0F5E75",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -83,7 +83,7 @@
         "section_height": "",
         "section_height_custom": 32,
         "background_media": "none",
-        "background_color": "#ffffff",
+        "background_color": "#FCFCFA",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -134,8 +134,8 @@
       ],
       "name": "Risk reversal bar",
       "settings": {
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
+        "background_color": "#FCFCFA",
+        "foreground_color": "#202224",
         "padding-block-start": 32,
         "padding-block-end": 32
       }
@@ -175,7 +175,7 @@
             "border": "none",
             "border_width": 0,
             "border_opacity": 100,
-            "border_color": "#d9d2c4",
+            "border_color": "#C8D1CC",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -207,7 +207,7 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1.0625rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -228,7 +228,7 @@
               "type": "custom-liquid",
               "name": "Product description",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if desc != blank %}\n  <p style=\"margin:4px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.45; color: #706C63;\">{{ desc | truncatewords: 14 }}</p>\n{% endif %}"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign desc = p.description | strip_html | strip_newlines\n%}\n{% if desc != blank %}\n  <p style=\"margin:4px 0 0; font-family: var(--font-body--family); font-size: 0.8125rem; line-height: 1.45; color: #5C6368;\">{{ desc | truncatewords: 14 }}</p>\n{% endif %}"
               },
               "blocks": {}
             },
@@ -236,7 +236,7 @@
               "type": "custom-liquid",
               "name": "Availability micro-line",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<p id=\"hs-cardstock-{{ block.id }}\" style=\"display:flex; align-items:center; gap:6px; margin:8px 0 0; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: {% if p.available %}#2F5D62{% else %}#9A968C{% endif %};\">\n  <span style=\"width:6px; height:6px; border-radius:50%; background: {% if p.available %}#2F5D62{% else %}#D9D2C4{% endif %}; flex-shrink:0;\"></span>\n  {% if p.available %}In Stock &middot; Free Shipping{% else %}Currently Sold Out{% endif %}\n</p>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<p id=\"hs-cardstock-{{ block.id }}\" style=\"display:flex; align-items:center; gap:6px; margin:8px 0 0; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: {% if p.available %}#0F5E75{% else %}#8B9398{% endif %};\">\n  <span style=\"width:6px; height:6px; border-radius:50%; background: {% if p.available %}#0F5E75{% else %}#C8D1CC{% endif %}; flex-shrink:0;\"></span>\n  {% if p.available %}In Stock &middot; Free Shipping{% else %}Currently Sold Out{% endif %}\n</p>"
               },
               "blocks": {}
             },
@@ -249,7 +249,7 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1.1875rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -266,7 +266,7 @@
               "type": "custom-liquid",
               "name": "CTA row",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n<div id=\"hs-ctarow-{{ block.id }}\" style=\"display:flex; align-items:center; gap:10px; margin-top:14px;\">\n  <a href=\"{{ p.url }}\" style=\"flex:0 0 auto; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #2E2C29; text-decoration: none; border-bottom: 1px solid #2E2C29; padding-bottom: 2px; white-space: nowrap;\">View</a>\n  {% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"flex: 1 1 auto;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/cart\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #2F5D62; border: 1px solid #2F5D62; cursor: pointer; border-radius: 2px;\">\n      <span>Add to Cart</span>\n    </button>\n  </form>\n  {% else %}\n  <button type=\"button\" disabled style=\"flex: 1 1 auto; display:flex; align-items:center; justify-content:center; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9A968C; background: transparent; border: 1px solid #D9D2C4; cursor: not-allowed; border-radius: 2px;\">\n    Sold Out\n  </button>\n  {% endif %}\n</div>\n<style>\n  #hs-ctarow-{{ block.id }} a:hover { opacity: 0.6; }\n  #hs-ctarow-{{ block.id }} button:not(:disabled):hover { background: #1F4448; border-color: #1F4448; }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  assign v = p.selected_or_first_available_variant\n%}\n<div id=\"hs-ctarow-{{ block.id }}\" style=\"display:flex; align-items:center; gap:10px; margin-top:14px;\">\n  <a href=\"{{ p.url }}\" style=\"flex:0 0 auto; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #202224; text-decoration: none; border-bottom: 1px solid #202224; padding-bottom: 2px; white-space: nowrap;\">View</a>\n  {% if p.available %}\n  <form method=\"post\" action=\"/cart/add\" style=\"flex: 1 1 auto;\">\n    <input type=\"hidden\" name=\"id\" value=\"{{ v.id }}\">\n    <input type=\"hidden\" name=\"return_to\" value=\"/cart\">\n    <button type=\"submit\" style=\"display:flex; align-items:center; justify-content:center; gap:9px; width:100%; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #0F5E75; border: 1px solid #0F5E75; cursor: pointer; border-radius: 2px;\">\n      <span>Add to Cart</span>\n    </button>\n  </form>\n  {% else %}\n  <button type=\"button\" disabled style=\"flex: 1 1 auto; display:flex; align-items:center; justify-content:center; padding:13px 16px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8B9398; background: transparent; border: 1px solid #C8D1CC; cursor: not-allowed; border-radius: 2px;\">\n    Sold Out\n  </button>\n  {% endif %}\n</div>\n<style>\n  #hs-ctarow-{{ block.id }} a:hover { opacity: 0.6; }\n  #hs-ctarow-{{ block.id }} button:not(:disabled):hover { background: #0B4D60; border-color: #0B4D60; }\n</style>"
               },
               "blocks": {}
             }
@@ -363,8 +363,8 @@
         "eyebrow": "Before You Choose",
         "heading": "Not All Filtration Is Equal.",
         "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
-        "background_color": "#ffffff",
-        "foreground_color": "#2e2c29",
+        "background_color": "#FCFCFA",
+        "foreground_color": "#202224",
         "cta_label": "",
         "cta_link": "",
         "padding-block-start": 64,

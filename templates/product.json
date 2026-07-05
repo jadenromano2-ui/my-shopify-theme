@@ -31,14 +31,6 @@
           },
           "blocks": {}
         },
-        "judge_me_reviews_preview_badge_7rRxKf": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "judge_me_reviews_preview_badge_T8DWgp": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
@@ -150,7 +142,7 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#2e2c29",
+                    "text_color": "#202224",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -161,11 +153,15 @@
                   },
                   "blocks": {}
                 },
+                "judge_me_reviews_preview_badge_QEDnaH": {
+                  "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+                  "settings": {}
+                },
                 "tagline_hook": {
                   "type": "custom-liquid",
                   "name": "Benefit tagline",
                   "settings": {
-                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign tag = 'The flagship system built to disappear into your countertop — and your life.'\n    when 'item-3'\n      assign tag = 'Full filtration, compact footprint — built for spaces that count every inch.'\n    when 'item-1'\n      assign tag = 'More capacity, same trusted filtration — for households that go through water fast.'\n    when 'item-2'\n      assign tag = 'Keep your system running at full strength, every single day.'\n    when 'haustas-reserve-2'\n      assign tag = 'A limited-run edition of the standard you already trust.'\n    else\n      assign tag = 'Engineered water filtration you can trust for decades.'\n  endcase\n%}\n<p id=\"hs-tagline-{{ block.id }}\">{{ tag }}</p>\n<style>\n  #hs-tagline-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 1rem;\n    line-height: 1.5;\n    color: #706C63;\n  }\n</style>"
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign tag = 'The flagship system built to disappear into your countertop — and your life.'\n    when 'item-3'\n      assign tag = 'Full filtration, compact footprint — built for spaces that count every inch.'\n    when 'item-1'\n      assign tag = 'More capacity, same trusted filtration — for households that go through water fast.'\n    when 'item-2'\n      assign tag = 'Keep your system running at full strength, every single day.'\n    when 'haustas-reserve-2'\n      assign tag = 'A limited-run edition of the standard you already trust.'\n    else\n      assign tag = 'Engineered water filtration you can trust for decades.'\n  endcase\n%}\n<p id=\"hs-tagline-{{ block.id }}\">{{ tag }}</p>\n<style>\n  #hs-tagline-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 1rem;\n    line-height: 1.5;\n    color: #5C6368;\n  }\n</style>"
                   },
                   "blocks": {}
                 },
@@ -178,12 +174,12 @@
                     "type_preset": "custom",
                     "width": "100%",
                     "alignment": "left",
-                    "font": "var(--font-body--family)",
+                    "font": "var(--font-subheading--family)",
                     "font_size": "1.1875rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
-                    "text_color": "#706c63",
+                    "text_color": "#5C6368",
                     "padding-block-start": 6,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -195,7 +191,7 @@
                   "type": "custom-liquid",
                   "name": "Value anchor",
                   "settings": {
-                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-2'\n      assign val = 'Just $0.16/day for full filtration.'\n    when 'item-1'\n      assign val = 'Just $0.27/day for full filtration.'\n    when 'item-4'\n      assign val = 'Under $1/month over its 15-year warranty.'\n    when 'item-3'\n      assign val = 'Under $3/year over its 15-year warranty.'\n    when 'haustas-reserve-2'\n      assign val = 'Under $10/year over its 15-year warranty.'\n    else\n      assign val = ''\n  endcase\n%}\n{% if val != blank %}\n<p id=\"hs-value-{{ block.id }}\">{{ val }}</p>\n<style>\n  #hs-value-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #9A968C;\n    padding-top: 2px;\n  }\n</style>\n{% endif %}"
+                    "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-2'\n      assign val = 'Just $0.16/day for full filtration.'\n    when 'item-1'\n      assign val = 'Just $0.27/day for full filtration.'\n    when 'item-4'\n      assign val = 'Under $1/month over its 15-year warranty.'\n    when 'item-3'\n      assign val = 'Under $3/year over its 15-year warranty.'\n    when 'haustas-reserve-2'\n      assign val = 'Under $10/year over its 15-year warranty.'\n    else\n      assign val = ''\n  endcase\n%}\n{% if val != blank %}\n<p id=\"hs-value-{{ block.id }}\">{{ val }}</p>\n<style>\n  #hs-value-{{ block.id }} {\n    margin: 0;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    color: #8B9398;\n    padding-top: 2px;\n  }\n</style>\n{% endif %}"
                   },
                   "blocks": {}
                 },
@@ -204,7 +200,7 @@
                   "settings": {
                     "inventory_threshold": 10,
                     "show_inventory_quantity": true,
-                    "text_color": "#706c63",
+                    "text_color": "#5C6368",
                     "padding-block-start": 2,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -215,6 +211,7 @@
               },
               "block_order": [
                 "text_xrnftG",
+                "judge_me_reviews_preview_badge_QEDnaH",
                 "tagline_hook",
                 "price_tVjtKg",
                 "value_anchor",
@@ -225,7 +222,7 @@
               "type": "custom-liquid",
               "name": "Checkmark highlights",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #2E2C29;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #2F5D62;\n  }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n  case p.handle\n    when 'item-4'\n      assign b1 = 'Full 4-stage filtration in one countertop unit'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = '304 stainless steel body, built to last decades'\n    when 'item-3'\n      assign b1 = 'Compact 4-stage filtration for smaller spaces'\n      assign b2 = 'No plumber required — set up in under 15 minutes'\n      assign b3 = 'Same filtration standard in a smaller footprint'\n    when 'item-1'\n      assign b1 = 'Extended-capacity replacement cartridge'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = 'Full 6-month supply of 4-stage filtration'\n    when 'item-2'\n      assign b1 = 'Standard replacement cartridge, 6-month supply'\n      assign b2 = 'Fits every HAUSTAS system'\n      assign b3 = '4-stage filtration — sediment, carbon, KDF, polish'\n    when 'haustas-reserve-2'\n      assign b1 = 'Limited-release small-batch edition'\n      assign b2 = 'Same 4-stage filtration standard'\n      assign b3 = 'No plumber required — set up in under 15 minutes'\n    else\n      assign b1 = '4-stage filtration engineered in 304 stainless steel'\n      assign b2 = 'NSF/ANSI 42 & 53 certified'\n      assign b3 = '15-year warranty, full coverage'\n  endcase\n%}\n<div id=\"hs-highlights-{{ block.id }}\">\n  <ul class=\"hs-highlight-list\">\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b1 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b2 }}</li>\n    <li><span class=\"hs-highlight-check\" aria-hidden=\"true\"><svg viewBox=\"0 0 16 16\" width=\"11\" height=\"11\" fill=\"none\"><path d=\"M3 8.5 6.5 12 13 4\" stroke=\"#FFFFFF\" stroke-width=\"1.6\"/></svg></span>{{ b3 }}</li>\n  </ul>\n</div>\n<style>\n  #hs-highlights-{{ block.id }} .hs-highlight-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.9375rem;\n    color: #202224;\n  }\n  #hs-highlights-{{ block.id }} .hs-highlight-check {\n    flex-shrink: 0;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    background: #0F5E75;\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -249,13 +246,13 @@
                 "show_swatches": false,
                 "option_label_text_color": "",
                 "variant_style_class": "default",
-                "custom_variant_background": "#ffffff",
-                "custom_variant_text": "#2e2c29",
-                "custom_variant_border": "#d9d2c4",
+                "custom_variant_background": "#FCFCFA",
+                "custom_variant_text": "#202224",
+                "custom_variant_border": "#C8D1CC",
                 "selected_variant_style_class": "default",
-                "custom_selected_variant_background": "#2e2c29",
+                "custom_selected_variant_background": "#202224",
                 "custom_selected_variant_text": "#ffffff",
-                "custom_selected_variant_border": "#2e2c29",
+                "custom_selected_variant_border": "#202224",
                 "alignment": "left",
                 "padding-block-start": 4,
                 "padding-block-end": 0,
@@ -309,9 +306,9 @@
                   "static": true,
                   "settings": {
                     "style_class": "button",
-                    "custom_button_background": "#2f5d62",
+                    "custom_button_background": "#0F5E75",
                     "custom_button_text": "#ffffff",
-                    "custom_button_border": "#2f5d62"
+                    "custom_button_border": "#0F5E75"
                   },
                   "blocks": {}
                 },
@@ -328,7 +325,7 @@
               "type": "custom-liquid",
               "name": "Risk reversal microcopy",
               "settings": {
-                "custom_liquid": "<div id=\"hs-riskline-{{ block.id }}\">\n  <span>Free Shipping</span><span class=\"hs-riskline-dot\">&middot;</span><span>100-Night Trial</span><span class=\"hs-riskline-dot\">&middot;</span><span>15-Year Warranty</span>\n</div>\n<style>\n  #hs-riskline-{{ block.id }} {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    letter-spacing: 0.02em;\n    color: #706C63;\n  }\n  #hs-riskline-{{ block.id }} .hs-riskline-dot {\n    color: #D9D2C4;\n  }\n</style>"
+                "custom_liquid": "<div id=\"hs-riskline-{{ block.id }}\">\n  <span>Free Shipping</span><span class=\"hs-riskline-dot\">&middot;</span><span>100-Night Trial</span><span class=\"hs-riskline-dot\">&middot;</span><span>15-Year Warranty</span>\n</div>\n<style>\n  #hs-riskline-{{ block.id }} {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 10px;\n    font-family: var(--font-body--family);\n    font-size: 0.75rem;\n    letter-spacing: 0.02em;\n    color: #5C6368;\n  }\n  #hs-riskline-{{ block.id }} .hs-riskline-dot {\n    color: #C8D1CC;\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -336,7 +333,7 @@
               "type": "custom-liquid",
               "name": "Subscribe & Save banner",
               "settings": {
-                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<a id=\"hs-subscribe-{{ block.id }}\" class=\"hs-subscribe-banner\" href=\"/discount/FLOWSAVE15?redirect=/products/{{ p.handle }}\">\n  <span class=\"hs-subscribe-banner__icon\" aria-hidden=\"true\">\n    <svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" fill=\"none\"><path d=\"M4 10a6 6 0 0110-4.5M16 10a6 6 0 01-10 4.5M14 3v3h-3M6 17v-3h3\" stroke=\"#2F5D62\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </span>\n  <span>Save 15% with Subscribe &amp; Save — use code <strong>FLOWSAVE15</strong></span>\n</a>\n<style>\n  #hs-subscribe-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-top: 12px;\n    padding: 12px 14px;\n    background: #EAF3F2;\n    border: 1px solid #BFD6D3;\n    text-decoration: none;\n    color: #2E2C29;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    line-height: 1.4;\n    transition: background 0.2s ease;\n  }\n  #hs-subscribe-{{ block.id }}:hover {\n    background: #DCEEEC;\n  }\n  #hs-subscribe-{{ block.id }} .hs-subscribe-banner__icon {\n    flex-shrink: 0;\n    display: inline-flex;\n  }\n  #hs-subscribe-{{ block.id }} strong {\n    color: #2F5D62;\n  }\n</style>"
+                "custom_liquid": "{% liquid\n  assign p = closest.product\n%}\n<a id=\"hs-subscribe-{{ block.id }}\" class=\"hs-subscribe-banner\" href=\"/discount/FLOWSAVE15?redirect=/products/{{ p.handle }}\">\n  <span class=\"hs-subscribe-banner__icon\" aria-hidden=\"true\">\n    <svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" fill=\"none\"><path d=\"M4 10a6 6 0 0110-4.5M16 10a6 6 0 01-10 4.5M14 3v3h-3M6 17v-3h3\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </span>\n  <span>Save 15% with Subscribe &amp; Save — use code <strong>FLOWSAVE15</strong></span>\n</a>\n<style>\n  #hs-subscribe-{{ block.id }} {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-top: 12px;\n    padding: 12px 14px;\n    background: #EAF5F8;\n    border: 1px solid #B7CFD6;\n    text-decoration: none;\n    color: #202224;\n    font-family: var(--font-body--family);\n    font-size: 0.8125rem;\n    line-height: 1.4;\n    transition: background 0.2s ease;\n  }\n  #hs-subscribe-{{ block.id }}:hover {\n    background: #DBE7EA;\n  }\n  #hs-subscribe-{{ block.id }} .hs-subscribe-banner__icon {\n    flex-shrink: 0;\n    display: inline-flex;\n  }\n  #hs-subscribe-{{ block.id }} strong {\n    color: #0F5E75;\n  }\n</style>"
               },
               "blocks": {}
             },
@@ -354,7 +351,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#706c63",
+                "text_color": "#5C6368",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -393,7 +390,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#d9d2c4",
+                "border_color": "#C8D1CC",
                 "border_radius": 0,
                 "link": "",
                 "open_in_new_tab": false,
@@ -450,7 +447,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2e2c29"
+                        "icon_color": "#202224"
                       },
                       "blocks": {}
                     },
@@ -469,7 +466,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2e2c29",
+                        "text_color": "#202224",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -532,7 +529,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2e2c29"
+                        "icon_color": "#202224"
                       },
                       "blocks": {}
                     },
@@ -551,7 +548,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2e2c29",
+                        "text_color": "#202224",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -614,7 +611,7 @@
                         "width": 20,
                         "link": "",
                         "open_in_new_tab": false,
-                        "icon_color": "#2e2c29"
+                        "icon_color": "#202224"
                       },
                       "blocks": {}
                     },
@@ -633,7 +630,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#2e2c29",
+                        "text_color": "#202224",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -675,7 +672,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#ffffff",
+                "background_color": "#FCFCFA",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -685,7 +682,7 @@
                 "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "#d9d2c4",
+                "border_color": "#C8D1CC",
                 "border_radius": 0,
                 "link": "/discount/FLOWSAVE15?redirect=/products/item-2",
                 "open_in_new_tab": false,
@@ -749,7 +746,7 @@
                         "letter_spacing": "loose",
                         "case": "uppercase",
                         "wrap": "pretty",
-                        "text_color": "#2e2c29",
+                        "text_color": "#202224",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -774,7 +771,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706c63",
+                        "text_color": "#5C6368",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -805,7 +802,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#2e2c29",
+                    "text_color": "#202224",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -837,7 +834,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#706c63",
+                "text_color": "#5C6368",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -854,7 +851,7 @@
               "settings": {
                 "icon": "plus",
                 "dividers": true,
-                "divider_color": "#d9d2c4",
+                "divider_color": "#C8D1CC",
                 "type_preset": "h6",
                 "background_color": "",
                 "text_color": "",
@@ -893,7 +890,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706c63",
+                        "text_color": "#5C6368",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -933,7 +930,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706c63",
+                        "text_color": "#5C6368",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -973,7 +970,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706c63",
+                        "text_color": "#5C6368",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -1013,7 +1010,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
-                        "text_color": "#706c63",
+                        "text_color": "#5C6368",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
@@ -1068,9 +1065,7 @@
         }
       },
       "block_order": [
-        "disclosures_g9mWze",
-        "judge_me_reviews_preview_badge_7rRxKf",
-        "judge_me_reviews_preview_badge_T8DWgp"
+        "disclosures_g9mWze"
       ],
       "settings": {
         "content_width": "content-center-aligned",
@@ -1102,7 +1097,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#2e2c29",
+            "text_color": "#202224",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1123,7 +1118,7 @@
             "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
-            "border_color": "#d9d2c4",
+            "border_color": "#C8D1CC",
             "border_radius": 0,
             "padding-block-start": 20,
             "padding-block-end": 20,
@@ -1156,7 +1151,7 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -1182,7 +1177,7 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-subheading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
