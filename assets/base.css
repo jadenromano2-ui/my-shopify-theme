@@ -4044,25 +4044,25 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hs-verified-badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-family: var(--font-body--family);
   font-weight: 500;
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   color: #5C6368;
 }
 .hs-verified-badge__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #3F7D5C;
   flex-shrink: 0;
 }
 .hs-verified-badge__icon svg {
-  width: 8px;
-  height: 8px;
+  width: 11px;
+  height: 11px;
 }
 
 /* HAUSTAS Brand Design System v2 -- low-stock indicator */
