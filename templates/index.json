@@ -478,10 +478,17 @@
         "eyebrow": "Engineering Philosophy",
         "heading": "Engineered Without Compromise.",
         "intro_text": "Four principles guide every object we build — none of them negotiable.",
+<<<<<<< HEAD
+        "light_background": "#ffffff",
+        "light_foreground": "#2e2c29",
+        "dark_background": "#faf9f6",
+        "dark_foreground": "#2e2c29",
+=======
         "light_background": "#FCFCFA",
         "light_foreground": "#202224",
         "dark_background": "#F5F7F6",
         "dark_foreground": "#202224",
+>>>>>>> 36d684e (Migrate to Brand Design System v2: Deep Water accent palette, cool slate/mineral neutrals, Instrument Serif headlines, Inter SemiBold product titles/prices, tabular numerals)
         "cta_label": "View The Collection",
         "cta_link": "shopify://collections/all",
         "padding-block-start": 72,
@@ -761,8 +768,13 @@
         "eyebrow": "Ultrafiltration",
         "heading": "Membrane Filtration, Without The Waste.",
         "body_text": "Ultrafiltration pushes water through a hollow-fiber membrane with pores measured in nanometers — small enough to block sediment, bacteria, and cysts, while letting water flow through at full pressure. Unlike reverse osmosis, it produces zero wastewater and needs no electricity or drain line, so it fits anywhere a countertop can. HAUSTAS Pure and Pure One both run on this technology, paired with carbon and KDF stages for taste and heavy-metal reduction.",
+<<<<<<< HEAD
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+=======
         "background_color": "#FCFCFA",
         "foreground_color": "#202224",
+>>>>>>> 36d684e (Migrate to Brand Design System v2: Deep Water accent palette, cool slate/mineral neutrals, Instrument Serif headlines, Inter SemiBold product titles/prices, tabular numerals)
         "cta_label": "Shop The Pure One",
         "cta_link": "shopify://products/item-4",
         "padding-block-start": 72,
@@ -778,8 +790,13 @@
         "eyebrow": "Reverse Osmosis",
         "heading": "The Most Thorough Filtration Available.",
         "body_text": "Reverse osmosis forces water through a semi-permeable membrane fine enough to reject dissolved solids, heavy metals, and other trace contaminants that lighter filtration methods can miss — typically the most complete filtration technology sold for home use. It runs under the sink, uses a small storage tank, and delivers filtered water on demand at the tap. HAUSTAS Reserve 2 pairs RO with a multi-stage pre-filter for full coverage.",
+<<<<<<< HEAD
+        "background_color": "#f3f7f6",
+        "foreground_color": "#2e2c29",
+=======
         "background_color": "#F5F7F6",
         "foreground_color": "#202224",
+>>>>>>> 36d684e (Migrate to Brand Design System v2: Deep Water accent palette, cool slate/mineral neutrals, Instrument Serif headlines, Inter SemiBold product titles/prices, tabular numerals)
         "cta_label": "Shop Reverse Osmosis",
         "cta_link": "shopify://products/5-stage",
         "padding-block-start": 72,
@@ -795,8 +812,13 @@
         "eyebrow": "Faucet Filtration",
         "heading": "Filtration Built Into The Faucet Itself.",
         "body_text": "Instead of a separate unit taking up counter or cabinet space, faucet filtration integrates the entire filtration stack directly into the faucet body — water is filtered the moment it leaves the tap. HAUSTAS Flow and Flow Pro add precision temperature control on top, so filtered water arrives at exactly the temperature you need, without a second appliance on the counter.",
+<<<<<<< HEAD
+        "background_color": "#ffffff",
+        "foreground_color": "#2e2c29",
+=======
         "background_color": "#FCFCFA",
         "foreground_color": "#202224",
+>>>>>>> 36d684e (Migrate to Brand Design System v2: Deep Water accent palette, cool slate/mineral neutrals, Instrument Serif headlines, Inter SemiBold product titles/prices, tabular numerals)
         "cta_label": "Shop HAUSTAS Flow",
         "cta_link": "shopify://products/item-1",
         "padding-block-start": 72,
