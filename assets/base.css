@@ -4207,3 +4207,18 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   border-color: #C8D1CC !important;
   color: #202224 !important;
 }
+
+/* Product card consistency: pin CTA/buy-now to the bottom of every card
+   regardless of variable title/description length, so cards in the same
+   row always line up at the same visual baseline. */
+.resource-list__item .product-card__content > *:last-child,
+.product-grid__item .product-card__content > *:last-child {
+  margin-top: auto !important;
+}
+
+/* Keep the media/gallery from stretching to fill leftover flex space -
+   only the text/button content below it should absorb the extra height. */
+.resource-list__item .product-card .card-gallery,
+.product-grid__item .product-card .card-gallery {
+  flex-shrink: 0;
+}
