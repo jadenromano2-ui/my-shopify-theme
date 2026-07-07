@@ -30,7 +30,8 @@
           assign is_dark = true
         endif
         assign is_reverse = false
-        if forloop.index0 == 1 or forloop.index0 == 3
+        assign reverse_check = forloop.index0 | modulo: 2
+        if reverse_check == 1
           assign is_reverse = true
         endif
       %}
