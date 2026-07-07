@@ -416,12 +416,13 @@
             "spec_code": "PROCESS / MACHINING",
             "fig_number": "FIG. 01",
             "heading": "Every Component, Considered.",
-            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment.",
+            "body": "Precision-milled from raw stainless steel and assembled by hand. Every unit passes through the same CNC-machined tolerances used in surgical-grade equipment, then a final hand-fitting pass before it ever reaches a box.",
             "spec_line_1": "Process — CNC Machined",
             "spec_line_2": "Tolerance — ±0.05mm",
             "spec_line_3": "Assembly — Hand-fitted",
             "diagram": "craftsmanship",
-            "row_theme": "light"
+            "row_theme": "light",
+            "spec_line_4": "Inspection — 100% Final Check"
           }
         },
         "panel_2": {
@@ -430,12 +431,13 @@
             "spec_code": "MATERIALS / COMPOSITION",
             "fig_number": "FIG. 02",
             "heading": "Materials That Outlast Trends.",
-            "body": "304 stainless steel and architectural glass — nothing plastic, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
+            "body": "304 stainless steel and ceramic-carbon filtration media — nothing plastic in the water path, nothing temporary. Materials chosen because they still look right in twenty years, not just twenty days.",
             "spec_line_1": "Shell — 304 Stainless Steel",
-            "spec_line_2": "Core — Architectural Glass",
+            "spec_line_2": "Filtration Media — Ceramic + Carbon Block",
             "spec_line_3": "Trim — Brushed Steel",
             "diagram": "materials",
-            "row_theme": "light"
+            "row_theme": "light",
+            "spec_line_4": "Finish — Satin, Non-Reflective"
           }
         },
         "panel_3": {
@@ -444,12 +446,13 @@
             "spec_code": "SYSTEM / FILTRATION",
             "fig_number": "FIG. 03",
             "heading": "Engineered For Silence.",
-            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it.",
-            "spec_line_1": "Stages — 4-Stage Filtration",
+            "body": "Multi-stage filtration tuned to disappear into daily life. No hum, no drip, no maintenance ritual — just clean water, every time you reach for it, with nothing skipped between raw intake and filtered output.",
+            "spec_line_1": "Stages — 4-Stage Sequential",
             "spec_line_2": "Flow Rate — 2.5 L / min",
             "spec_line_3": "Media Life — 6 Months",
             "diagram": "engineering",
-            "row_theme": "light"
+            "row_theme": "light",
+            "spec_line_4": "Chlorine Reduction — 99.9%"
           }
         },
         "panel_4": {
@@ -458,11 +461,40 @@
             "spec_code": "FORM / LONGEVITY",
             "fig_number": "FIG. 04",
             "heading": "Designed To Never Go Out Of Style.",
-            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, so it never looks dated.",
+            "body": "A form language built on restraint, made to sit quietly in any home for decades. We designed against trends on purpose, backed by a warranty long enough to prove we mean it.",
             "spec_line_1": "Warranty — 15 Years",
             "spec_line_2": "Finish — Hand-brushed",
-            "spec_line_3": "Certification — NSF/ANSI 42",
+            "spec_line_3": "Certification — NSF/ANSI 42 & 53",
             "diagram": "timeless",
+            "row_theme": "light",
+            "spec_line_4": "Trial Period — 100 Nights"
+          }
+        },
+        "panel_5": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "QA / VALIDATION",
+            "fig_number": "FIG. 05",
+            "heading": "Tested Past The Point Of Doubt.",
+            "body": "Every unit is individually pressure-tested before it leaves the workshop, then cycled through hundreds of hours of stress testing to confirm it performs the same on day 2,000 as it did on day one.",
+            "spec_line_1": "Stress Testing — 500+ Hours",
+            "spec_line_2": "Pressure Testing — Per Unit, Before Shipment",
+            "spec_line_3": "Certification — NSF/ANSI 42 & 53",
+            "diagram": "testing",
+            "row_theme": "light"
+          }
+        },
+        "panel_6": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "SOURCE / PACKAGING",
+            "fig_number": "FIG. 06",
+            "heading": "Considered Beyond The Box.",
+            "body": "The commitment to durability doesn't stop at the product. Packaging is sourced from responsibly managed forests and built to be fully recycled, not landfilled the day it arrives.",
+            "spec_line_1": "Packaging — FSC-Certified",
+            "spec_line_2": "Void-Fill — None (No Single-Use Foam)",
+            "spec_line_3": "End-Of-Life — Fully Recyclable",
+            "diagram": "sourcing",
             "row_theme": "light"
           }
         }
@@ -471,7 +503,9 @@
         "panel_1",
         "panel_2",
         "panel_3",
-        "panel_4"
+        "panel_4",
+        "panel_5",
+        "panel_6"
       ],
       "name": "Engineered panels",
       "settings": {
