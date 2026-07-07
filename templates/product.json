@@ -1585,12 +1585,504 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
+    },
+    "cert_deepdive_pdp": {
+      "type": "section",
+      "blocks": {
+        "text_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Certified To What, Exactly</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Two Standards, Not Just One Badge.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most filters advertise \"NSF certified\" without saying which standard or what it actually tested. Here's the specific difference.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_content": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-cert-deepdive\" style=\"max-width:980px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <div style=\"display:grid; grid-template-columns: 1fr; gap:28px;\">\n    <style>\n      @media screen and (min-width: 800px) {\n        #hs-cert-deepdive > div { grid-template-columns: 1fr 1fr; }\n      }\n    </style>\n    <div style=\"border:1px solid #C8D1CC; padding:28px;\">\n      <div style=\"display:flex; align-items:center; gap:14px; margin-bottom:16px;\">\n        <svg width=\"34\" height=\"34\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#0F5E75\" stroke-width=\"1.4\"/><path d=\"M9 12l2 2 4-4\" stroke=\"#0F5E75\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n        <div>\n          <span style=\"display:block; font-family: ui-monospace, monospace; font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase; color:#8B9398;\">Standard 01</span>\n          <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:1.25rem; color:#202224;\">NSF/ANSI 42</span>\n        </div>\n      </div>\n      <p style=\"margin:0 0 16px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368;\">Covers <strong>aesthetic effects</strong> — the things that affect how your water looks, tastes, and smells, not necessarily whether it's unsafe.</p>\n      <div style=\"display:flex; flex-direction:column; gap:10px;\">\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">Chlorine taste and odor reduction</span>\n        </div>\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">Particulate (sediment) reduction, Class I-VI ratings</span>\n        </div>\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">Structural integrity and material safety of the unit itself</span>\n        </div>\n      </div>\n    </div>\n    <div style=\"border:1px solid #C8D1CC; padding:28px;\">\n      <div style=\"display:flex; align-items:center; gap:14px; margin-bottom:16px;\">\n        <svg width=\"34\" height=\"34\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0;\"><path d=\"M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/><path d=\"M9 12l2 2 4-4\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n        <div>\n          <span style=\"display:block; font-family: ui-monospace, monospace; font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase; color:#8B9398;\">Standard 02</span>\n          <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:1.25rem; color:#202224;\">NSF/ANSI 53</span>\n        </div>\n      </div>\n      <p style=\"margin:0 0 16px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368;\">Covers <strong>health effects</strong> — contaminants that are regulated because of documented health risk, not just taste or appearance.</p>\n      <div style=\"display:flex; flex-direction:column; gap:10px;\">\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">Lead and other heavy metal reduction</span>\n        </div>\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">Cyst reduction (Cryptosporidium, Giardia)</span>\n        </div>\n        <div style=\"display:flex; gap:10px; align-items:flex-start;\">\n          <span style=\"width:6px; height:6px; border-radius:50%; background:#0F5E75; margin-top:8px; flex-shrink:0;\"></span>\n          <span style=\"font-family: var(--font-body--family); font-size:0.875rem; line-height:1.55; color:#202224;\">VOC (volatile organic compound) reduction</span>\n        </div>\n      </div>\n    </div>\n  </div>\n  <p style=\"margin:24px auto 0; max-width:44rem; text-align:center; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368;\">Most filters advertise a certification without saying which one, or which specific contaminants it was tested against. HAUSTAS systems are tested to both standards — <a href=\"/pages/about-us\" style=\"color:#0F5E75;\">see the certificate</a> for the exact contaminant list and reduction claims.</p>\n</div>\n"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eyebrow",
+        "text_heading",
+        "text_intro",
+        "custom_liquid_content"
+      ],
+      "name": "Certification deep-dive",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#FCFCFA",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "install_guide_pdp": {
+      "type": "section",
+      "blocks": {
+        "text_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Setup</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Installed In Four Steps, No Plumber.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most owners are done start to finish in under 15 minutes — here's exactly what that looks like.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_content": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-install-guide\" style=\"max-width:1040px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <div style=\"display:grid; grid-template-columns: repeat(2, 1fr); gap:32px;\">\n    <style>\n      @media screen and (min-width: 900px) {\n        #hs-install-guide > div { grid-template-columns: repeat(4, 1fr); }\n      }\n    </style>\n    <div>\n      <div style=\"display:flex; align-items:center; gap:10px; margin-bottom:14px;\">\n        <span style=\"display:flex; align-items:center; justify-content:center; width:30px; height:30px; border:1px solid #0F5E75; border-radius:50%; font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#0F5E75; flex-shrink:0;\">01</span>\n        <span style=\"height:1px; flex:1; background:#C8D1CC;\"></span>\n      </div>\n      <svg viewBox=\"0 0 100 90\" width=\"100%\" style=\"max-width:140px; color:#0F5E75;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n        <path d=\"M30 20 L30 55\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n        <circle cx=\"30\" cy=\"16\" r=\"6\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n        <path d=\"M24 16 L36 16\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <rect x=\"20\" y=\"55\" width=\"20\" height=\"14\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <path d=\"M50 20 L80 20 L80 40\" stroke=\"currentColor\" stroke-width=\"0.6\" stroke-dasharray=\"2 3\"/>\n      </svg>\n      <h4 style=\"margin:14px 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Shut Off The Water</h4>\n      <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Turn the supply valve under your sink to off. Takes a few seconds and avoids any mess during the swap.</p>\n    </div>\n    <div>\n      <div style=\"display:flex; align-items:center; gap:10px; margin-bottom:14px;\">\n        <span style=\"display:flex; align-items:center; justify-content:center; width:30px; height:30px; border:1px solid #0F5E75; border-radius:50%; font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#0F5E75; flex-shrink:0;\">02</span>\n        <span style=\"height:1px; flex:1; background:#C8D1CC;\"></span>\n      </div>\n      <svg viewBox=\"0 0 100 90\" width=\"100%\" style=\"max-width:140px; color:#0F5E75;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n        <rect x=\"30\" y=\"30\" width=\"40\" height=\"30\" rx=\"2\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n        <path d=\"M20 45 L30 45\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <path d=\"M70 45 L80 45\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <path d=\"M25 40 L25 50\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <path d=\"M75 40 L75 50\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n        <circle cx=\"50\" cy=\"45\" r=\"4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"1 2\"/>\n      </svg>\n      <h4 style=\"margin:14px 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Connect, Tool-Free</h4>\n      <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">HAUSTAS connects to your standard fixture by hand — no wrenches, no plumber, no sealant required.</p>\n    </div>\n    <div>\n      <div style=\"display:flex; align-items:center; gap:10px; margin-bottom:14px;\">\n        <span style=\"display:flex; align-items:center; justify-content:center; width:30px; height:30px; border:1px solid #0F5E75; border-radius:50%; font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#0F5E75; flex-shrink:0;\">03</span>\n        <span style=\"height:1px; flex:1; background:#C8D1CC;\"></span>\n      </div>\n      <svg viewBox=\"0 0 100 90\" width=\"100%\" style=\"max-width:140px; color:#0F5E75;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n        <rect x=\"40\" y=\"16\" width=\"20\" height=\"46\" rx=\"8\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n        <path d=\"M50 62 L50 76\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-dasharray=\"2 3\"/>\n        <path d=\"M44 70 L50 78 L56 70\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"/>\n        <line x1=\"45\" y1=\"26\" x2=\"45\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-dasharray=\"1 2\"/>\n      </svg>\n      <h4 style=\"margin:14px 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Seat The Cartridge</h4>\n      <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Your filter cartridge arrives pre-installed. On future swaps, it clicks into place — no twisting or guesswork.</p>\n    </div>\n    <div>\n      <div style=\"display:flex; align-items:center; gap:10px; margin-bottom:14px;\">\n        <span style=\"display:flex; align-items:center; justify-content:center; width:30px; height:30px; border:1px solid #0F5E75; border-radius:50%; font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#0F5E75; flex-shrink:0;\">04</span>\n        <span style=\"height:1px; flex:1; background:#C8D1CC;\"></span>\n      </div>\n      <svg viewBox=\"0 0 100 90\" width=\"100%\" style=\"max-width:140px; color:#0F5E75;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n        <path d=\"M40 20 L40 40 Q40 50 50 50 L65 50\" stroke=\"currentColor\" stroke-width=\"1.4\" fill=\"none\"/>\n        <path d=\"M60 45 L67 50 L60 55\" stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"/>\n        <path d=\"M67 55 L67 70\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/>\n        <path d=\"M67 70 L64 65 M67 70 L70 65\" stroke=\"currentColor\" stroke-width=\"1\"/>\n      </svg>\n      <h4 style=\"margin:14px 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Flush &amp; Go</h4>\n      <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Run water for about 60 seconds to clear the new media, then it's ready. Start to finish, most owners are done in under 15 minutes.</p>\n    </div>\n  </div>\n</div>\n"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eyebrow",
+        "text_heading",
+        "text_intro",
+        "custom_liquid_content"
+      ],
+      "name": "Install guide",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#F5F7F6",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "spec_sheet_pdp": {
+      "type": "section",
+      "blocks": {
+        "text_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Reference</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Every Spec, In One Place.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything real about this system, consolidated into one clean reference — no digging through the page for it.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_content": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-spec-sheet\" style=\"max-width:760px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px); border:1px solid #C8D1CC;\">\n  <div style=\"display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid #C8D1CC;\">\n    <span style=\"font-family: ui-monospace, monospace; font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase; color:#8B9398;\">Spec Sheet</span>\n    <span style=\"font-family: ui-monospace, monospace; font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase; color:#8B9398;\">Rev. A</span>\n  </div>\n  <div style=\"padding:8px 24px;\">\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Filtration Stages</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">4-Stage Sequential</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Filtration Media</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">Ceramic + Carbon Block</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Shell Material</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">304 Stainless Steel</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Final Filtration Precision</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">0.5 Micron</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Chlorine &amp; Odor Reduction</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">99.9%</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Flow Rate</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">2.5 L / min</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Cartridge Life</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">~6 Months</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Certification</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">NSF/ANSI 42 &amp; 53</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Independent Testing</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">500+ Hrs, Per-Unit Pressure Test</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Installation</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">No Plumber, &lt; 15 Min</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Warranty</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">15 Years</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">Trial Period</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right;\">100 Nights</span></div>\n    <div style=\"display:flex; justify-content:space-between; gap:16px; padding:14px 0;\"><span style=\"font-family: var(--font-body--family); font-size:0.875rem; color:#5C6368;\">What's Included</span><span style=\"font-family: ui-monospace, monospace; font-size:0.8125rem; font-weight:600; color:#202224; text-align:right; max-width:55%;\">Unit, Cartridge, Hardware, Setup Guide</span></div>\n  </div>\n</div>\n"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eyebrow",
+        "text_heading",
+        "text_intro",
+        "custom_liquid_content"
+      ],
+      "name": "Spec sheet",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#FCFCFA",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 48
+      }
+    },
+    "care_maintenance_pdp": {
+      "type": "section",
+      "blocks": {
+        "text_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ownership</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Living With It, Long Term.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What actually changes after the sale — how to know it needs attention, and how to keep it running well past year one.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_content": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-care-maintenance\" style=\"max-width:760px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <div style=\"display:flex; flex-direction:column; gap:0;\">\n    <div style=\"display:flex; gap:18px; padding:20px 0; border-bottom:1px solid #C8D1CC;\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/><path d=\"M12 7v5l3 2\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n      <div>\n        <h4 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Knowing When To Replace The Cartridge</h4>\n        <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368; max-width:34rem;\">Each cartridge is engineered for about 6 months of normal household use. If flow slows down or taste starts to shift before then, that's your cue too — don't wait for a hard failure to swap it.</p>\n      </div>\n    </div>\n    <div style=\"display:flex; gap:18px; padding:20px 0; border-bottom:1px solid #C8D1CC;\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M7 3h10l-1 8H8L7 3z\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/><path d=\"M8 11l-1 10h10l-1-10\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/></svg>\n      <div>\n        <h4 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Cleaning The Exterior</h4>\n        <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368; max-width:34rem;\">Wipe down with a damp cloth as needed. No harsh chemicals, no disassembly required — the 304 stainless steel body is built to shrug off daily use without special care.</p>\n      </div>\n    </div>\n    <div style=\"display:flex; gap:18px; padding:20px 0; border-bottom:1px solid #C8D1CC;\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M12 3v6M12 3l-4 4M12 3l4 4\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 13a7 7 0 0014 0\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/></svg>\n      <div>\n        <h4 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">If Flow Slows Down</h4>\n        <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368; max-width:34rem;\">Usually a sign the cartridge has reached the end of its service life. Check how long it's been installed first — if it's near or past 6 months, that's almost always the fix.</p>\n      </div>\n    </div>\n    <div style=\"display:flex; gap:18px; padding:20px 0;\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><rect x=\"5\" y=\"7\" width=\"14\" height=\"12\" rx=\"1.5\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/><path d=\"M9 7V5a3 3 0 016 0v2\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/></svg>\n      <div>\n        <h4 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.0625rem; color:#202224;\">Not Using It For A While?</h4>\n        <p style=\"margin:0; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.65; color:#5C6368; max-width:34rem;\">If it'll sit unused for more than a couple weeks (travel, seasonal home), run water through it for about a minute before your next use rather than letting it sit stagnant.</p>\n      </div>\n    </div>\n  </div>\n  <p style=\"margin:24px auto 0; text-align:center; font-family: var(--font-body--family); font-size:0.9375rem; color:#5C6368;\">Still have a question about your system? <a href=\"/pages/contact\" style=\"color:#0F5E75;\">Reach out</a> — real support, not a bot.</p>\n</div>\n"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eyebrow",
+        "text_heading",
+        "text_intro",
+        "custom_liquid_content"
+      ],
+      "name": "Care & maintenance",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#F5F7F6",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
     "main",
+    "cert_deepdive_pdp",
+    "install_guide_pdp",
     "filtration_process_pdp",
     "comparison_table_pdp",
+    "spec_sheet_pdp",
+    "care_maintenance_pdp",
     "product_recommendations_qggXJq",
     "pdp_faq_01",
     "1783027098a017e1bd",
