@@ -348,6 +348,62 @@
             "haustas_value": "100 Nights",
             "typical_value": "None"
           }
+        },
+        "row_7": {
+          "type": "row",
+          "settings": {
+            "label": "Materials",
+            "haustas_value": "304 Stainless Steel & Ceramic + Carbon Media",
+            "typical_value": "BPA Plastic Housing"
+          }
+        },
+        "row_8": {
+          "type": "row",
+          "settings": {
+            "label": "Installation",
+            "haustas_value": "No Plumber Required — Under 15 Minutes",
+            "typical_value": "Varies, Often Requires Tools"
+          }
+        },
+        "row_9": {
+          "type": "row",
+          "settings": {
+            "label": "Final Filtration Precision",
+            "haustas_value": "0.5 Micron Final Polish",
+            "typical_value": "~5 Micron, Sediment Only"
+          }
+        },
+        "row_10": {
+          "type": "row",
+          "settings": {
+            "label": "Chlorine & Odor Reduction",
+            "haustas_value": "99.9% Reduction",
+            "typical_value": "Partial, Diminishes Over Cartridge Life"
+          }
+        },
+        "row_11": {
+          "type": "row",
+          "settings": {
+            "label": "Flow Rate",
+            "haustas_value": "2.5 L/min, Consistent Through Cartridge Life",
+            "typical_value": "Slows Noticeably As Filter Clogs"
+          }
+        },
+        "row_12": {
+          "type": "row",
+          "settings": {
+            "label": "Independent Testing",
+            "haustas_value": "500+ Hours Stress Tested, Individually Pressure-Tested",
+            "typical_value": "Rarely Independently Verified"
+          }
+        },
+        "row_13": {
+          "type": "row",
+          "settings": {
+            "label": "Beneficial Minerals",
+            "haustas_value": "Retained — Filters Contaminants, Not Minerals",
+            "typical_value": "Often Stripped Along With Everything Else"
+          }
         }
       },
       "block_order": [
@@ -356,18 +412,252 @@
         "row_3",
         "row_4",
         "row_5",
-        "row_6"
+        "row_6",
+        "row_7",
+        "row_8",
+        "row_9",
+        "row_10",
+        "row_11",
+        "row_12",
+        "row_13"
       ],
       "name": "Comparison table",
       "settings": {
         "eyebrow": "Before You Choose",
         "heading": "Not All Filtration Is Equal.",
-        "intro_text": "A side-by-side look at what actually separates engineered filtration from a basic pitcher filter.",
+        "intro_text": "A detailed, row-by-row look at what actually separates engineered filtration from a basic pitcher filter — the difference shows up in the water, not just the spec sheet.",
         "background_color": "#FCFCFA",
         "foreground_color": "#202224",
         "cta_label": "",
         "cta_link": "",
         "padding-block-start": 64,
+        "padding-block-end": 72
+      }
+    },
+    "why_haustas_cat_01": {
+      "type": "engineered-precision",
+      "blocks": {
+        "panel_1": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "QA / VALIDATION",
+            "fig_number": "FIG. 01",
+            "heading": "Independently Certified, Not Just Advertised.",
+            "body": "Every HAUSTAS system is NSF/ANSI 42 & 53 certified and individually pressure-tested before it leaves the workshop. We publish the standard we're held to, so you're not just taking our word for it.",
+            "spec_line_1": "Certification — NSF/ANSI 42 & 53",
+            "spec_line_2": "Stress Testing — 500+ Hours",
+            "spec_line_3": "Pressure Testing — Per Unit, Before Shipment",
+            "diagram": "testing",
+            "row_theme": "light"
+          }
+        },
+        "panel_2": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "MATERIALS / COMPOSITION",
+            "fig_number": "FIG. 02",
+            "heading": "Materials That Actually Matter.",
+            "body": "304 stainless steel and ceramic-carbon filtration media — nothing in the water path that leaches, degrades, or needs replacing more than the filter itself. Built to be trusted, not just to look premium.",
+            "spec_line_1": "Shell — 304 Stainless Steel",
+            "spec_line_2": "Filtration Media — Ceramic + Carbon Block",
+            "spec_line_3": "Plastic In Water Path — None",
+            "diagram": "materials",
+            "row_theme": "dark"
+          }
+        },
+        "panel_3": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "PROCESS / MACHINING",
+            "fig_number": "FIG. 03",
+            "heading": "Engineered By Hand, Not Just Assembled.",
+            "body": "Every unit is precision-milled to the same CNC tolerances used in surgical-grade equipment, then hand-fitted and given a 100% final inspection before it's boxed — not pulled off a line and shipped.",
+            "spec_line_1": "Process — CNC Machined",
+            "spec_line_2": "Tolerance — ±0.05mm",
+            "spec_line_3": "Inspection — 100% Final Check",
+            "diagram": "craftsmanship",
+            "row_theme": "light"
+          }
+        },
+        "panel_4": {
+          "type": "panel",
+          "settings": {
+            "spec_code": "FORM / LONGEVITY",
+            "fig_number": "FIG. 04",
+            "heading": "Backed Long After The Sale.",
+            "body": "A 100-night trial and a 15-year warranty aren't marketing lines — they're what happens when you build something you don't expect to see returned. Try it at home, risk-free, then keep it covered for over a decade.",
+            "spec_line_1": "Trial Period — 100 Nights",
+            "spec_line_2": "Warranty — 15 Years",
+            "spec_line_3": "Shipping & Returns — Free, Every Order",
+            "diagram": "timeless",
+            "row_theme": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "panel_1",
+        "panel_2",
+        "panel_3",
+        "panel_4"
+      ],
+      "name": "Why HAUSTAS",
+      "settings": {
+        "eyebrow": "Why HAUSTAS",
+        "heading": "Four Reasons To Trust This More Than A Pitcher Filter.",
+        "intro_text": "Not vague promises — the specific standards, materials, and guarantees behind every HAUSTAS system.",
+        "light_background": "#FCFCFA",
+        "light_foreground": "#202224",
+        "dark_background": "#F5F7F6",
+        "dark_foreground": "#202224",
+        "cta_label": "Shop The Collection",
+        "cta_link": "shopify://collections/all",
+        "padding-block-start": 72,
+        "padding-block-end": 0
+      }
+    },
+    "why_upgrade_cat_01": {
+      "type": "section",
+      "blocks": {
+        "text_wu_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Why Upgrade</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wu_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>Whatever You're Upgrading From, Here's What Changes.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wu_intro": {
+          "type": "text",
+          "name": "Intro",
+          "settings": {
+            "text": "<p>Most people land on HAUSTAS from one of two places: drinking unfiltered tap water, or already using a basic pitcher filter that isn't doing the whole job. Here's exactly what changes either way.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_wu_grid": {
+          "type": "custom-liquid",
+          "name": "Upgrade comparison grid",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-why-upgrade\" style=\"max-width:1040px; margin:36px auto 0; padding-inline: clamp(4px, 2vw, 16px);\">\n  <div style=\"display:grid; grid-template-columns: 1fr; gap:40px;\">\n    <style>\n      @media screen and (min-width: 800px) {\n        #hs-why-upgrade > div { grid-template-columns: 1fr 1fr; }\n      }\n    </style>\n    <div style=\"border-top:2px solid #0F5E75; padding-top:20px;\">\n      <h3 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.375rem; color:#202224;\">Upgrading From Tap Water</h3>\n      <p style=\"margin:0 0 20px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.6; color:#5C6368;\">Municipal treatment handles the basics — it doesn't handle everything.</p>\n      <div style=\"display:flex; flex-direction:column; gap:0;\">\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/><path d=\"M12 7v5l3 2\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">Lead &amp; Heavy Metals</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">The CDC states there is no known safe level of lead exposure — it can leach from aging pipes and fixtures with no taste or smell to warn you.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M12 3l6 9-6 9-6-9 6-9z\" stroke=\"#0F5E75\" stroke-width=\"1.3\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">Chlorine &amp; Disinfection Byproducts</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Necessary to keep municipal water safe from bacteria, but a well-known contributor to off tastes, odors, dry skin, and brittle hair.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M7 3h10M9 3v4a5 5 0 002 4 5 5 0 00-2 4v6M15 3v4a5 5 0 01-2 4 5 5 0 012 4v6M7 21h10\" stroke=\"#0F5E75\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">PFAS (\"Forever Chemicals\")</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Synthetic chemicals that don't break down in the environment or the body. The EPA links long-term exposure to increased health risks.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><circle cx=\"7\" cy=\"8\" r=\"1.4\" fill=\"#0F5E75\"/><circle cx=\"13\" cy=\"6\" r=\"1\" fill=\"#0F5E75\"/><circle cx=\"17\" cy=\"11\" r=\"1.4\" fill=\"#0F5E75\"/><circle cx=\"9\" cy=\"15\" r=\"1\" fill=\"#0F5E75\"/><circle cx=\"15\" cy=\"17\" r=\"1.4\" fill=\"#0F5E75\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">Microplastics &amp; Sediment</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Researchers have detected microplastic particles in tap water samples worldwide — sediment filtration is one of the simplest ways to reduce daily exposure.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div style=\"border-top:2px solid #C9A24B; padding-top:20px;\">\n      <h3 style=\"margin:0 0 6px; font-family: var(--font-heading--family); font-weight:600; font-size:1.375rem; color:#202224;\">Upgrading From A Pitcher Filter</h3>\n      <p style=\"margin:0 0 20px; font-family: var(--font-body--family); font-size:0.9375rem; line-height:1.6; color:#5C6368;\">A basic carbon filter is better than nothing — it's just not built for the whole job.</p>\n      <div style=\"display:flex; flex-direction:column; gap:0;\">\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><rect x=\"7\" y=\"4\" width=\"10\" height=\"16\" rx=\"1\" stroke=\"#C9A24B\" stroke-width=\"1.3\"/><line x1=\"7\" y1=\"10\" x2=\"17\" y2=\"10\" stroke=\"#C9A24B\" stroke-width=\"1\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">Only 1-Stage Carbon Filtration</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Improves taste and odor, but doesn't address heavy metals or fine sediment the way a multi-stage system does.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#C9A24B\" stroke-width=\"1.3\"/><path d=\"M12 8v4l2.5 1.5\" stroke=\"#C9A24B\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">~2-Month Cartridge Life</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Needs replacing roughly every 2 months versus HAUSTAS's 6-month service life — easy to forget, easy to run past its effective window.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed #C8D1CC;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z\" stroke=\"#C9A24B\" stroke-width=\"1.1\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">No Independent Certification</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">Most basic pitcher filters carry no NSF/ANSI certification — you're taking the manufacturer's word for what it actually removes.</span>\n          </div>\n        </div>\n        <div style=\"display:flex; gap:14px; padding:14px 0;\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"flex-shrink:0; margin-top:2px;\"><path d=\"M4 12h16M15 6l5 6-5 6\" stroke=\"#C9A24B\" stroke-width=\"1.3\" stroke-linecap=\"round\"/></svg>\n          <div>\n            <span style=\"display:block; font-family: var(--font-heading--family); font-weight:600; font-size:0.9375rem; color:#202224; margin-bottom:3px;\">No Warranty, No Trial</span>\n            <span style=\"display:block; font-family: var(--font-body--family); font-size:0.875rem; line-height:1.6; color:#5C6368;\">If it doesn't work for your water or your routine, there's no 100-night trial and no 15-year warranty to fall back on.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          },
+          "blocks": {}
+        },
+        "button_wu_cta": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop The Collection",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-primary",
+            "custom_button_background": "#0F5E75",
+            "custom_button_text": "#FFFFFF",
+            "custom_button_border": "#0F5E75",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_wu_eyebrow",
+        "text_wu_heading",
+        "text_wu_intro",
+        "custom_liquid_wu_grid",
+        "button_wu_cta"
+      ],
+      "name": "Why upgrade",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#F5F7F6",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 72,
         "padding-block-end": 72
       }
     }
@@ -376,6 +666,8 @@
     "section",
     "risk_reversal_cat_01",
     "main",
-    "comparison_table_cat_01"
+    "comparison_table_cat_01",
+    "why_haustas_cat_01",
+    "why_upgrade_cat_01"
   ]
 }
