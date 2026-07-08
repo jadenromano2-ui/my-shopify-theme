@@ -4098,6 +4098,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .jdgm-rev-widg,
 .jdgm-rev-widg * {
   font-family: var(--font-body--family) !important;
+  font-weight: 400 !important;
 }
 
 .jdgm-rev-widg__title {
