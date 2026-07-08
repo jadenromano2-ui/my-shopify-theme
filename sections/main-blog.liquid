@@ -151,13 +151,49 @@
    * When there's no image, the blog post item has a border.
    */
   .blog-post-item {
-    border: 1px solid rgb(var(--color-foreground-rgb) / var(--opacity-20));
-    padding: 0 1rem 1rem;
+    border: 1px solid #C8D1CC;
+    padding: 0 1.25rem 1.25rem;
   }
 
   .blog-post-item:has(.blog-post-card__image-container) {
     border: none;
     padding: 0;
+  }
+
+  /**
+   * Editorial polish: subtle image zoom on hover, and a fine underline
+   * that draws in on the post title to signal it's clickable.
+   */
+  .blog-post-item .blog-post-card__image-container {
+    overflow: hidden;
+  }
+
+  .blog-post-item .blog-post-card__image {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .blog-post-item:hover .blog-post-card__image {
+    transform: scale(1.035);
+  }
+
+  .blog-post-item a.blog-post-card__title-link {
+    position: relative;
+    transition: color 0.25s ease;
+  }
+
+  .blog-post-item a.blog-post-card__title-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    margin-top: 6px;
+    background: currentColor;
+    opacity: 0.55;
+    transition: width 0.35s ease;
+  }
+
+  .blog-post-item:hover a.blog-post-card__title-link::after {
+    width: 32px;
   }
 {% endstylesheet %}
 

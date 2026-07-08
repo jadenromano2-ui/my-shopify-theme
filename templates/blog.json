@@ -6,34 +6,37 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-blog",
       "blocks": {
         "title": {
           "type": "text",
-          "name": "Title",
           "settings": {
-            "text": "<h1>{{ closest.blog.title }}</h1>",
-            "width": "fit-content",
+            "text": "<h1>Water, Explained.</h1>",
+            "width": "100%",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
             "line_height": "normal",
-            "letter_spacing": "normal",
+            "letter_spacing": "tight",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#202224",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 48,
-            "padding-block-end": 48,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {},
+          "name": "Title"
         },
         "static-blog-post-card": {
           "type": "_blog-post-card",
@@ -48,7 +51,7 @@
               "static": true,
               "settings": {
                 "type_preset": "h4",
-                "font": "var(--font-primary--family)",
+                "font": "var(--font-heading--family)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -59,7 +62,8 @@
                 "padding-block-start": 0,
                 "padding-block-end": 10,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "text_color": "#202224"
               },
               "blocks": {}
             },
@@ -73,7 +77,8 @@
                 "alignment": "left",
                 "show_alignment": false,
                 "padding-block-start": 0,
-                "padding-block-end": 0
+                "padding-block-end": 0,
+                "text_color": "#5C6368"
               },
               "blocks": {}
             },
@@ -85,21 +90,75 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 4
+                "border_radius": 0
               },
               "blocks": {}
             }
           },
           "block_order": []
+        },
+        "text_journal_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Journal</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {},
+          "name": "Eyebrow"
+        },
+        "text_journal_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Technical breakdowns of filtration technology and water quality — for people who want to understand what they're buying, not just buy it.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 16,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {},
+          "name": "Intro"
         }
       },
       "block_order": [
-        "title"
+        "text_journal_eyebrow",
+        "title",
+        "text_journal_intro"
       ],
       "settings": {
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 48
+        "background_color": "#FCFCFA",
+        "padding-block-start": 72,
+        "padding-block-end": 88
       }
     }
   },
