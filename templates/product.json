@@ -314,7 +314,7 @@
                   "type": "add-to-cart",
                   "static": true,
                   "settings": {
-                    "style_class": "button",
+                    "style_class": "button-custom",
                     "custom_button_background": "#0F5E75",
                     "custom_button_text": "#ffffff",
                     "custom_button_border": "#0F5E75"
