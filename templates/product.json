@@ -1306,69 +1306,6 @@
         "padding-block-end": 0
       }
     },
-    "filtration_process_pdp": {
-      "type": "filtration-process",
-      "blocks": {
-        "stage_1": {
-          "type": "stage",
-          "settings": {
-            "tag_number": "STAGE 01",
-            "name": "Sediment Pre-Filter",
-            "description": "Removes sand, rust, and particulate down to 5 microns, protecting every stage that follows."
-          }
-        },
-        "stage_2": {
-          "type": "stage",
-          "settings": {
-            "tag_number": "STAGE 02",
-            "name": "Carbon Block",
-            "description": "Absorbs chlorine, odor, and volatile organic compounds for noticeably cleaner taste and smell."
-          }
-        },
-        "stage_3": {
-          "type": "stage",
-          "settings": {
-            "tag_number": "STAGE 03",
-            "name": "KDF Media",
-            "description": "Reduces heavy metals like lead and mercury through KDF redox filtration."
-          }
-        },
-        "stage_4": {
-          "type": "stage",
-          "settings": {
-            "tag_number": "STAGE 04",
-            "name": "Polishing Filter",
-            "description": "A final 0.5-micron pass for clarity, taste, and total peace of mind."
-          }
-        }
-      },
-      "block_order": [
-        "stage_1",
-        "stage_2",
-        "stage_3",
-        "stage_4"
-      ],
-      "name": "Filtration process",
-      "settings": {
-        "eyebrow": "The Process",
-        "heading": "How Filtration Works.",
-        "intro_text": "Four mechanical and chemical stages, working in sequence — nothing skipped, nothing added. Each stage is engineered to catch what the last one missed.",
-        "background_color": "#FCFCFA",
-        "foreground_color": "#202224",
-        "stat_1_value": "5 Micron",
-        "stat_1_label": "Sediment Capture",
-        "stat_2_value": "0.5 Micron",
-        "stat_2_label": "Final Polish",
-        "stat_3_value": "99.9%",
-        "stat_3_label": "Chlorine Reduction",
-        "stat_4_value": "4-Stage",
-        "stat_4_label": "Sequential Process",
-        "cta_label": "View The Collection",
-        "cta_link": "shopify://collections/all",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
     "comparison_table_pdp": {
       "type": "comparison-table",
       "blocks": {
@@ -1424,7 +1361,7 @@
           "type": "row",
           "settings": {
             "label": "Materials",
-            "haustas_value": "304 Stainless Steel & Architectural Glass",
+            "haustas_value": "304 Stainless Steel Body",
             "typical_value": "BPA Plastic"
           }
         },
@@ -1642,7 +1579,7 @@
         "text_intro": {
           "type": "text",
           "settings": {
-            "text": "<p>Most filters advertise \"NSF certified\" without saying which standard or what it actually tested. Here's the specific difference.</p>",
+            "text": "<p>Most filters advertise \"NSF certified\" without saying which standard or what it actually tested. Here's the specific difference — and why it matters for what ends up in your glass.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1764,7 +1701,7 @@
         "text_intro": {
           "type": "text",
           "settings": {
-            "text": "<p>Most owners are done start to finish in under 15 minutes — here's exactly what that looks like.</p>",
+            "text": "<p>Most owners are done start to finish in under 15 minutes — here's exactly what that looks like, so there's no surprise waiting when the box arrives.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1886,7 +1823,7 @@
         "text_intro": {
           "type": "text",
           "settings": {
-            "text": "<p>Everything real about this system, consolidated into one clean reference — no digging through the page for it.</p>",
+            "text": "<p>Everything real about this system, consolidated into one clean reference — no digging through the page, no fine print to hunt for.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1936,7 +1873,7 @@
         "section_height": "",
         "section_height_custom": 32,
         "background_media": "none",
-        "background_color": "#FCFCFA",
+        "background_color": "#F5F7F6",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -2008,7 +1945,7 @@
         "text_intro": {
           "type": "text",
           "settings": {
-            "text": "<p>What actually changes after the sale — how to know it needs attention, and how to keep it running well past year one.</p>",
+            "text": "<p>What actually changes after the sale — how to know it needs attention, and how to keep it performing exactly like day one, for years.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -2058,7 +1995,7 @@
         "section_height": "",
         "section_height_custom": 32,
         "background_media": "none",
-        "background_color": "#F5F7F6",
+        "background_color": "#FCFCFA",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -2073,14 +2010,137 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
+    },
+    "education_cta_pdp": {
+      "type": "section",
+      "name": "Education CTA banner",
+      "blocks": {
+        "text_eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Before You Keep Reading</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#0F5E75",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>You Don't Have To Take Our Word For It.</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#202224",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>100 nights to live with it. 15 years of coverage if anything goes wrong. Free shipping, both ways. If this isn't the system you thought it was, it costs you nothing to find out.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1.0625rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#5C6368",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "custom_liquid_cta": {
+          "type": "custom-liquid",
+          "name": "CTA + trust badges",
+          "settings": {
+            "custom_liquid": "<div id=\"hs-edu-cta\" style=\"max-width:640px; margin:28px auto 0; text-align:center;\"><a href=\"#shopify-section-main\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:15px 40px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size:0.75rem; letter-spacing:0.16em; text-transform:uppercase; color:#FFFFFF; background:#0F5E75; text-decoration:none; border:1px solid #0F5E75; transition: background 0.25s ease, color 0.25s ease;\" onmouseover=\"this.style.background='transparent';this.style.color='#0F5E75';\" onmouseout=\"this.style.background='#0F5E75';this.style.color='#FFFFFF';\">Add To Cart</a><div style=\"display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 26px; margin-top:22px; padding-top:20px; border-top:1px solid #C8D1CC;\"><span style=\"display:flex; align-items:center; gap:8px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size:0.75rem; letter-spacing:0.06em; text-transform:uppercase; color:#202224;\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M9 12l2 2 4-4\" stroke=\"#3F7D5C\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#3F7D5C\" stroke-width=\"1.6\"/></svg>100-Night Trial</span><span style=\"display:flex; align-items:center; gap:8px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size:0.75rem; letter-spacing:0.06em; text-transform:uppercase; color:#202224;\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M9 12l2 2 4-4\" stroke=\"#3F7D5C\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#3F7D5C\" stroke-width=\"1.6\"/></svg>15-Year Warranty</span><span style=\"display:flex; align-items:center; gap:8px; font-family: var(--font-accent--family); font-weight: var(--font-accent--weight); font-size:0.75rem; letter-spacing:0.06em; text-transform:uppercase; color:#202224;\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M9 12l2 2 4-4\" stroke=\"#3F7D5C\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"#3F7D5C\" stroke-width=\"1.6\"/></svg>Free Shipping &amp; Returns</span></div></div>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_eyebrow",
+        "text_heading",
+        "text_intro",
+        "custom_liquid_cta"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 32,
+        "background_media": "none",
+        "background_color": "#EAF5F8",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
     }
   },
   "order": [
     "main",
     "cert_deepdive_pdp",
     "install_guide_pdp",
-    "filtration_process_pdp",
     "comparison_table_pdp",
+    "education_cta_pdp",
     "spec_sheet_pdp",
     "care_maintenance_pdp",
     "product_recommendations_qggXJq",
