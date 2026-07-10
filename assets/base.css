@@ -4209,6 +4209,140 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   color: #202224 !important;
 }
 
+/* HAUSTAS Brand Design System v2 -- structural re-skin, part 2.
+   The overrides above handle color/type; these handle SHAPE and SPACING,
+   which is what actually makes a third-party widget read as "bolted on."
+   The whole site uses zero border-radius, flat 1px borders, and the same
+   uppercase-accent button treatment everywhere (see .hs-buy-now-btn) --
+   Judge.me's defaults use rounded pills and its own spacing scale, so we
+   flatten and re-space everything to match. */
+
+.jdgm-rev-widg *,
+.jdgm-widget * {
+  border-radius: 0 !important;
+}
+
+/* Overall widget container: no shadow, flat border, generous internal
+   spacing consistent with the rest of the site's card/box components. */
+.jdgm-rev-widg {
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.jdgm-rev-widg__header {
+  padding-bottom: 24px !important;
+  border-bottom: 1px solid #C8D1CC !important;
+  margin-bottom: 32px !important;
+}
+
+/* Primary CTA buttons (Write a Review, Ask a Question, form submit) --
+   match the flat, uppercase-accent treatment used by .hs-buy-now-btn and
+   every other primary button on the site instead of Judge.me's rounded
+   pill buttons. */
+.jdgm-write-rev-btn,
+.jdgm-submit-btn,
+.jdgm-btn--add-photos,
+.jdgm-ask-question-btn {
+  font-family: var(--font-accent--family) !important;
+  font-weight: var(--font-accent--weight) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  padding: 14px 24px !important;
+  border-width: 1px !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Individual review cards -- flat border, no rounded corners, spacing
+   that matches the rest of the site's generous vertical rhythm. */
+.jdgm-rev {
+  border: 1px solid #C8D1CC !important;
+  border-radius: 0 !important;
+  padding: 24px !important;
+  margin-bottom: 20px !important;
+  box-shadow: none !important;
+}
+
+.jdgm-rev__header {
+  margin-bottom: 12px !important;
+}
+
+/* Reviewer avatar stays circular (matches the circular icon treatment
+   used by .hs-verified-badge__icon elsewhere on the site) but flattened
+   from Judge.me's default rainbow gradient to solid Graphite. */
+.jdgm-rev__icon {
+  border-radius: 50% !important;
+}
+
+/* Verified Buyer / transparency badges -- Judge.me renders these as
+   rounded pill chips by default; flatten to match the site's own
+   .hs-verified-badge component, which uses a small circular icon plus
+   plain text rather than a colored pill. */
+.jdgm-rev__buyer-badge,
+.jdgm-verified-buyer-badge,
+.jdgm-rev__transparency-badge {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Histogram: flatten the bar ends and tighten row spacing so it reads as
+   a precise data chart rather than a rounded progress-bar widget. */
+.jdgm-histogram__row {
+  margin-bottom: 8px !important;
+}
+
+.jdgm-histogram__bar {
+  border-radius: 0 !important;
+  background: #F5F7F6 !important;
+}
+
+.jdgm-histogram__bar-content {
+  border-radius: 0 !important;
+}
+
+/* Filter/sort controls -- flat select matching the rest of the site's
+   form inputs (see faceted filters, cart quantity selectors). */
+.jdgm-rev-widg__sort-wrapper select,
+.jdgm-form-inp,
+.jdgm-form-textarea {
+  border-radius: 0 !important;
+  border-width: 1px !important;
+  padding: 10px 12px !important;
+  box-shadow: none !important;
+}
+
+/* Photo review thumbnails -- flat corners, thin border, no shadow. */
+.jdgm-carousel-thumb,
+.jdgm-carousel-slide img,
+.jdgm-rev__pic-btn,
+.jdgm-rev__pic img {
+  border-radius: 0 !important;
+  border: 1px solid #C8D1CC !important;
+  box-shadow: none !important;
+}
+
+/* Pagination -- flat, consistent with the rest of the site's numbered
+   controls; no rounded "pill" current-page indicator. */
+.jdgm-paginate__page {
+  border-radius: 0 !important;
+}
+
+/* De-emphasize the Judge.me attribution footer so it reads as a quiet
+   footnote instead of a second logo competing with the brand -- kept
+   visible (not hidden) since removing it outright can require a paid
+   Judge.me plan depending on your subscription tier. */
+.jdgm-carousel-track ~ a[href*="judge.me"],
+.jdgm-rev-widg a[href*="judge.me"] {
+  opacity: 0.45 !important;
+  font-size: 0.6875rem !important;
+  text-decoration: none !important;
+}
+
+
 /* Product card consistency: pin CTA/buy-now to the bottom of every card
    regardless of variable title/description length, so cards in the same
    row always line up at the same visual baseline. */
